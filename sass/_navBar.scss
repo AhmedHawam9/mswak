@@ -1,0 +1,68 @@
+.navbar-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem 0;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .email {
+        color: $SecondText;
+        font-size: .8rem;
+        padding: 0 .5rem;
+        display: flex;
+        align-items: center;
+        border-inline-end: 1px solid $SecondText;
+        font-family: "regular";
+        text-decoration: none;
+        svg {
+            color: $PrimaryColor;
+            font-size: 1rem;
+            margin-inline-end: .5rem;
+        }
+    }
+    .url {
+        padding: 0 .5rem;
+        color: $SecondText;
+        font-size: .8rem;
+        font-family: "regular";
+        text-decoration: none;
+    }
+    .phone {
+        margin-inline-start: 2rem;
+        color: $SecondText;
+        font-size: .8rem;
+        padding: 0 .5rem;
+        display: flex;
+        align-items: center;
+        font-family: "regular";
+        text-decoration: none;
+        svg {
+            color: $PrimaryColor;
+            font-size: 1rem;
+            margin-inline-end: .5rem;
+        }
+    }
+}
+.navbar {
+    margin-top: 3rem;
+    position: relative;
+    .navbar-brand {
+        margin-inline-end: 5rem;
+        .logo {
+            width: 100px;
+            margin-top: -2rem;
+        }
+    }
+    .navbar-collapse {
+        .nav-item {
+            margin-inline-end: 1rem;
+            .nav-link {
+                color: #5B6152;
+                font-family: "regular";
+            }
+        }
+    }
+}

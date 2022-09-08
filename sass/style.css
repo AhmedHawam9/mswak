@@ -16,235 +16,106 @@
 }
 body {
   overflow-x: hidden;
-  direction: rtl;
+  direction: ltr;
+}
+
+.btn {
+  padding: 0.75rem;
+  font-size: 0.8rem;
+}
+
+ul {
+  padding: 0;
 }
 
 .swal2-title {
   font-family: "semibold";
 }
 
-.mswak .floating_img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  height: 180px;
-  pointer-events: none;
-}
-.mswak .col-xl-7 {
-  z-index: 999;
-}
-.mswak .mswak_img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 1.5rem;
-}
-.mswak h1 {
-  font-family: "semibold";
-  color: #2F4858;
-  width: 55%;
-}
-.mswak h1 p {
-  color: #A1CF5F;
-  display: inline-block;
-}
-.mswak .mswak_text {
-  font-family: "regular";
-  color: #43493A;
-  width: 70%;
-  margin: 1.5rem 0;
-  font-size: 0.8rem;
-}
-.mswak .form_card_register {
-  width: 107%;
-}
-.mswak .form_card_register .card_register {
-  background-color: white;
-  box-shadow: -0.52px 5px 27px rgba(204, 204, 204, 0.32);
-  padding: 2rem;
-  border-radius: 10px;
-  position: relative;
-}
-.mswak .form_card_register .card_register .form-group {
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-.mswak .form_card_register .card_register .form-group label {
-  font-family: "semibold";
-  color: #000;
-  margin-bottom: 0.5rem;
-}
-.mswak .form_card_register .card_register .form-group svg {
-  color: #707070;
-  position: absolute;
-  top: 57%;
-  right: 3%;
-  z-index: 999;
-}
-.mswak .form_card_register .card_register .form-group input {
-  font-family: "regular";
-  font-size: 0.8rem;
-  padding: 0.75rem;
-  -webkit-padding-start: 1.7rem !important;
-          padding-inline-start: 1.7rem !important;
-  background-color: #FAFAFA;
-}
-.mswak .form_card_register .card_register .form-group .bootstrap-select .btn {
-  background-color: #FAFAFA !important;
-  border: 1px solid #ced4da;
-}
-.mswak .form_card_register .card_register .form-group .bootstrap-select .btn:hover {
-  background-color: #FAFAFA !important;
-}
-.mswak .form_card_register .card_register .form-group .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
-  text-align: start;
-  font-family: "regular";
-  font-size: 0.8rem;
-  padding: 0.6rem;
-  -webkit-padding-start: 1.3rem !important;
-          padding-inline-start: 1.3rem !important;
-}
-.mswak .form_card_register .card_register .form-group .bootstrap-select .dropdown-menu li {
-  text-align: start;
-  font-family: "regular";
-  font-size: 0.9rem;
-}
-.mswak .form_card_register .card_register .form-group .bootstrap-select .dropdown-item.active,
-.mswak .form_card_register .card_register .form-group .bootstrap-select .dropdown-item:active {
-  background-color: #2F4858;
-}
-.mswak .form_card_register .card_register .floating_circle_bottom {
-  position: absolute;
-  left: 5%;
-  bottom: -25%;
-  width: 150px;
-  height: 150px;
-  z-index: -1;
-}
-.mswak .submit_btn {
-  background-color: #2F4858;
-  color: #fff;
-  font-family: "semibold";
-  font-size: 0.8rem;
-  padding: 0.6rem 2.5rem;
-  margin-top: 2rem;
-  transition: 0.7s ease-in-out;
-}
-.mswak .submit_btn:hover {
-  background-color: transparent;
-  border: 1px solid #2F4858;
-  color: #2F4858;
-  transition: 0.7s ease-in-out;
-}
-.mswak .swiper {
-  width: 100%;
-  height: 500px;
-}
-.mswak .swiper .floating_circle {
-  position: absolute;
-  left: 0;
+.navbar-top {
+  position: fixed;
   top: 0;
-  width: 200px;
-  height: 200px;
-}
-.mswak .swiper .swiper-wrapper {
-  width: 90%;
-}
-.mswak .swiper .swiper-wrapper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
+  right: 0;
+  left: 0;
+  padding: 1rem 0;
+  background-color: #F7F7F7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.mswak .swiper .swiper-wrapper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.navbar-top .email {
+  color: #7F7F73;
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  -webkit-border-end: 1px solid #7F7F73;
+          border-inline-end: 1px solid #7F7F73;
+  font-family: "regular";
+  text-decoration: none;
 }
-.mswak .swiper-pagination-vertical.swiper-pagination-bullets,
-.mswak .swiper-vertical > .swiper-pagination-bullets {
-  left: 5%;
-  right: unset;
+.navbar-top .email svg {
+  color: #A1CF5F;
+  font-size: 1rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
 }
-.mswak .swiper-pagination-bullet {
-  background-color: #DEDEDE;
-  transform: scale(1.5);
-  opacity: 1;
-  margin-bottom: 1rem !important;
+.navbar-top .url {
+  padding: 0 0.5rem;
+  color: #7F7F73;
+  font-size: 0.8rem;
+  font-family: "regular";
+  text-decoration: none;
 }
-.mswak .swiper-pagination-bullet-active {
-  background-color: #A1CF5F;
-  transform: scale(2);
-  margin-bottom: 1.2rem !important;
+.navbar-top .phone {
+  -webkit-margin-start: 2rem;
+          margin-inline-start: 2rem;
+  color: #7F7F73;
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  font-family: "regular";
+  text-decoration: none;
 }
-.mswak .mobile_preview_swiper {
-  display: none;
-}
-.mswak .laptop_preview_swiper {
-  display: block;
+.navbar-top .phone svg {
+  color: #A1CF5F;
+  font-size: 1rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
 }
 
-@media only screen and (max-width: 991.98px) {
-  .mswak .mswak_img {
-    display: block;
-    margin: 0 auto 1.5rem;
-  }
-  .mswak h1 {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    font-size: 1.5rem;
-  }
-  .mswak .mswak_text {
-    text-align: center;
-    margin: 0 auto 1.5rem;
-    width: 90%;
-  }
-  .mswak .form_card_register {
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  .mswak .form_card_register .card_register .floating_circle_bottom {
-    display: none;
-  }
-  .mswak .form_card_register .card_register .form-group svg {
-    right: 1%;
-  }
-  .mswak .floating_img {
-    display: none;
-  }
-  .mswak .swiper {
-    margin-bottom: 2rem;
-  }
-  .mswak .swiper .swiper-wrapper {
-    height: 90%;
-  }
-  .mswak .swiper .swiper-pagination {
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .mswak .swiper .swiper-pagination-bullet {
-    margin: 0 0.5rem 1rem !important;
-  }
-  .mswak .submit_btn {
-    margin: 2rem auto 0;
-    display: block;
-  }
-  .mswak .mobile_preview_swiper {
-    display: block;
-  }
-  .mswak .laptop_preview_swiper {
-    display: none;
+.navbar {
+  margin-top: 3rem;
+  position: relative;
+}
+.navbar .navbar-brand {
+  -webkit-margin-end: 5rem;
+          margin-inline-end: 5rem;
+}
+.navbar .navbar-brand .logo {
+  width: 100px;
+  margin-top: -2rem;
+}
+.navbar .navbar-collapse .nav-item {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+.navbar .navbar-collapse .nav-item .nav-link {
+  color: #5B6152;
+  font-family: "regular";
+}
+
+/* ======= 4K style ======= */
+@media (min-width: 2000px) and (max-width: 2600px) {
+  .container {
+    max-width: 1600px;
   }
 }
-@media only screen and (max-width: 600px) {
-  .mswak .form_card_register .card_register .form-group svg {
-    right: 2%;
-  }
-}/*# sourceMappingURL=style.css.map */
+/* ======= 4K style ======= */
+/* ======= Small laptop ======= */
+/* ======= Small laptop ======= */
+/* ======= Tablet ======= */
+/* ======= Tablet ======= */
+/* ======= Mobile ======= */
+/* ======= Mobile ======= *//*# sourceMappingURL=style.css.map */
