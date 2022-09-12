@@ -29,12 +29,49 @@
   </head>
 
   <body>
+    <!-- Start flotting whatsapp -->
+    <a href="#" class="float">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- Start flotting whatsapp -->
+
+    <!-- Start Navbar -->
     <div class="navbar-top">
-      <a href="mailto:almeswak.dental@gmail.com" class="email">
-        <i class="fa-regular fa-envelope"></i>almeswak.dental@gmail.com
-      </a>
-      <a href="#" class="url">Almeswak_dentist.com</a>
-      <a href="tel:+966251254255" class="phone"><i class="fa-solid fa-phone"></i>+966 2512 542 55</a>
+      <div class="container">
+        <div class="contact_details">
+          <a href="mailto:almeswak.dental@gmail.com" class="email">
+            <i class="fa-regular fa-envelope"></i>almeswak.dental@gmail.com
+          </a>
+          <a href="#" class="url">Almeswak_dentist.com</a>
+          <a href="tel:+966251254255" class="phone"
+            ><i class="fa-solid fa-phone"></i>+966 2512 542 55</a
+          >
+        </div>
+        <ul class="socialicon">
+          <li>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=+966506661277"
+              ><i class="fab fa-whatsapp icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="#"
+              ><i class="fa-brands fa-facebook-f icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="#"
+              ><i class="fa-brands fa-twitter icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="#"
+              ><i class="fa-brands fa-instagram icon"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -68,7 +105,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-              Medical Provider
+                Medical Provider
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">test</a></li>
@@ -76,29 +113,244 @@
               </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Training Academy</a>
+              <a class="nav-link" href="#">Training Academy</a>
             </li>
             <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Library
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">test</a></li>
-                  <li><a class="dropdown-item" href="#">test</a></li>
-                </ul>
-              </li>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">test</a></li>
+                <li><a class="dropdown-item" href="#">test</a></li>
+              </ul>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact us</a>
+              <a class="nav-link" href="#">Contact us</a>
             </li>
           </ul>
+          <div class="auth">
+            <a href="#" class="signup_btn btn">Sign up</a>
+            <a href="#" class="login_btn btn">Login</a>
+            <!-- start lang -->
+            <div class="dropdown lang">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Arabic
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </div>
+            <!-- End lang -->
+          </div>
         </div>
       </div>
     </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Header -->
+    <section class="header">
+      <video src="./media/video/header.mp4" muted autoplay loop></video>
+      <div class="text_header">
+        <h1>Miswak Medical Group welcomes you</h1>
+        <p>Book your appointment now with ease and we will contact you to confirm the appointment (open the file and check for free)</p>
+      </div>
+      
+
+      <!-- offers header -->
+      <div class="offers_header">
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- start footer section -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center align-items-lg-start justify-content-sm-center contact"
+          >
+            <img src="./media/image/logo_footer.png" alt="logo footer" />
+            <p>
+              Miswak Dental Foundation is one of the largest dental treatment
+              institutions in the Kingdom of Saudi Arabia and contains more than
+              80 branches throughout the Kingdom .
+            </p>
+            <form action="" class="subscribe_form">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="subscribe our offers & news"
+                />
+                <button type="submit" class="btn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+            <div class="payment_footer">
+              <img src="./media/image/mada.png" alt="mada" />
+              <img src="./media/image/visa.png" alt="visa" />
+              <img src="./media/image/mastercard.png" alt="mastercard" />
+            </div>
+          </div>
+          <div class="d-lg-flex col-lg-8 col-md-12 col-sm-12 mx-auto">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-links">
+              <div class="h3 d-block">Need Help?</div>
+              <div class="d-lg-block">
+                <ul>
+                  <li>
+                    <a href="contact.html" class="hvr-float-shadow"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="privacy.html" class="hvr-float-shadow"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="terms.html" class="hvr-float-shadow"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="faq.html" class="hvr-float-shadow">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-links">
+              <div class="h3 d-block">Quick Links</div>
+              <div class="d-lg-block">
+                <ul>
+                  <li>
+                    <a href="about.html" class="hvr-float-shadow">About Us</a>
+                  </li>
+                  <li>
+                    <a href="doctors.html" class="hvr-float-shadow">Doctors</a>
+                  </li>
+                  <li>
+                    <a href="services.html" class="hvr-float-shadow"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="training.html" class="hvr-float-shadow"
+                      >Training Academy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="offers.html" class="hvr-float-shadow">Offers</a>
+                  </li>
+                  <li>
+                    <a href="blog.html" class="hvr-float-shadow">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 p-0 col-links">
+              <div class="h3 d-block">Branches</div>
+              <div class="d-lg-block">
+                <ul>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Jeddah</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Elreyad</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Al Damam</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Al Khobar</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Makkah</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Al madina Al mnwara</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">more......</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-0">
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="item col-sm-6">
+                <p class="my-3">All Right Reserved To Almeswak @2022</p>
+              </div>
+              <div class="item col-sm-6">
+                <ul class="socialicon">
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=+966506661277"
+                      ><i class="fab fa-whatsapp icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fa-brands fa-facebook-f icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fa-brands fa-twitter icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fa-brands fa-instagram icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section -->
   </body>
 </html>
