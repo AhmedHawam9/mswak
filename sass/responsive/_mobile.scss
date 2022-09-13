@@ -1,5 +1,35 @@
 /* ======= Mobile ======= */
-  @media only screen and (max-width: 600px) {
-  
+@media only screen and (max-width: 600px) {
+  .header {
+    .text_header {
+      h1,
+      p {
+        width: 90%;
+      }
+    }
+  }
+  .statistics {
+    .wonderful_section {
+      padding: 2rem 5rem;
+      .statistics_card {
+        width: 80%;
+        margin-bottom: 1.5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .miswak_academy {
+      padding: 2rem 5rem;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .join_btn {
+        margin: 1rem auto 0;
+        display: block;
+      }
+    }
+  }
 }
 /* ======= Mobile ======= */
