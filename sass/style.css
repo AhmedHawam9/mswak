@@ -660,6 +660,7 @@ footer .email button svg {
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(0.7);
+  z-index: -1;
 }
 .header .text_header {
   position: absolute;
@@ -680,6 +681,53 @@ footer .email button svg {
   position: absolute;
   right: 0;
   width: 30%;
+}
+
+.reservation_info {
+  z-index: 999;
+  margin-top: -4rem;
+}
+.reservation_info form {
+  background-color: #fff;
+  box-shadow: -15px 30px 60px rgba(142, 142, 142, 0.16);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+.reservation_info form h6 {
+  font-family: "bold";
+  color: #1C2410;
+  margin-bottom: 1rem;
+}
+.reservation_info form .form-group {
+  margin-bottom: 1rem;
+}
+.reservation_info form .form-group .bootstrap-select .dropdown-toggle {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 0.7px solid #C2C2C2;
+  padding: 0.75rem;
+}
+.reservation_info form .form-group .bootstrap-select .dropdown-toggle .filter-option .filter-option-inner {
+  font-size: 0.8rem;
+  font-family: "regular";
+}
+.reservation_info form .form-group .bootstrap-select .dropdown-menu .dropdown-item {
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.reservation_info form .submit_btn {
+  width: 100%;
+  background-color: #A1CF5F;
+  color: #fff;
+  font-family: "bold";
+  transition: 0.7s ease-in-out;
+}
+.reservation_info form .submit_btn:hover {
+  border-color: transparent;
+  background-color: transparent;
+  color: #A1CF5F;
+  border: 1px solid #A1CF5F;
+  transition: 0.7s ease-in-out;
 }
 
 /* ======= 4K style ======= */
