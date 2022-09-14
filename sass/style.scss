@@ -421,6 +421,8 @@ a {
       color: #fff;
       font-family: "bold";
       transition: 0.7s ease-in-out;
+<<<<<<< HEAD
+=======
       &:hover {
         border-color: transparent;
         background-color: transparent;
@@ -432,6 +434,249 @@ a {
   }
 }
 // End reservation info
+
+// Start services
+.services {
+  margin-top: 5rem;
+  .title_head {
+    font-family: "bold";
+    color: $PrimaryText;
+    text-align: center;
+  }
+  .text_section {
+    font-family: "regular";
+    color: $SecondText;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto 3rem;
+  }
+  .card_service {
+    border: 0.5px solid #c1c1c1;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .img_card {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .title_card {
+      font-family: "semibold";
+      color: $PrimaryText;
+      margin: 1rem auto 0.5rem;
+      width: 90%;
+    }
+    .text_card {
+      font-family: "regular";
+      color: $SecondText;
+      font-size: 0.8rem;
+      width: 90%;
+      margin: 0 auto 1rem;
+    }
+    .btn {
+      background-color: transparent;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+      font-family: "semibold";
+      font-size: 0.8rem;
+      padding: 0.6rem;
+      border-radius: 180px;
+      width: 90%;
+      display: block;
+      margin: auto auto 1rem;
+      transition: 0.7s ease-in-out;
+      &:hover {
+        background-color: $PrimaryColor;
+        color: #fff;
+        transition: 0.7s ease-in-out;
+      }
+    }
+  }
+}
+// End services
+
+// Start statistics
+.statistics {
+  margin-top: 5rem;
+  .wonderful_section {
+    background-color: $PrimaryColor;
+    padding: 5rem;
+    height: 100%;
+    .wonderful_title {
+      font-family: "bold";
+      color: #fff;
+    }
+    .wonderful_text {
+      font-family: "regular";
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+    .statistics_card {
+      display: inline-flex;
+      align-items: center;
+      width: 49%;
+      margin-bottom: 1rem;
+      svg {
+        background-color: #fff;
+        color: $PrimaryColor;
+        padding: .7rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-inline-end: 1rem;
+      }
+      .statistics_text {
+        .statistics_number {
+          margin-bottom: 0;
+          color: #fff;
+          font-family: "bold";
+          font-size: 1.5rem
+        }
+        .statistics_object {
+          color: #fff;
+          font-family: "regular";
+        }
+      }
+    }
+  }
+  .miswak_academy {
+    background-color: #F5FAEF;
+    padding: 5rem;
+    height: 100%;
+    .title {
+      font-family: "bold";
+      color: $PrimaryText;
+    }
+    .text {
+      font-family: "regular";
+      color: $SecondText;
+      margin-bottom: 2rem;
+    }
+    img {
+      width: 350px;
+      margin-inline-end: 1rem;
+    }
+    .join_btn {
+      background-color: $PrimaryColor;
+      color: #fff;
+      font-family: "semibold";
+      transition: .7s ease-in-out;
+      width: 30%;
+      border-radius: 35px;
+>>>>>>> cdfb1e69896205a86591d6ba4ff9bb044452047c
+      &:hover {
+        border-color: transparent;
+        background-color: transparent;
+        color: $PrimaryColor;
+        border: 1px solid $PrimaryColor;
+        transition: 0.7s ease-in-out;
+<<<<<<< HEAD
+=======
+      }
+    }
+  }
+}
+// End statistics
+
+// Start Doctors
+.doctors {
+  margin-top: 3rem;
+  .sub_title {
+    color: $PrimaryColor;
+    font-family: "regular";
+  }
+  .title {
+    font-family: "bold";
+    color: $PrimaryText;
+  }
+  .text {
+    font-family: "regular";
+    color: $SecondText;
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  .show_all {
+    background-color: $PrimaryColor;
+    color: #fff;
+    font-family: "regular";
+    border-radius: 180px;
+    font-size: .8rem;
+    padding: .6rem 1.5rem;
+    transition: .7s ease-in-out;
+    &:hover {
+      border-color: transparent;
+      background-color: transparent;
+      color: $PrimaryColor;
+      border: 1px solid $PrimaryColor;
+      transition: .7s ease-in-out;
+    }
+  }
+  .card_doctor {
+    box-shadow: 10px 30px 76px rgba(116, 116, 116, .16);
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    width: 47%;
+    margin-inline-end: 2%;
+    margin-bottom: 2rem;
+    border-radius: 17px;
+    img {
+      width: 30%;
+      height: 100%;
+      margin-inline-end: 1rem;
+      border-radius: 17px 0 0 17px;
+    }
+    .description_doctor {
+      width: 70%;
+      .title {
+        color: $PrimaryText;
+        font-family: "semibold";
+      }
+      .specialize {
+        display: block;
+        font-family: "regular";
+        color: $SecondText;
+        font-size: .9rem;
+        margin-bottom: .5rem;
+      }
+      .address {
+        display: block;
+        font-family: "regular";
+        color: #5B6152;
+        font-size: .9rem;
+        margin-bottom: .5rem;
+      }
+      .rating {
+        margin-bottom: .5rem;
+        svg {
+          color: $SecondText;
+          &.active {
+            color: #D18927;
+          }
+        }
+      }
+      .booking {
+        color: $PrimaryColor;
+        background-color: transparent;
+        border: 1px solid $PrimaryColor;
+        font-family: "semibold";
+        font-size: .8rem;
+        padding: .6rem;
+        border-radius: 180px;
+        width: 60%;
+        transition: .7s ease-in-out;
+        &:hover {
+          background-color: $PrimaryColor;
+          color: #fff;
+          transition: .7s ease-in-out;
+        }
+>>>>>>> cdfb1e69896205a86591d6ba4ff9bb044452047c
+      }
+    }
+  }
+}
+// End Doctors
 
 //start about us page
 .header_about_us{

@@ -1,4 +1,5 @@
 /* ======= Mobile ======= */
+<<<<<<< HEAD
   @media only screen and (max-width: 600px) {
     .form_sign .collection .content label.box{
       width: 52%;
@@ -16,5 +17,54 @@
     footer .footer-bottom .socialicon{
       justify-content: center;
     }
+=======
+@media only screen and (max-width: 600px) {
+  .header {
+    .text_header {
+      h1,
+      p {
+        width: 90%;
+      }
+    }
+  }
+  .statistics {
+    .wonderful_section {
+      padding: 2rem 5rem;
+      .statistics_card {
+        width: 80%;
+        margin-bottom: 1.5rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .miswak_academy {
+      padding: 2rem 5rem;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .join_btn {
+        margin: 1rem auto 0;
+        display: block;
+      }
+    }
+  }
+  .form_sign .collection .content label.box {
+    width: 52%;
+  }
+  .form_sign .collection .content {
+    justify-content: center;
+  }
+  .form_sign .input-group .form-control {
+    padding-inline-start: 12%;
+  }
+  .form_sign p.term {
+    font-size: 0.8rem;
+  }
+  footer .footer-bottom .socialicon {
+    justify-content: center;
+  }
+>>>>>>> cdfb1e69896205a86591d6ba4ff9bb044452047c
 }
 /* ======= Mobile ======= */
