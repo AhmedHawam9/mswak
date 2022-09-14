@@ -1,6 +1,7 @@
 /* ======= Mobile ======= */
 @media only screen and (max-width: 600px) {
   .header {
+    height: 50vh;
     .text_header {
       h1,
       p {
@@ -21,12 +22,14 @@
     }
     .miswak_academy {
       padding: 2rem 5rem;
+      text-align: center;
       img {
         width: 100%;
         margin: 0 auto;
       }
       .join_btn {
         margin: 1rem auto 0;
+        width: 50%;
         display: block;
       }
     }
@@ -42,6 +45,35 @@
   }
   .form_sign p.term {
     font-size: 0.8rem;
+  }
+  .doctors {
+    .text {
+      width: 80%;
+    }
+    .card_doctor {
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: 200px;
+        margin-inline-end: 0;
+        border-radius: 17px 17px 0 0;
+      }
+      .description_doctor {
+        padding: 1rem 0;
+        width: 90%;
+        margin: 0 auto;
+        .title {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .booking_information {
+    .container {
+      .form-group {
+        margin-bottom: 0.5rem;
+      }
+    }
   }
   footer .footer-bottom .socialicon {
     justify-content: center;
