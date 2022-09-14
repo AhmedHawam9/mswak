@@ -8,5 +8,23 @@
       margin-bottom: 2rem;
     }
   }
+  .doctors {
+    .card_doctor {
+      width: 100%;
+    }
+  }
+  .statistics {
+    .p-0 {
+      padding: 0 .75rem !important;
+    } 
+  }
+  .doctors {
+    .title {
+      margin-top: 1rem;
+    }
+    .text {
+      width: 50%;
+    }
+  }
 }
 /* ======= Tablet ======= */
