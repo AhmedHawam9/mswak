@@ -126,6 +126,9 @@
       .nav-link {
         color: #5b6152;
         font-family: "regular";
+        &.active {
+          color: $PrimaryColor;
+        }
         &.dropdown-toggle {
           &::after {
             transform: rotate(270deg);

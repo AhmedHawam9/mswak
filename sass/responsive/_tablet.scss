@@ -1,5 +1,12 @@
 /* ======= Tablet ======= */
-  @media only screen and (max-width: 991.98px) {
-  
+@media only screen and (max-width: 991.98px) {
+  .services {
+    .text_section {
+      width: 70%;
+    }
+    .col-lg-4 {
+      margin-bottom: 2rem;
+    }
+  }
 }
 /* ======= Tablet ======= */
