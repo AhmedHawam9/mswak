@@ -102,32 +102,37 @@ a {
 // End header
 
 //start breadcrumb
-.braedcrumb {
-  padding: 3% 0;
+.breadcrumb {
+  padding: 1rem 0;
+  margin-bottom: 3rem;
   position: relative;
   text-align: start;
   background-color: #f7f7f7;
   .content {
+    display: flex;
+    align-items: center;
     svg {
       color: $SecondText;
-      font-size: 1.5rem;
-      margin-inline-end: 4%;
+      font-size: 1.3rem;
     }
     span,
     a {
       font-size: 1rem;
       color: $PrimaryText;
       font-family: "semibold";
+      margin-inline-end: 1rem;
     }
   }
 }
 //finish breadcrumb
+
 //start form sign
 .form_sign {
   border: 1px solid #bdbdbd;
   border-radius: 5px;
-  margin: 9% 0;
-  padding: 6% 4%;
+  padding: 3rem 2rem;
+  width: 50%;
+  margin: 0 auto;
   h5 {
     margin-bottom: 4%;
     font-size: 1.2rem;
@@ -196,7 +201,7 @@ a {
     text-align: center;
     position: relative;
     font-family: "light";
-    margin: 3% 0;
+    margin: 2rem 0;
     &::after {
       content: "";
       top: 12px;
@@ -218,43 +223,46 @@ a {
       height: 2px;
     }
   }
-  .input-group {
+  .form-group {
     margin: 5% 0;
     position: relative;
-    .btn {
-      width: 50%;
-      background-color: $PrimaryColor;
-      color: white;
-      font-family: "regular";
-      font-size: 1.2rem;
-      border-radius: 5px;
-      padding: 1%;
-      transition: 0.25s all ease-in-out;
-      border: 1px solid $PrimaryColor;
-      &:hover {
-        background-color: white;
-        color: $PrimaryColor;
-      }
-    }
     .form-control {
       border: 1px solid #c2c2c2;
       border-radius: 5px;
       font-family: "regular";
       color: $PrimaryText;
-      padding-inline-start: 9%;
+      padding: 0.75rem;
+      font-size: 0.8rem;
+      padding-inline-start: 2.5rem;
       border-top-right-radius: 5px !important;
       border-bottom-right-radius: 5px !important;
     }
     .icon_form {
       position: absolute;
-      top: 6px;
+      top: .6rem;
       left: 18px;
       color: $SecondText;
-      z-index: 1000;
+      z-index: 5;
+    }
+  }
+  .btn_submit {
+    width: 100%;
+    background-color: $PrimaryColor;
+    color: white;
+    font-family: "regular";
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .6rem;
+    border: 1px solid $PrimaryColor;
+    transition: .7s ease-in-out;
+    &:hover {
+      background-color: white;
+      color: $PrimaryColor;
+      transition: .7s ease-in-out;
     }
   }
   p.term {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "regular";
     color: $PrimaryText;
     margin: 3% 0;
@@ -263,13 +271,160 @@ a {
     }
   }
   p.login {
+    font-size: 1rem;
+    font-family: "regular";
+    color: $PrimaryText;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 3rem;
+    border-top: 1px solid #c2c2c2;
+    a {
+      color: $PrimaryColor;
+    }
+  }
+}
+//finish form sign
+
+//start form sign
+.form_login {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  h5 {
+    margin-bottom: 4%;
+    font-size: 1.2rem;
+    font-family: "bold";
+    color: $PrimaryText;
+  }
+  .collection {
+    .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      label.box {
+        width: 31%;
+        margin: 0 1%;
+        background: white;
+        color: #000;
+        display: flex;
+        border-radius: 5px;
+        border: 1px solid #000;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        padding: .7rem;
+        .plan {
+          display: flex;
+          width: 100%;
+          padding: 1%;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+          .text {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            p {
+              // margin-top: 1%;
+              // margin-right: 2%;
+              margin-bottom: 0;
+              color: $PrimaryText;
+              font-size: 0.8rem;
+              font-family: "regular";
+            }
+          }
+        }
+      }
+      #one:checked ~ label.first,
+      #two:checked ~ label.two,
+      #three:checked ~ label.three {
+        border-color: #b63131;
+      }
+      input[type="radio"] {
+        display: none;
+      }
+    }
+  }
+  .or {
+    font-size: 1rem;
+    color: $SecondText;
+    text-align: center;
+    position: relative;
+    font-family: "light";
+    margin: 2rem 0;
+    &::after {
+      content: "";
+      top: 12px;
+      left: 0;
+      background-color: #bdbdbd;
+      color: #bdbdbd;
+      width: 45%;
+      height: 2px;
+      position: absolute;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 0;
+      background-color: #bdbdbd;
+      color: #bdbdbd;
+      width: 45%;
+      height: 2px;
+    }
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    .form-control {
+      border: 1px solid #c2c2c2;
+      border-radius: 5px;
+      font-family: "regular";
+      color: $PrimaryText;
+      padding: 0.75rem;
+      font-size: 0.8rem;
+      padding-inline-start: 2.5rem;
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+    }
+    .icon_form {
+      position: absolute;
+      top: .6rem;
+      left: 18px;
+      color: $SecondText;
+      z-index: 5;
+    }
+  }
+  .btn_submit {
+    width: 100%;
+    background-color: $PrimaryColor;
+    color: white;
+    font-family: "regular";
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .6rem;
+    margin-bottom: 2rem;
+    border: 1px solid $PrimaryColor;
+    transition: .7s ease-in-out;
+    &:hover {
+      background-color: white;
+      color: $PrimaryColor;
+      transition: .7s ease-in-out;
+    }
+  }
+  p.login {
     font-size: 1.1rem;
     font-family: "regular";
     color: $PrimaryText;
-    margin-top: 6%;
+    margin-bottom: 0;
     text-align: center;
-    padding-top: 6%;
-    border-top: 1px solid #c2c2c2;
     a {
       color: $PrimaryColor;
     }
