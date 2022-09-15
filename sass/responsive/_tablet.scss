@@ -8,23 +8,82 @@
       margin-bottom: 2rem;
     }
   }
-  .doctors {
-    .card_doctor {
-      width: 100%;
-    }
-  }
   .statistics {
     .p-0 {
       padding: 0 .75rem !important;
     } 
   }
+  .doctor_header {
+    img {
+      width: 100%;
+    }
+    h2 {
+      width: 90%;
+    }
+    p {
+      width: 80%;
+    }
+  }
   .doctors {
+    .card_doctor {
+      width: 100%;
+    }
     .title {
       margin-top: 1rem;
     }
     .text {
       width: 50%;
     }
+  }
+  .single_blog {
+    .sidebar_blog {
+      .box {
+        display: inline-block;
+        width: 48.5%;
+        margin-bottom: 0;
+        &:nth-child(even) {
+          margin-inline-end: 1.5%;
+        }
+      }
+    }
+  }
+  .counter_aboutus {
+    margin-top: 3rem;
+    .boxes {
+      .box {
+        width: 50%;
+      }
+    }
+  }
+  .best_dector_aboutus {
+    .head {
+      .main_content_start {
+        p {
+          width: 70%;
+        }
+      }
+    }
+  }
+  .choose_doctor {
+    .card_booking_doctor {
+      flex-wrap: wrap;
+      img {
+        width: 50%;
+        height: 300px;
+      }
+      .details_doctor {
+        padding: 1.5rem;
+        width: 49%;
+        border-inline-end: 0;
+      }
+      .booking_time {
+        width: 100%;
+        padding: 1rem 3rem 3rem;
+      }
+    }
+  }
+  .payment_methods {
+    margin-bottom: 1.5rem;
   }
 }
 /* ======= Tablet ======= */

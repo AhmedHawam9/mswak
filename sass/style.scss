@@ -45,21 +45,23 @@ a {
 .rates {
   padding: 2% 0;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: start;
+  align-items: center;
   flex-direction: row;
-  .fa-solid {
-    color: #d18927;
-    border: #d18927;
-  }
-  .fa-regular {
-    color: #d18927;
-  }
   svg {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-inline-end: 1%;
-    color: #d18927;
-    border: #d18927;
+    stroke: #d18927;
+    color: transparent;
+    stroke-width: 50px;
+    &.active {
+      color: #d18927;
+    }
+  }
+  span {
+    font-family: "regular";
+    font-size: .8rem;
+    color: $SecondText;
   }
 }
 
@@ -124,7 +126,7 @@ a {
 
 //start breadcrumb
 .breadcrumb {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   margin-bottom: 3rem;
   position: relative;
   text-align: start;
@@ -455,23 +457,18 @@ a {
 
 //start single blog
 .single_blog {
-  padding: 5% 0;
+  padding: 2rem 0 0;
   position: relative;
   .content_blog {
     h2 {
-      font-size: 2rem;
       color: $PrimaryText;
       font-family: "semibold";
-    }
-    h5 {
-      font-size: 1.2rem;
-      color: $SecondText;
-      font-family: "regular";
+      margin-bottom: 0;
     }
     img {
       width: 100%;
-      height: 350px;
-      margin: 3% 0;
+      height: 500px;
+      margin: 1rem 0 2rem;
     }
     p {
       font-size: 1rem;
@@ -485,16 +482,16 @@ a {
       background-color: #f5f5f5;
       font-family: "semibold";
       color: $PrimaryText;
-      font-size: 1.2rem;
-      padding: 4% 0;
-      margin-bottom: 4%;
-      text-align: center;
+      font-size: 1rem;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      text-align: start;
       border-radius: 4px;
     }
     .box {
-      margin-bottom: 6%;
-      border: 1px solid #c1c1c1;
-      padding-bottom: 5%;
+      margin-bottom: 1rem;
+      border: .5px solid #c1c1c1;
+      padding-bottom: 1rem;
       img {
         width: 100%;
         height: 200px;
@@ -502,15 +499,16 @@ a {
       .info {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin: 4% 2% 6%;
-        padding: 3% 0 6%;
+        justify-content: space-between;
+        padding: 1rem 0;
         border-bottom: 1px solid #c1c1c1;
+        width: 90%;
+        margin: 0 auto;
         .date {
           display: flex;
           flex-direction: row;
           align-items: center;
-          width: 45%;
+          width: 50%;
           svg {
             color: $PrimaryColor;
             font-size: 0.9rem;
@@ -519,7 +517,7 @@ a {
             color: $PrimaryText;
             font-size: 0.8rem;
             font-family: "regular";
-            padding-inline-start: 7%;
+            padding-inline-start: .5rem;
           }
         }
       }
@@ -527,22 +525,26 @@ a {
         font-size: 1rem;
         color: $PrimaryText;
         font-family: "bold";
-        margin: 4% 0 2%;
-        padding: 0 3%;
+        width: 90%;
+        margin: 1.5rem auto .5rem;
       }
       p {
         font-size: 0.8rem;
         color: $SecondText;
         font-family: "regular";
-        padding: 0 3%;
+        width: 90%;
+        margin: 0 auto 0.5rem;
       }
       a {
-        font-family: "regular";
+        font-family: "semibold";
         color: $PrimaryColor;
         transition: 0.25s all ease-out;
-        padding: 0 3%;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
         svg {
-          margin-inline-start: 3%;
+          margin-inline-start: .5rem;
         }
         &:hover {
           color: $PrimaryText;
@@ -863,6 +865,12 @@ a {
   margin-top: 5rem;
   padding: 3rem 0;
   position: relative;
+  .title {
+    color: $PrimaryColor;
+    font-family: "semibold";
+    text-align: center;
+    margin-bottom: .5rem;
+  }
   h3 {
     font-family: "semibold";
     color: $PrimaryText;
@@ -1274,7 +1282,7 @@ a {
 
 //start about us page
 .header_about_us {
-  padding: 5% 0;
+  margin-top: 5rem;
   position: relative;
   h4 {
     font-size: 2.5rem;
@@ -1295,14 +1303,17 @@ a {
     flex-direction: column;
     img {
       width: 100%;
-      height: 192px;
-      margin-bottom: 6%;
+      height: 196px;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 .aboutus_card {
-  padding: 5% 0;
+  margin-top: 5rem;
   position: relative;
   .service_box {
     &::before {
@@ -1367,27 +1378,33 @@ a {
       height: 50px;
     }
     h5 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: $PrimaryText;
       font-family: "bold";
-      margin: 3% 0;
+      margin: 1.5rem 0 .5rem;
     }
     p {
-      font-size: 1rem;
+      font-size: .8rem;
+      width: 90%;
+      margin: 0 auto;
       color: $SecondText;
       font-family: "regular";
-      margin-top: 9px;
       text-align: center;
     }
   }
 }
 
-.couner_aboutus {
-  padding: 3% 0;
+.counter_aboutus {
+  margin-top: 5rem;
+  background-image: url("../media/image/back-join.png");
+  background-position: center;
+  background-size: cover;
   .boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
     .box {
       width: 25%;
       display: flex;
@@ -1405,11 +1422,9 @@ a {
         }
       }
       .content {
-        // display: flex;
-        // flex-direction: row;
         svg {
           color: #fff;
-          font-size: 1.5rem;
+          font-size: 1rem;
           font-family: "bold";
         }
         .counter {
@@ -1420,6 +1435,7 @@ a {
         }
         .head_categ {
           color: #f2f2f2;
+          margin-top: .3rem;
         }
       }
     }
@@ -1427,7 +1443,7 @@ a {
 }
 
 .best_dector_aboutus {
-  padding: 5% 0;
+  margin-top: 3rem;
   position: relative;
   .head {
     display: flex;
@@ -1442,7 +1458,6 @@ a {
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-      padding-inline-end: 10%;
       margin: 2% 0;
      
       h2 {
@@ -1451,7 +1466,8 @@ a {
         color: $PrimaryText;
       }
       p {
-        font-size: 1.5rem;
+        font-size: .9rem;
+        width: 50%;
         font-family: "regular";
         color: $SecondText;
         line-height: 1.4;
@@ -1467,30 +1483,32 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: 0.2s all ease-in-out;
         background: $PrimaryColor;
         border: 1px solid $PrimaryColor;
         border-radius: 30px;
-        font-size: 1rem;
+        font-size: .8rem;
         font-family: "regular";
         text-align: center;
         color: #fff;
-        padding: 2% 1%;
-        width: 68%;
+        padding: .5rem 2rem;
+        width: fit-content;
+        transition: .7s ease-in-out;
         &:hover {
           background-color: #fff;
           color: $PrimaryColor;
+          transition: .7s ease-in-out;
         }
       }
     }
   }
   .card {
-    border: 1px solid #bdbdbd;
+    border: .7px solid #bdbdbd;
     border-radius: 5px;
-    padding: 3% 2%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
     img {
       width: 100%;
-      height: 170px;
+      height: 150px;
     }
     .info {
       padding: 2% 3%;
@@ -1500,12 +1518,15 @@ a {
         font-family: 'bold';
       }
       p {
-        font-size: 1rem;
+        font-size: .9rem;
         color: $SecondText;
         font-family: 'regular';
+        margin-bottom: 0;
+      }
+      .rates {
+        margin: 1rem 0;
       }
       .connect_info {
-        margin-top: 10%;
         .list {
           display: flex;
           flex-direction: row;
@@ -1529,6 +1550,306 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+.personal_information {
+  margin-top: 3rem;
+  border: .7px solid #d4d4d4;
+  border-radius: 12px;
+  padding: 2rem;
+  h6 {
+    font-family: "semibold";
+    color: $PrimaryText;
+    padding-bottom: 1rem;
+    border-bottom: .7px solid #BDBDBD;
+  }
+  ul {
+    display: flex;
+    padding-top: 1rem;
+    li {
+      width: 31%;
+      margin-inline-end: 2%;
+      list-style: none;
+      border: 0.7px solid #BDBDBD;
+      &:last-child {
+        margin-inline-end: 0;
+      }
+      a {
+        color: #000000;
+        font-family: "regular";
+        font-size: .9rem;
+        display: flex;
+        align-items: center;
+        padding: .75rem;
+        width: 100%;
+        img {
+          margin-inline-end: .5rem;
+          width: 25px;
+          height: 25px
+        }
+      }
+    }
+  }
+  .or {
+    font-size: 1rem;
+    color: $SecondText;
+    text-align: center;
+    position: relative;
+    font-family: "light";
+    margin: 2rem 0;
+    &::after {
+      content: "";
+      top: 12px;
+      left: 0;
+      background-color: #bdbdbd;
+      color: #bdbdbd;
+      width: 47%;
+      height: 2px;
+      position: absolute;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 0;
+      background-color: #bdbdbd;
+      color: #bdbdbd;
+      width: 47%;
+      height: 2px;
+    }
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 1rem;
+    svg {
+      position: absolute;
+      top: 30%;
+      left: 2%;
+      color: transparent;
+      stroke: #5B6152;
+      stroke-width: 30px;
+    }
+    input {
+      padding: .6rem;
+      font-size: .8rem;
+      padding-inline-start: 2.5rem;
+      font-family: "regular";
+      color: #5B6152;
+    }
+  }
+  .submit_btn {
+    background-color: $PrimaryColor;
+    color: #fff;
+    font-family: "semibold";
+    font-size: .8rem;
+    padding: .75rem;
+    transition: .7s ease-in-out;
+    width: 100%;
+    &:hover {
+      border-color: transparent;
+      background-color: transparent;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+      transition: .7s ease-in-out;
+    }
+  }
+}
+
+.booking_summery {
+  margin-top: 3rem;
+  border: .7px solid #d4d4d4;
+  border-radius: 12px;
+  padding: 2rem;
+  h6 {
+    font-family: "semibold";
+    color: $PrimaryText;
+    padding-bottom: 1rem;
+    border-bottom: .7px solid #BDBDBD;
+  }
+  .card_doctor {
+    display: flex;
+    margin-top: 1rem;
+    img {
+      width: 100px;
+      height: 100px;
+      margin-inline-end: 1rem;
+    }
+    .details_doctor {
+      .title {
+        font-family: "semibold";
+        color: $PrimaryText;
+        margin-bottom: 0
+      }
+      .rates {
+        margin: .5rem 0;;
+      }
+      .address {
+        font-family: "regular";
+        font-size: .8rem;
+        color: $PrimaryText;
+      }
+    }
+  }
+  .booking_time {
+    border: 1.5px solid $PrimaryColor;
+    border-radius: 6px;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .book {
+      h6 {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+      .time {
+        font-family: "semibold";
+        color: #5B6152;
+        font-size: .8rem;
+        svg {
+          color: $PrimaryColor;
+          margin-inline-end: .5rem;
+        }
+      }
+    }
+    .booking_btn {
+      background-color: $PrimaryColor;
+      color: #fff;
+      font-family: "semibold";
+      font-size: .8rem;
+      padding: .5rem 1.7rem;
+      border-radius: 105px;
+      transition: .7s ease-in-out;
+      &:hover {
+        border-color: transparent;
+        background-color: transparent;
+        color: $PrimaryColor;
+        border: 1px solid $PrimaryColor;
+        transition: .7s ease-in-out;
+      }
+    }
+  }
+}
+
+.payment_methods {
+  border: .7px solid #d4d4d4;
+  border-radius: 12px;
+  padding: 2rem;
+  h6 {
+    font-family: "semibold";
+    color: $PrimaryText;
+    padding-bottom: 1rem;
+    border-bottom: .7px solid #BDBDBD;
+  }
+  .payment {
+    margin-top: 2rem;
+    .hide {
+      display: none;
+    }
+    .form-check {
+      margin-bottom: 1.5rem;
+      .form-check-label {
+        font-family: "semibold";
+        color: $PrimaryText;
+        .terms {
+          color: $PrimaryColor;
+          cursor: pointer;
+        }
+      }
+      .form-check-input {
+        &:checked {
+          background-color: $PrimaryColor;
+          border-color: $PrimaryColor;
+        }
+        &:focus {
+          box-shadow: 0 0 0 0.25rem rgb(161 207 95 / 25%);
+        }
+      }
+    }
+    .modal {
+      .modal-dialog {
+        max-width: 50%;
+      }
+    }
+    .form-group {
+      margin-bottom: .5rem;
+      label {
+        margin-bottom: .5rem;
+        font-family: "regular";
+        color: #5B6152;
+        font-size: .8rem;
+      }
+      input {
+        font-size: .8rem;
+        padding: .6rem;
+        font-family: "regular";
+      }
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+    }
+    .btn_submit {
+      background-color: $PrimaryColor;
+      color: #fff;
+      font-family: "semibold";
+      font-size: .9rem;
+      padding: .75rem;
+      transition: .7s ease-in-out;
+      width: 45%;
+      &:hover {
+        background-color: transparent;
+        color: $PrimaryColor;
+        border: 1px solid $PrimaryColor;
+        transition: .7s ease-in-out;
+      }
+    }
+  }
+}
+
+.booking_summery_cost {
+  border: .7px solid #d4d4d4;
+  border-radius: 12px;
+  padding: 2rem;
+  h6 {
+    font-family: "semibold";
+    color: $PrimaryText;
+    padding-bottom: 1rem;
+    border-bottom: .7px solid #BDBDBD;
+  }
+  .costs {
+    margin-top: 1rem;
+    border-bottom: .7px solid #BDBDBD;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      span {
+        font-family: "semibold";
+        color: $PrimaryText;
+        font-size: .9rem
+      }
+    }
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-family: "semibold";
+      color: $PrimaryText;
+      font-size: .9rem
     }
   }
 }
