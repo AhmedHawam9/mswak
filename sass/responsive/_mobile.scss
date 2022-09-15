@@ -1,5 +1,8 @@
 /* ======= Mobile ======= */
 @media only screen and (max-width: 600px) {
+  .breadcrumb {
+    margin-bottom: 0;
+  }
   .header {
     height: 50vh;
     .text_header {
@@ -74,6 +77,84 @@
         margin-bottom: 0.5rem;
       }
     }
+  }
+  .single_blog {
+    .sidebar_blog {
+      .box {
+        width: 100%;
+        margin-bottom: 1rem;
+        &:nth-child(even) {
+          margin-inline-end: 0;
+        }
+      }
+    }
+    .content_blog {
+      img {
+        height: 300px;
+      }
+    }
+  }
+  .aboutus_card {
+    margin-top: 3rem;
+  }
+  .counter_aboutus {
+    .boxes {
+      .box {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .best_dector_aboutus {
+    .head {
+      .button {
+        width: 40%;
+        .first {
+          font-size: .7rem;
+        }
+      }
+      .main_content_start {
+        p {
+          width: 90%;
+        }
+      }
+    }
+    .card {
+      img {
+        height: 250px;
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+  }
+  .doctor_header {
+    padding-top: 2rem;
+  }
+  .choose_doctor {
+    .card_booking_doctor {
+      img {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+      }
+      .details_doctor {
+        width: 100%;
+      }
+      .booking_time {
+        padding: 0 3rem 3rem;
+      }
+    }
+  }
+  .personal_information {
+    ul {
+      flex-direction: column;
+      li {
+        width: 100%;
+        margin-bottom: .5rem;
+      }
+    }
+  }
+  .booking_summery {
+    margin-top: 1.5rem;
   }
   footer .footer-bottom .socialicon {
     justify-content: center;
