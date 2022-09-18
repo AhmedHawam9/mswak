@@ -164,202 +164,280 @@
       <div class="container">
         <div class="content">
           <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
-          <span>Booking Information</span>
+          <span>Doctor.Adham Abdulrahman</span>
         </div>
       </div>
     </section>
     <!-- FINISH BREADCRUMB -->
 
-    <section class="booking_info">
+    <!-- start doctor details -->
+    <section class="doctor">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 col-12">
-            <form action="booking_details.html" class="payment_methods">
-              <h6>Choose The Payment Method</h6>
-              <div class="payment">
-                <!-- Start Cash On Clinic -->
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="payment"
-                    value="CashOnClinic"
-                    onclick="CashOnClinic();"
-                    id="CashOnClinicLabel"
-                  />
-                  <label class="form-check-label" for="CashOnClinicLabel">
-                    Cash On The Clinic
-                  </label>
-                </div>
-                <!-- End Cash On Clinic -->
-
-                <!-- Start Credit Card -->
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="payment"
-                    value="CreditCard"
-                    onclick="CreditCard();"
-                    id="CreditCardLabel"
-                  />
-                  <label class="form-check-label" for="CreditCardLabel">
-                    Credit Card
-                  </label>
-                </div>
-                <!-- Start Form data Credit Card -->
-                <div id="CreditCard" class="hide">
-                  <div class="row">
-                    <div class="col-lg-6 col-12">
-                      <div class="form-group">
-                        <label for="">Name On Card</label>
-                        <input
-                          type="text"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Name On Card"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <div class="form-group">
-                        <label for="">Card Number</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Card Number"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                      <div class="form-group">
-                        <label for="">Expiry Month</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Mm"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                      <div class="form-group">
-                        <label for="">Expiry Year</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Yy"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                      <div class="form-group">
-                        <label for="">CVV</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="CVV"
-                        />
-                      </div>
-                    </div>
+          <div class="col-lg-8 col-12">
+            <div class="doctor_details">
+              <div class="doctor_card">
+                <img src="./media/image/7w7w.jpg" alt="doctor" />
+                <div class="doctor_description">
+                  <h5 class="name">Dr. AHmed Hawam</h5>
+                  <p class="description">
+                    Consultant of Oral Medicine and Cosmetic Dentistry and a
+                    Diploma in Cosmetic Dentistry, University of Leeds, England
+                  </p>
+                  <div class="rating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(120 reviews)</span>
                   </div>
-                </div>
-                <!-- End Form data Credit Card -->
-
-                <!-- End Credit Card -->
-                <script>
-                  function CashOnClinic() {
-                    document.getElementById("CreditCard").style.display =
-                      "none";
-                  }
-                  function CreditCard() {
-                    document.getElementById("CreditCard").style.display =
-                      "block";
-                  }
-                </script>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckChecked"
-                  />
-                  <label class="form-check-label" for="flexCheckChecked">
-                    I have read and accept
-                    <span
-                      class="terms"
-                      data-bs-toggle="modal"
-                      data-bs-target="#termsModal"
-                      >Terms & Conditions</span
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="text"
+                      >ElDamam Branch , Jasmine District , A2esha …..</span
                     >
-                  </label>
-                </div>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="termsModal"
-                  tabindex="-1"
-                  aria-labelledby="termsModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="termsModalLabel">
-                            Terms & Conditions
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">...</div>
-                    </div>
+                  </div>
+                  <div class="time">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="title">Waiting Time: </span>
+                    <span class="text">45:00 Min</span>
+                  </div>
+                  <div class="fees">
+                    <i class="fa-solid fa-money-bills"></i>
+                    <span class="title">Fees: </span>
+                    <span class="text">Start From 250 SAR</span>
                   </div>
                 </div>
-                <button type="submit" class="btn btn_submit">
-                  Confirm and pay
-                </button>
               </div>
-            </form>
-          </div>
-          <div class="col-lg-5 col-12">
-            <div class="booking_summery_cost">
-                <h6>Booking summery</h6>
-                <ul class="costs">
-                    <li>
-                        <span>Service Cost</span>
-                        <span>500 SAR</span>
-                    </li>
-                    <li>
-                        <span>Concultation Cost</span>
-                        <span>100 SAR</span>
-                    </li>
-                    <li>
-                        <span>Fees</span>
-                        <span>10 SAR</span>
-                    </li>
-                </ul>
-                <div class="total">
-                    <span>Total</span>
-                    <span>610 SAR</span>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="overview-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#overview-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="overview-tab-pane"
+                    aria-selected="true"
+                  >
+                    Over View
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="services-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#services-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="services-tab-pane"
+                    aria-selected="false"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="reviews-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#reviews-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="reviews-tab-pane"
+                    aria-selected="false"
+                  >
+                    Reviews
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active overview"
+                  id="overview-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="overview-tab"
+                  tabindex="0"
+                >
+                  <div class="about_doctor">
+                  <!-- About Doctor -->
+                    <h5>About Doctor</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua. At vero eos et
+                      accusam et justo duo dolores et ea rebum. Stet clita kasd
+                      gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                      sit amet. Lorem ipsum dolor sit amet, consetetur
+                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                      ut labore et dolore magna aliquyam erat, sed diam
+                      voluptua. At vero eos et accusam et justo duo dolores et
+                      ea rebum. Stet clita kasd gubergren, no sea takimata
+                      sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                      sit amet, consetetur sadipscing elitr, sed diam nonumy
+                      eirmod tempor invidunt ut labore et dolore magna aliquyam
+                      erat, sed diam voluptua. At vero eos et accusam et justo
+                      duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                      takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                      ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                      diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat, sed diam voluptua. At vero eos et
+                      accusam et justo duo
+                    </p>
+                  </div>
+                  <!-- About Doctor -->
+
+                  <!-- languages -->
+                  <div class="languages">
+                    <h5>Languages</h5>
+                    <ul>
+                      <li>Arabic</li>
+                      <li>English</li>
+                    </ul>
+                  </div>
+                  <!-- languages -->
+
+                  <!-- experience -->
+                  <div class="experience">
+                    <h5>Experience</h5>
+                    <!-- Start experience card -->
+                    <div class="experience_card">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <div class="experience_description">
+                        <p class="title">Dentistry Certificate</p>
+                        <p class="specialty">Jerman Medical Specialization Board</p>
+                        <span class="date">2015 - 2019</span>
+                        <span class="address">Berlin , Jerman</span>
+                      </div>
+                    </div>
+                    <!-- End experience card -->
+
+                    <!-- Start experience card -->
+                    <div class="experience_card">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <div class="experience_description">
+                        <p class="title">Dentistry Certificate</p>
+                        <p class="specialty">Jerman Medical Specialization Board</p>
+                        <span class="date">2015 - 2019</span>
+                        <span class="address">Berlin , Jerman</span>
+                      </div>
+                    </div>
+                    <!-- End experience card -->
+                  </div>
+                  <!-- experience -->
+
+                  <!-- Clinic Images -->
+                  <div class="clinic_images">
+                    <h5>Clinic Images</h5>
+                    <!-- Swiper -->
+                    <div class="swiper clinicSwiper">
+                      <div class="swiper-wrapper">
+                        <!-- For loop this slide -->
+                        <div class="swiper-slide">
+                          <img src="./media/image/tooth1.jpg" alt="clinic">
+                        </div>
+                        <!-- For loop this slide -->
+
+                        <!-- For loop this slide -->
+                        <div class="swiper-slide">
+                          <img src="./media/image/tooth2.jpg" alt="clinic">
+                        </div>
+                        <!-- For loop this slide -->
+
+                        <!-- For loop this slide -->
+                        <div class="swiper-slide">
+                          <img src="./media/image/tooth3.jpg" alt="clinic">
+                        </div>
+                        <!-- For loop this slide -->
+
+                        <!-- For loop this slide -->
+                        <div class="swiper-slide">
+                          <img src="./media/image/tooth1.jpg" alt="clinic">
+                        </div>
+                        <!-- For loop this slide -->
+                      </div>
+                      <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                      <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                    </div>
+                    <!-- Initialize Swiper -->
+                    <script>
+                      var swiper = new Swiper(".clinicSwiper", {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        loop: true,
+                        autoplay: {
+                          delay: 3500,
+                          disableOnInteraction: false,
+                        },
+                        navigation: {
+                          nextEl: ".swiper-button-next",
+                          prevEl: ".swiper-button-prev",
+                        },
+                      });
+                    </script>
+                  </div>
+                  <!-- Clinic Images -->
                 </div>
+                <div
+                  class="tab-pane fade services"
+                  id="services-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="services-tab"
+                  tabindex="0"
+                >
+                  ...
+                </div>
+                <div
+                  class="tab-pane fade reviews"
+                  id="reviews-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="reviews-tab"
+                  tabindex="0"
+                >
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h6 class="pick_title">Pick A Time Slot</h6>
+            <div class="time_slot">
+              <div class="appointment_fees">
+                <h6><i class="fa-solid fa-money-bills"></i> Appointment Fees</h6>
+                <span>200 SAR</span>
+              </div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>ElDamam Branch , Jasmine District , A2esha …..</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.960405149614!2d31.371055515097687!3d31.027352778424618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d1062afff57%3A0x40e6c610456cf723!2sCrazy%20Idea!5e0!3m2!1sen!2seg!4v1663512041744!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="reservation_data">
+                <h6>Reservation Data</h6>
+                <div class="form-group">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" name="" id="" class="form-control" placeholder="your full name">
+                </div>
+                <div class="form-group">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="text" name="" id="" class="form-control" placeholder="your phone number">
+                </div>
+                <div class="form-group">
+                  <i class="fa-solid fa-tooth"></i>
+                  <select name="" id="" class="selectpicker form-control" title="please choose the  required service">
+                    <option value="">test</option>
+                    <option value="">test</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- start doctor details -->
 
     <!-- start footer section -->
     <footer>

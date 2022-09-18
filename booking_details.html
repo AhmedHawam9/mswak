@@ -163,8 +163,7 @@
     <section class="breadcrumb">
       <div class="container">
         <div class="content">
-          <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
-          <span>Booking Information</span>
+            <h6><i class="fa-regular fa-circle-check"></i> Your Booking Was Successfully Submitted</h6>
         </div>
       </div>
     </section>
@@ -174,187 +173,65 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-12">
-            <form action="booking_details.html" class="payment_methods">
-              <h6>Choose The Payment Method</h6>
-              <div class="payment">
-                <!-- Start Cash On Clinic -->
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="payment"
-                    value="CashOnClinic"
-                    onclick="CashOnClinic();"
-                    id="CashOnClinicLabel"
-                  />
-                  <label class="form-check-label" for="CashOnClinicLabel">
-                    Cash On The Clinic
-                  </label>
-                </div>
-                <!-- End Cash On Clinic -->
-
-                <!-- Start Credit Card -->
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="payment"
-                    value="CreditCard"
-                    onclick="CreditCard();"
-                    id="CreditCardLabel"
-                  />
-                  <label class="form-check-label" for="CreditCardLabel">
-                    Credit Card
-                  </label>
-                </div>
-                <!-- Start Form data Credit Card -->
-                <div id="CreditCard" class="hide">
-                  <div class="row">
-                    <div class="col-lg-6 col-12">
-                      <div class="form-group">
-                        <label for="">Name On Card</label>
-                        <input
-                          type="text"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Name On Card"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <div class="form-group">
-                        <label for="">Card Number</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Card Number"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                      <div class="form-group">
-                        <label for="">Expiry Month</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Mm"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                      <div class="form-group">
-                        <label for="">Expiry Year</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="Yy"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                      <div class="form-group">
-                        <label for="">CVV</label>
-                        <input
-                          type="number"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder="CVV"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Form data Credit Card -->
-
-                <!-- End Credit Card -->
-                <script>
-                  function CashOnClinic() {
-                    document.getElementById("CreditCard").style.display =
-                      "none";
-                  }
-                  function CreditCard() {
-                    document.getElementById("CreditCard").style.display =
-                      "block";
-                  }
-                </script>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckChecked"
-                  />
-                  <label class="form-check-label" for="flexCheckChecked">
-                    I have read and accept
-                    <span
-                      class="terms"
-                      data-bs-toggle="modal"
-                      data-bs-target="#termsModal"
-                      >Terms & Conditions</span
-                    >
-                  </label>
-                </div>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="termsModal"
-                  tabindex="-1"
-                  aria-labelledby="termsModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="termsModalLabel">
-                            Terms & Conditions
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">...</div>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn_submit">
-                  Confirm and pay
-                </button>
-              </div>
-            </form>
+            <div class="booking_details">
+              <h6><i class="fa-solid fa-calendar-day"></i> Booking Details</h6>
+              <ul>
+                <li>
+                    <span class="title">Patient Name</span>
+                    <span class="text">Rasha Elsayed</span>
+                </li>
+                <li>
+                    <span class="title">Booking Date</span>
+                    <span class="text">Sat, 22May , 10:30AM</span>
+                </li>
+                <li>
+                    <span class="title">Doctor Name</span>
+                    <span class="text">Doctor.Adham Abdulrhman</span>
+                </li>
+                <li>
+                    <span class="title">Waiting Time</span>
+                    <span class="text">30:00 Min</span>
+                </li>
+                <li>
+                    <span class="title">Location</span>
+                    <span class="text">Eldmam Branch , Jasmine Abstract, A2esha
+                        Street , Seventh Floor <span class="map">View On Map</span></span>
+                </li>
+                <li>
+                    <span class="title">Examination Fees</span>
+                    <span class="text">250 SAR</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-5 col-12">
-            <div class="booking_summery_cost">
-                <h6>Booking summery</h6>
-                <ul class="costs">
-                    <li>
-                        <span>Service Cost</span>
-                        <span>500 SAR</span>
-                    </li>
-                    <li>
-                        <span>Concultation Cost</span>
-                        <span>100 SAR</span>
-                    </li>
-                    <li>
-                        <span>Fees</span>
-                        <span>10 SAR</span>
-                    </li>
-                </ul>
-                <div class="total">
-                    <span>Total</span>
-                    <span>610 SAR</span>
-                </div>
+            <div class="additional_info">
+                <h6><i class="fa-regular fa-note-sticky"></i> Additional Info. ( optional )</h6>
+                <span class="text">help the doctor know alittle about your self and your health problem </span>
+                <form action="" class="additional_info_form">
+                    <div class="form-group">
+                        <i class="fa-regular fa-user"></i>
+                      <input type="text" name="" id="" class="form-control" placeholder="your age">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-venus-mars"></i>
+                        <select name="" id="" class="selectpicker form-control" title="Gender">
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="5 " class="form-control" placeholder="Case description"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="file_info" class="file_info">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            <input type="file" name="" id="file_info" class="form-control">
+                            <span>attach files (pdf, png , jpg) max 10 files</span>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn submit_btn">Send To Doctor</button>
+                </form>
             </div>
           </div>
         </div>
