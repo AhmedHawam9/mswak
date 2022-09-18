@@ -102,10 +102,13 @@
       }
     }
   }
-  .best_dector_aboutus {
+  .best_dector_aboutus,.great_section {
     .head {
       .button {
-        width: 40%;
+        width: 80%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        justify-content: start;
         .first {
           font-size: .7rem;
         }
@@ -156,5 +159,20 @@
   footer .footer-bottom .socialicon {
     justify-content: center;
   }
+}
+.header_about_us .main_img{
+  height: 260px;
+}
+.header_about_us .coll_img img{
+  height: 126px;
+}
+.best_dector_aboutus .head .main_content_start{
+  width: 100%;
+}
+.best_dector_aboutus .head ,.great_section .head{
+  flex-direction: column;
+}
+.team_about .head .main_content_start{
+  width: 100%;
 }
 /* ======= Mobile ======= */
