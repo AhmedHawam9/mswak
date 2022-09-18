@@ -1758,20 +1758,6 @@ a {
       color: $PrimaryText;
       padding-bottom: 1rem;
       border-bottom: 0.7px solid #bdbdbd;
-.payment_methods {
-  border: 0.7px solid #d4d4d4;
-  border-radius: 12px;
-  padding: 2rem;
-  h6 {
-    font-family: "semibold";
-    color: $PrimaryText;
-    padding-bottom: 1rem;
-    border-bottom: 0.7px solid #bdbdbd;
-  }
-  .payment {
-    margin-top: 2rem;
-    .hide {
-      display: none;
     }
     .payment {
       margin-top: 2rem;
@@ -1954,16 +1940,6 @@ a {
       }
       input,
       textarea {
-      margin-bottom: 0.5rem;
-      label {
-        margin-bottom: 0.5rem;
-        font-family: "regular";
-        color: #5b6152;
-        font-size: 0.8rem;
-      }
-      input {
-        font-size: 0.8rem;
-        padding: 0.6rem;
         font-family: "regular";
         color: $SecondText;
         font-size: 0.8rem;
@@ -2017,9 +1993,7 @@ a {
           color: $SecondText;
           font-size: 0.8rem;
           text-align: center;
-      /* Firefox */
-      input[type="number"] {
-        -moz-appearance: textfield;
+        }
       }
     }
     .submit_btn {
@@ -2030,10 +2004,6 @@ a {
       font-size: 0.8rem;
       padding: 0.75rem;
       transition: 0.7s ease-in-out;
-      font-size: 0.9rem;
-      padding: 0.75rem;
-      transition: 0.7s ease-in-out;
-      width: 45%;
       &:hover {
         border-color: transparent;
         background-color: #fff;
@@ -2272,20 +2242,6 @@ a {
     border-radius: 12px;
     border: .7px solid #BDBDBD;
     .appointment_fees {
-.booking_summery_cost {
-  border: 0.7px solid #d4d4d4;
-  border-radius: 12px;
-  padding: 2rem;
-  h6 {
-    font-family: "semibold";
-    color: $PrimaryText;
-    padding-bottom: 1rem;
-    border-bottom: 0.7px solid #bdbdbd;
-  }
-  .costs {
-    margin-top: 1rem;
-    border-bottom: 0.7px solid #bdbdbd;
-    li {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -2371,21 +2327,12 @@ a {
               font-size: 0.8rem;
             }
           }
-        font-size: 0.9rem;
+        }
       }
     }
   }
-  .total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    span {
-      font-family: "semibold";
-      color: $PrimaryText;
-      font-size: 0.9rem;
-    }
-  }
 }
+
 .team_about {
   padding: 5% 0;
   position: relative;
