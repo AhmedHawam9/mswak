@@ -38,6 +38,14 @@ ul {
 a {
   text-decoration: none;
 }
+.btn:focus,
+.form-check-input:focus,
+.form-check :focus,
+.btn-check:focus + .btn,
+.btn-close:focus,
+.accordion-button:focus {
+  box-shadow: none;
+}
 .swal2-title {
   font-family: "semibold";
 }
@@ -2095,7 +2103,7 @@ a {
 
 .doctor {
   .doctor_details {
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     border-radius: 12px;
     padding: 1.5rem;
     .doctor_card {
@@ -2216,6 +2224,10 @@ a {
               }
             }
           }
+        p {
+          font-family: "regular";
+          color: $SecondText;
+          font-size: 0.8rem;
         }
         .experience {
           margin-bottom: 1.5rem;
@@ -2307,6 +2319,21 @@ a {
               &:after {
                 content: unset;
               }
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          li {
+            border: 0.7px solid #bdbdbd;
+            width: fit-content;
+            margin-inline-end: 0.5rem;
+            font-family: "regular";
+            color: $PrimaryText;
+            font-size: 0.8rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 4px;
+            &:last-child {
+              margin-inline-end: 0;
             }
           }
         }
@@ -2321,6 +2348,15 @@ a {
           margin-bottom: 1rem;
           &:last-child {
             margin-bottom: 0;
+          svg {
+            color: transparent;
+            stroke: $PrimaryColor;
+            stroke-width: 40px;
+            background-color: rgba(141, 181, 83, 0.1);
+            padding: 1.5rem;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            margin-inline-end: 1rem;
           }
           img {
             width: 40%;
@@ -2334,6 +2370,13 @@ a {
               font-size: 1.1rem;
               color: $PrimaryText;
               margin-bottom: 0.5rem;
+              margin-bottom: 0;
+            }
+            .specialty {
+              font-family: "regular";
+              color: #5b6152;
+              font-size: 0.9rem;
+              margin-bottom: 0;
             }
             .text {
               font-family: "regular";
@@ -2356,6 +2399,14 @@ a {
                 color: #fff;
                 transition: .7s ease-in-out;
               }
+              color: #5b6152;
+              font-size: 0.8rem;
+            }
+            .address {
+              display: block;
+              font-family: "regular";
+              color: #5b6152;
+              font-size: 0.8rem;
             }
           }
         }
@@ -2401,6 +2452,16 @@ a {
             border-bottom: 0;
           }
           .person_rate {
+        .swiper {
+          width: 100%;
+          height: 100%;
+          .swiper-slide {
+            text-align: center;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             img {
               width: 60px;
@@ -2432,6 +2493,16 @@ a {
                 font-size: .8rem;
                 color: $SecondText;
               }
+          }
+          .swiper-button-next,
+          .swiper-button-prev {
+            background-color: #fff;
+            color: $SecondText;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            &:after {
+              content: unset;
             }
           }
           .rate_text {
@@ -2450,14 +2521,14 @@ a {
     color: $PrimaryText;
     margin-bottom: 1rem;
   }
-  .time_slot{
+  .time_slot {
     border-radius: 12px;
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     .appointment_fees {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
       border-radius: 12px 12px 0 0;
       padding: 1rem 1.5rem;
       // margin-bottom: 1rem;
@@ -2467,27 +2538,27 @@ a {
         margin-bottom: 0;
         svg {
           color: $PrimaryColor;
-          margin-inline-end: .5rem;
+          margin-inline-end: 0.5rem;
         }
       }
       span {
         font-family: "semibold";
         color: $PrimaryText;
-      }   
+      }
     }
     .location {
       padding: 1.5rem;
-      border-bottom: .7px solid #BDBDBD;
+      border-bottom: 0.7px solid #bdbdbd;
       svg {
         color: $PrimaryColor;
-        margin-inline-end: .5rem;
+        margin-inline-end: 0.5rem;
       }
       span {
         font-family: "regular";
         color: $PrimaryText;
-        font-size: .9rem;
+        font-size: 0.9rem;
         margin-bottom: 1rem;
-        display: inline-block
+        display: inline-block;
       }
       iframe {
         width: 100%;
@@ -2512,11 +2583,11 @@ a {
           left: 0.5rem;
         }
         input {
-          font-size: .8rem;
+          font-size: 0.8rem;
           font-family: "regular";
           color: $SecondText;
-          padding: .6rem;
-          padding-inline-start: 2rem
+          padding: 0.6rem;
+          padding-inline-start: 2rem;
         }
         .bootstrap-select {
           .dropdown-toggle {
@@ -2645,29 +2716,29 @@ a {
         font-family: "semibold";
         color: #fff;
         font-size: 1.2rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
       span {
         display: block;
         font-family: "regular";
         color: #fff;
-        font-size: .9rem;
+        font-size: 0.9rem;
       }
       .btn {
         font-family: "semibold";
         color: #fff;
         background-color: $PrimaryColor;
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-top: 1.3rem;
-        padding: .3rem 2rem;
+        padding: 0.3rem 2rem;
         border-radius: 110px;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
         &:hover {
           border-color: transparent;
           border: 1px solid $PrimaryColor;
           background-color: transparent;
           color: $PrimaryColor;
-          transition: .7s ease-in-out;
+          transition: 0.7s ease-in-out;
         }
       }
     }
@@ -2685,21 +2756,21 @@ a {
     color: #fff;
     font-family: "semibold";
     border-radius: 180px;
-    font-size: .8rem;
-    padding: .6rem 1.5rem;
-    transition: .7s ease-in-out;
+    font-size: 0.8rem;
+    padding: 0.6rem 1.5rem;
+    transition: 0.7s ease-in-out;
     &:hover {
       border-color: transparent;
       background-color: transparent;
       border: 1px solid $PrimaryColor;
       color: $PrimaryColor;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
     }
   }
   .card_doctor {
     width: 23%;
     margin-inline-end: 2%;
-    border: .5px solid #C1C1C1;
+    border: 0.5px solid #c1c1c1;
     border-radius: 8px;
     display: inline-block;
     &:last-child {
@@ -2721,14 +2792,14 @@ a {
       .speciality {
         color: $SecondText;
         font-family: "regular";
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
       .location {
         font-family: "regular";
-        font-size: .8rem;
-        color: #5B6152;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
+        font-size: 0.8rem;
+        color: #5b6152;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
       }
       .rating {
         svg {
@@ -2745,18 +2816,18 @@ a {
         border: 1px solid $PrimaryColor;
         color: $PrimaryColor;
         font-family: "semibold";
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-top: 1rem;
-        padding: .6rem;
+        padding: 0.6rem;
         width: 100%;
         border-radius: 180px;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
         &:hover {
           border-color: transparent;
           color: #fff;
           background-color: $PrimaryColor;
           border: 1px solid $PrimaryColor;
-          transition: .7s ease-in-out;
+          transition: 0.7s ease-in-out;
         }
       }
     }
@@ -3303,11 +3374,7 @@ a {
           display: block;
           width: 80px;
           height: 80px;
-          background: linear-gradient(
-            45deg,
-            #A1CF5F 15%,
-            #89AF52 70%
-          );
+          background: linear-gradient(45deg, #a1cf5f 15%, #89af52 70%);
           border-radius: 50%;
           -webkit-animation: pulse-border 1500ms ease-out infinite;
           animation: pulse-border 1500ms ease-out infinite;
@@ -3322,11 +3389,7 @@ a {
           display: block;
           width: 80px;
           height: 80px;
-          background: linear-gradient(
-            45deg,
-            #A1CF5F 15%,
-            #89AF52 70%
-          );
+          background: linear-gradient(45deg, #a1cf5f 15%, #89af52 70%);
           border-radius: 50%;
           transition: all 200ms;
           box-shadow: 0 2px 7px #131b49;
@@ -3360,11 +3423,11 @@ a {
         text-decoration: none;
         cursor: pointer;
         transition: all 200ms;
-        &:hover{
+        &:hover {
           color: #fa183d;
         }
       }
-      iframe{
+      iframe {
         position: absolute;
         inset: 0;
         margin: auto;
@@ -3380,9 +3443,7 @@ a {
         animation-fill-mode: both;
         -webkit-animation-duration: 0.5s;
         -webkit-animation-fill-mode: both;
-        
       }
-
     }
     .info {
       margin: 2% 4%;
@@ -3462,11 +3523,11 @@ a {
     opacity: 0;
   }
 }
-@keyframes fadeInUp{
-  from{
+@keyframes fadeInUp {
+  from {
     transform: translate3d(0, 30px, 0);
   }
-  to{
+  to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
@@ -3500,72 +3561,71 @@ a {
 //finish pagination
 
 //start contact us page
-.contact_sec{
+.contact_sec {
   padding: 3% 0;
-  .container{
-    border:1px solid #C1C1C1;
+  .container {
+    border: 1px solid #c1c1c1;
     padding: 2%;
-
   }
-  .information_contact{
-    background-color: #F7F7F7;
+  .information_contact {
+    background-color: #f7f7f7;
     padding: 7% 5% 2%;
-    h2.head{
+    h2.head {
       color: $PrimaryText;
       font-size: 1.2rem;
-      font-family: 'bold'; 
+      font-family: "bold";
     }
-    p{
+    p {
       color: $SecondText;
       font-size: 1rem;
-      font-family: 'bold'; 
+      font-family: "bold";
       margin-bottom: 8%;
     }
-   
-      .lists{
-        margin-bottom: 3%;
+
+    .lists {
+      margin-bottom: 3%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      span {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        span{
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: white;
-          
-          svg{
-            color: $PrimaryColor;
-          }
-        }
-        p,a{
-          font-size: 1rem;
-          color: $PrimaryText;
-          font-family: 'regular';
-          padding-inline-start: 5%;
-          display: inline-block;
-          width: 80%
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+        svg {
+          color: $PrimaryColor;
         }
       }
-    
+      p,
+      a {
+        font-size: 1rem;
+        color: $PrimaryText;
+        font-family: "regular";
+        padding-inline-start: 5%;
+        display: inline-block;
+        width: 80%;
+      }
+    }
   }
-  .take_look{
-    margin: 5% 0; 
+  .take_look {
+    margin: 5% 0;
     background-color: $PrimaryColor;
     padding: 5% 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    h4{
+    h4 {
       font-size: 1.3rem;
-      font-family: 'bold';
+      font-family: "bold";
       color: white;
       padding-inline-end: 8%;
     }
-    a{
+    a {
       width: 47px;
       height: 39px;
       border-radius: 50%;
@@ -3573,16 +3633,16 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      svg{
+      svg {
         color: $PrimaryColor;
       }
     }
   }
 }
-form.form_contact{
-  h3{
+form.form_contact {
+  h3 {
     font-size: 1.1rem;
-    font-family: 'bold';
+    font-family: "bold";
     color: $PrimaryText;
   }
   .input-group {
@@ -3592,7 +3652,7 @@ form.form_contact{
       border: 1px solid transparent;
       border-radius: 5px;
       font-family: "regular";
-      background-color: #F8F8F9;
+      background-color: #f8f8f9;
       color: $PrimaryText;
       padding: 0.75rem;
       font-size: 0.8rem;
@@ -3600,11 +3660,11 @@ form.form_contact{
       border-top-right-radius: 5px !important;
       border-bottom-right-radius: 5px !important;
     }
-    textarea{
+    textarea {
       height: 150px !important;
     }
   }
-  .button{
+  .button {
     width: 30%;
     display: flex;
     justify-content: start;
@@ -3625,41 +3685,40 @@ form.form_contact{
       }
     }
   }
- 
 }
 //finish contact us page
 
 // start service section
-.service_header{
+.service_header {
   padding: 5% 0;
   position: relative;
-  img{
+  img {
     width: 100%;
     height: 450px;
   }
-  .info{
-    h2{
+  .info {
+    h2 {
       font-size: 2.2rem;
       color: $PrimaryText;
       font-family: "bold";
     }
-    p{
+    p {
       font-size: 1rem;
       color: $SecondText;
       font-family: "regular";
     }
-    ul{
+    ul {
       list-style: none;
       margin-top: 3%;
-      li{
+      li {
         font-size: 1rem;
         color: $PrimaryText;
         font-family: "regular";
         margin-bottom: 3%;
         position: relative;
         padding-inline-start: 5%;
-        &::before{
-          content: url('../media/image/ok.png');
+        &::before {
+          content: url("../media/image/ok.png");
           position: absolute;
           top: 0;
           left: 0;
@@ -3668,7 +3727,415 @@ form.form_contact{
     }
   }
 }
-// finish service section
+.other_doctor_service {
+  margin-top: 2rem;
+  .search_form {
+    position: relative;
+    width: 400px;
+    .form-control {
+      border: 1px solid transparent;
+      border-radius: 30px;
+      font-family: "regular";
+      background-color: #f8f8f9;
+      color: #9ca293;
+      padding: 0.75rem;
+      font-size: 0.8rem;
+      padding-inline-start: 2.5rem;
+      border-top-right-radius: 30px !important;
+      border-bottom-right-radius: 30px !important;
+    }
+    .icon_search {
+      position: absolute;
+      top: 9px;
+      left: 14px;
+      svg {
+        color: #9ca293;
+      }
+    }
+  }
+  p {
+    color: $SecondText;
+    font-family: "regular";
+    font-size: 0.8rem;
+  }
+  .title {
+    font-family: "semibold";
+    color: $PrimaryText;
+  }
+  .view_doctor {
+    background-color: $PrimaryColor;
+    color: #fff;
+    font-family: "semibold";
+    border-radius: 180px;
+    font-size: 0.8rem;
+    padding: 0.6rem 1.5rem;
+    transition: 0.7s ease-in-out;
+    &:hover {
+      border-color: transparent;
+      background-color: transparent;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+      transition: 0.7s ease-in-out;
+    }
+  }
+  .card_doctor {
+    width: 31%;
+    margin-inline-end: 2%;
+    border: 0.5px solid #c1c1c1;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: start;
+    &:last-child {
+      margin-inline-end: 0;
+    }
+    img {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px 8px 0 0;
+    }
+    .other_doctor_details {
+      padding: 1rem;
+      text-align: start;
+      .name {
+        color: $PrimaryText;
+        font-family: "semibold";
+        margin-bottom: 0;
+      }
+      .speciality {
+        color: $SecondText;
+        font-family: "regular";
+        font-size: 0.8rem;
+      }
+      .location {
+        font-family: "regular";
+        font-size: 0.8rem;
+        color: #5b6152;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .rating {
+        svg {
+          font-size: 0.8rem;
+          color: transparent;
+          stroke-width: 60px;
+          stroke: #d18927;
+          &.active {
+            color: #d18927;
+          }
+        }
+      }
+      .book_doctor_btn {
+        border: 1px solid $PrimaryColor;
+        color: $PrimaryColor;
+        font-family: "semibold";
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        padding: 0.6rem;
+        width: 100%;
+        border-radius: 180px;
+        transition: 0.7s ease-in-out;
+        &:hover {
+          border-color: transparent;
+          color: #fff;
+          background-color: $PrimaryColor;
+          border: 1px solid $PrimaryColor;
+          transition: 0.7s ease-in-out;
+        }
+      }
+    }
+  }
+}
+// finish service page
 
+// start service detils page
+.service_detials {
+  .tabs_service{
+    background-color: #EEEEEE;
+    padding: 4% 2%;
+    border-radius: 5px;
+    ul{
+      list-style: none;
+      li{
+        padding: 5% 6%;
+        background-color: white;
+        margin-bottom: 2%;
+        border-radius: 5px;
+        a{
+          font-size: 1rem;
+          font-family: 'semibold';
+          color: $PrimaryText;
+          svg{
+            margin-inline-start: 46%;
+          }
+        }
+
+      }
+      li.active{
+        background-color: $PrimaryColor;
+        a{
+          color: white;
+          
+        }
+      }
+    }
+  }
+  .vedio_service{
+    margin: 5% 0;
+    p{
+      color: $SecondText;
+      font-family: "regular";
+      font-size: 1rem;
+    }
+    .content {
+      margin-top: 4%;
+      border: 1px solid #c1c1c1;
+      position: relative;
+     
+      img {
+        width: 100%;
+        height: 250px;
+      }
+      .img {
+        position: relative;
+        img {
+          width: 100%;
+          height: 250px;
+        }
+     
+        .video-play-button {
+          position: absolute;
+          z-index: 10;
+          inset: 0;
+          margin: auto;
+          display: block;
+          cursor: pointer;
+          width: 67px;
+          height: 67px;
+          border: none;
+          border-radius: 50%;
+          padding: 18px 20px 18px 28px;
+          span {
+            display: block;
+            position: relative;
+            z-index: 3;
+            width: 0;
+            height: 0;
+            border-left: 30px solid #fff;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+            border-radius: 4px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            inset: 0;
+            margin: auto;
+            display: block;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #a1cf5f 15%, #89af52 70%);
+            border-radius: 50%;
+            -webkit-animation: pulse-border 1500ms ease-out infinite;
+            animation: pulse-border 1500ms ease-out infinite;
+          }
+  
+          &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            inset: 0;
+            margin: auto;
+            display: block;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #a1cf5f 15%, #89af52 70%);
+            border-radius: 50%;
+            transition: all 200ms;
+            box-shadow: 0 2px 7px #131b49;
+            &:hover::after {
+              background-color: $PrimaryColor;
+            }
+          }
+        }
+      }
+      .video-overlay {
+        position: fixed;
+        z-index: -1;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+        opacity: 0;
+        transition: all ease 500ms;
+        &.open {
+          position: fixed;
+          z-index: 1000;
+          opacity: 1;
+        }
+        .video-overlay-close {
+          position: absolute;
+          z-index: 1000;
+          top: 15px;
+          right: 20px;
+          font-size: 36px;
+          line-height: 1;
+          font-weight: 400;
+          color: #fff;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 200ms;
+          &:hover {
+            color: #fa183d;
+          }
+        }
+        iframe {
+          position: absolute;
+          inset: 0;
+          margin: auto;
+          width: 80vw;
+          height: 47vw;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+          opacity: 0;
+          z-index: 1;
+          animation-name: fadeInUp;
+          -webkit-animation-name: fadeInUp;
+          animation-delay: 0.4s;
+          animation-duration: 0.5s;
+          animation-fill-mode: both;
+          -webkit-animation-duration: 0.5s;
+          -webkit-animation-fill-mode: both;
+        }
+      }
+   
+   
+    }
+  }
+  .info {
+    img {
+      width: 100%;
+      height: 350px;
+    }
+    h5 {
+      color: $PrimaryText;
+      font-family: "semibold";
+      font-size: 1.3rem;
+    }
+    p {
+      color: $SecondText;
+      font-family: "regular";
+      font-size: 1rem;
+    }
+    ul {
+      list-style: none;
+      margin-top: 3%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li {
+        width: 45%;
+        font-size: 1rem;
+        color: $PrimaryText;
+        font-family: "regular";
+        margin-bottom: 3%;
+        position: relative;
+        padding-inline-start: 5%;
+        &::before {
+          content: url("../media/image/ok.png");
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .img_collect{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 2% 0 4%;
+      img{
+        width: 45%;
+        height: 200px;
+        margin: 0 2%;
+
+      }
+    }
+  }
+}
+.reservation_info_service{
+  margin-top: 2%;
+  margin-bottom: 2% ;
+}
+.service_common_anawser{
+  margin: 3% 0;
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    .main_content_start {
+      width: 90%;
+      position: relative;
+      text-align: start;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 2% 0;
+
+      h2 {
+        font-size: 1.9rem;
+        font-family: "bold";
+        color: $PrimaryText;
+      }
+      p {
+        font-size: 0.9rem;
+        width: 70%;
+        font-family: "regular";
+        color: $SecondText;
+        line-height: 1.4;
+      }
+    }
+  
+  }
+  .accordion {
+		.accordion-item {
+			margin: 2% 0;
+			border: 1px solid $SecondText;
+			.accordion-header {
+				font-size: 2.2rem;
+				font-family: "bold";
+				color: $PrimaryText;
+				.accordion-button {
+					color: white;
+					background-color: $PrimaryColor;
+					&::after {
+						margin-left: auto;
+						margin-right: unset;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
+					}
+				}
+				.accordion-button.collapsed {
+					color: $PrimaryText;
+					background-color: #F1F1F1;
+          border: 1px solid transparent;
+					&::after {
+						margin-left: auto;
+						margin-right: unset;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+					}
+				}
+			}
+			.accordion-collapse {
+				.accordion-body {
+					font-size: 1.2rem;
+					font-family: "regular";
+					color: $SecondText;
+					padding: 2% 1%;
+				}
+			}
+		}
+	}
+
+}
+// finish service detils page
 
 @import "./_responsive.scss";

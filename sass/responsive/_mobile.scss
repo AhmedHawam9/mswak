@@ -209,7 +209,7 @@
       }
     }
   }
-  .other_doctor {
+  .other_doctor, .other_doctor_service {
     .card_doctor {
       width: 90%;
       margin: 0 5%;
@@ -251,6 +251,11 @@
     h4 {
       font-size: 1.5rem;
     }
+  .service_header .info ul li{
+    padding-inline-start: 8%;
+  }
+  .service_header img {
+    height: 250px;
   }
 }
 /* ======= Mobile ======= */
