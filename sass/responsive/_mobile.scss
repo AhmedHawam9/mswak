@@ -102,7 +102,8 @@
       }
     }
   }
-  .best_dector_aboutus,.great_section {
+  .best_dector_aboutus,
+  .great_section {
     .head {
       .button {
         width: 80%;
@@ -110,7 +111,7 @@
         margin-bottom: 5%;
         justify-content: start;
         .first {
-          font-size: .7rem;
+          font-size: 0.7rem;
         }
       }
       .main_content_start {
@@ -149,7 +150,7 @@
       flex-direction: column;
       li {
         width: 100%;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
     }
   }
@@ -159,19 +160,20 @@
   footer .footer-bottom .socialicon {
     justify-content: center;
   }
-  .header_about_us .main_img{
+  .header_about_us .main_img {
     height: 260px;
   }
-  .header_about_us .coll_img img{
+  .header_about_us .coll_img img {
     height: 126px;
   }
-  .best_dector_aboutus .head .main_content_start{
+  .best_dector_aboutus .head .main_content_start {
     width: 100%;
   }
-  .best_dector_aboutus .head ,.great_section .head{
+  .best_dector_aboutus .head,
+  .great_section .head {
     flex-direction: column;
   }
-  .team_about .head .main_content_start{
+  .team_about .head .main_content_start {
     width: 100%;
   }
   .doctor {
@@ -209,7 +211,8 @@
       }
     }
   }
-  .other_doctor {
+  .other_doctor,
+  .other_doctor_service {
     .card_doctor {
       width: 90%;
       margin: 0 5%;
@@ -250,6 +253,12 @@
   .header_about_us {
     h4 {
       font-size: 1.5rem;
+    }
+    .service_header .info ul li {
+      padding-inline-start: 8%;
+    }
+    .service_header img {
+      height: 250px;
     }
   }
 }
