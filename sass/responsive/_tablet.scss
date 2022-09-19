@@ -10,8 +10,8 @@
   }
   .statistics {
     .p-0 {
-      padding: 0 .75rem !important;
-    } 
+      padding: 0 0.75rem !important;
+    }
   }
   .doctor_header {
     img {
@@ -104,7 +104,8 @@
       margin-top: 1.5rem;
     }
   }
-  .other_doctor ,.other_doctor_service {
+  .other_doctor,
+  .other_doctor_service {
     .card_doctor {
       width: 47%;
       margin-bottom: 1.5rem;
@@ -126,12 +127,17 @@
         margin-bottom: 1.5rem;
       }
     }
-  }
-  .branch_details {
     .statistics_branch {
       .cards {
         width: 100%;
       }
+    }
+    .service_detials .info ul li {
+      width: 95%;
+      padding-inline-start: 10%;
+    }
+    .service_detials .info .img_collect img {
+      height: 150px;
     }
   .service_detials .info ul li{
     width: 95%;
@@ -141,5 +147,6 @@
   .service_detials .info .img_collect img {
     height: 150px;
   }
+}
 }
 /* ======= Tablet ======= */
