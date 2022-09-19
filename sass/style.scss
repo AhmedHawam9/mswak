@@ -3034,11 +3034,15 @@ a {
 
 //start contact us page
 .contact_sec{
-  border:1px solid #C1C1C1;
   padding: 3% 0;
+  .container{
+    border:1px solid #C1C1C1;
+    padding: 2%;
+
+  }
   .information_contact{
     background-color: #F7F7F7;
-    padding: 7% 5%;
+    padding: 7% 5% 2%;
     h2.head{
       color: $PrimaryText;
       font-size: 1.2rem;
@@ -3048,24 +3052,156 @@ a {
       color: $SecondText;
       font-size: 1rem;
       font-family: 'bold'; 
+      margin-bottom: 8%;
     }
-    ul{
-      list-style: none;
-      li{
+   
+      .lists{
         margin-bottom: 3%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
         span{
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           background-color: white;
+          
           svg{
             color: $PrimaryColor;
           }
+        }
+        p,a{
+          font-size: 1rem;
+          color: $PrimaryText;
+          font-family: 'regular';
+          padding-inline-start: 5%;
+          display: inline-block;
+          width: 80%
+        }
+      }
+    
+  }
+  .take_look{
+    margin: 5% 0; 
+    background-color: $PrimaryColor;
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    h4{
+      font-size: 1.3rem;
+      font-family: 'bold';
+      color: white;
+      padding-inline-end: 8%;
+    }
+    a{
+      width: 47px;
+      height: 39px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg{
+        color: $PrimaryColor;
+      }
+    }
+  }
+}
+form.form_contact{
+  h3{
+    font-size: 1.1rem;
+    font-family: 'bold';
+    color: $PrimaryText;
+  }
+  .input-group {
+    margin: 3% 0;
+    position: relative;
+    .form-control {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      font-family: "regular";
+      background-color: #F8F8F9;
+      color: $PrimaryText;
+      padding: 0.75rem;
+      font-size: 0.8rem;
+      padding-inline-start: 2.5rem;
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+    }
+    textarea{
+      height: 150px !important;
+    }
+  }
+  .button{
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    .btn_submit {
+      width: 100%;
+      background-color: $PrimaryColor;
+      color: white;
+      font-family: "regular";
+      font-size: 1rem;
+      border-radius: 32px;
+      padding: 1rem;
+      border: 1px solid $PrimaryColor;
+      transition: 0.7s ease-in-out;
+      &:hover {
+        background-color: white;
+        color: $PrimaryColor;
+        transition: 0.7s ease-in-out;
+      }
+    }
+  }
+ 
+}
+//finish contact us page
+
+// start service section
+.service_header{
+  padding: 5% 0;
+  position: relative;
+  img{
+    width: 100%;
+    height: 450px;
+  }
+  .info{
+    h2{
+      font-size: 2.2rem;
+      color: $PrimaryText;
+      font-family: "bold";
+    }
+    p{
+      font-size: 1rem;
+      color: $SecondText;
+      font-family: "regular";
+    }
+    ul{
+      list-style: none;
+      margin-top: 3%;
+      li{
+        font-size: 1rem;
+        color: $PrimaryText;
+        font-family: "regular";
+        margin-bottom: 3%;
+        position: relative;
+        padding-inline-start: 5%;
+        &::before{
+          content: url('../media/image/ok.png');
+          position: absolute;
+          top: 0;
+          left: 0;
         }
       }
     }
   }
 }
-//finish contact us page
+// finish service section
 
 
 @import "./_responsive.scss";
