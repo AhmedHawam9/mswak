@@ -95,11 +95,19 @@
       margin-top: 1.5rem;
     }
   }
-  .other_doctor {
+  .other_doctor ,.other_doctor_service {
     .card_doctor {
       width: 47%;
       margin-bottom: 1.5rem;
     }
+  }
+  .service_detials .info ul li{
+    width: 95%;
+    padding-inline-start: 10%;
+
+  }
+  .service_detials .info .img_collect img {
+    height: 150px;
   }
 }
 /* ======= Tablet ======= */
