@@ -798,6 +798,7 @@ a {
     color: $SecondText;
     width: 40%;
     margin-bottom: 2rem;
+    font-size: .8rem;
   }
   .show_all {
     background-color: $PrimaryColor;
@@ -879,6 +880,77 @@ a {
   }
 }
 // End Doctors
+
+// Start Search doctors
+.search_doctors {
+  .form_search_doctors {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    .city {
+      width: 24%;
+      margin-inline-end: 1%;
+      display: inline-flex;
+      .bootstrap-select {
+        .dropdown-toggle {
+          background-color: transparent;
+          border-radius: 4px;
+          border: 0.7px solid #c2c2c2;
+          padding: 0.6rem;
+          .filter-option {
+            .filter-option-inner {
+              font-size: 0.8rem;
+              font-family: "regular";
+            }
+          }
+        }
+        .dropdown-menu {
+          .dropdown-item {
+            font-family: "regular";
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .search {
+      width: 75%;
+      display: inline-flex;
+      position: relative;
+      svg {
+        position: absolute;
+        top: 30%;
+        left: 1%;
+        color: $SecondText;
+      }
+      input {
+        color: $SecondText;
+        background-color: #F7F7F7;
+        font-family: "regular";
+        font-size: .8rem;
+        padding: .65rem;
+        padding-inline-start: 2rem;
+      }
+    }
+    .btn_submit {
+      position: absolute;
+      right: 1%;
+      top: 13%;
+      padding: 0.3rem 1.5rem;
+      background-color: $PrimaryColor;
+      color: #fff;
+      font-family: "semibold";
+      transition: .7s ease-in-out;
+      &:hover {
+        border-color: transparent;
+        border: 1px solid $PrimaryColor;
+        color: $PrimaryColor;
+        background-color: transparent;
+        transition: .7s ease-in-out;
+      }
+    }
+  }
+}
+// End Search doctors
 
 // Start opinions
 .opinions {
@@ -1127,6 +1199,12 @@ a {
     font-family: "bold";
     color: $PrimaryText;
   }
+  .text {
+    font-family: "regular";
+    color: $SecondText;
+    font-size: .8rem;
+    width: 70%;
+  }
   .sorting {
     display: flex;
     align-items: center;
@@ -1304,7 +1382,7 @@ a {
 
 //start about us page
 .header_about_us {
-  margin-top: 5rem;
+  margin-top: 3rem;
   position: relative;
   h4 {
     font-size: 2.5rem;
@@ -2107,26 +2185,140 @@ a {
     }
     .tab-content {
       margin-top: 1.5rem;
-      .about_doctor {
-        margin-bottom: 1.5rem;
-        h5 {
-          font-family: "semibold";
-          color: $PrimaryText;
-          margin-bottom: 1rem;
+      .overview {
+        .about_doctor {
+          margin-bottom: 1.5rem;
+          h5 {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin-bottom: 1rem;
+          }
+          p {
+            font-family: "regular";
+            color: $SecondText;
+            font-size: .8rem
+          }
         }
+        .languages {
+          margin-bottom: 1.5rem;
+          h5 {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin-bottom: 1rem;
+          }
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            li {
+              border: .7px solid #BDBDBD;
+              width: fit-content;
+              margin-inline-end: .5rem;
+              font-family: "regular";
+              color: $PrimaryText;
+              font-size: .8rem;
+              padding: .3rem .7rem;
+              border-radius: 4px;
+              &:last-child {
+                margin-inline-end: 0;
+              }
+            }
+          }
         p {
           font-family: "regular";
           color: $SecondText;
           font-size: 0.8rem;
         }
-      }
-      .languages {
-        margin-bottom: 1.5rem;
-        h5 {
-          font-family: "semibold";
-          color: $PrimaryText;
-          margin-bottom: 1rem;
+        .experience {
+          margin-bottom: 1.5rem;
+          h5 {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin-bottom: 1rem;
+          }
+          .experience_card {
+            display: flex;
+            align-items: start;
+            margin-bottom: 1rem;
+            svg {
+              color: transparent;
+              stroke: $PrimaryColor;
+              stroke-width: 40px;
+              background-color: rgba(141, 181, 83, 0.1);
+              padding: 1.5rem;
+              border-radius: 50%;
+              font-size: .9rem;
+              margin-inline-end: 1rem;
+            }
+            .experience_description {
+              .title {
+                font-family: "semibold";
+                color: $PrimaryText;
+                margin-bottom: 0;
+              }
+              .specialty {
+                font-family: "regular";
+                color: #5B6152;
+                font-size: .9rem;
+                margin-bottom: 0;
+              }
+              .date {
+                display: block;
+                font-family: "regular";
+                color: #5B6152;
+                font-size: .8rem;
+              }
+              .address {
+                display: block;
+                font-family: "regular";
+                color: #5B6152;
+                font-size: .8rem;
+              }
+            }
+          }
         }
+        .clinic_images {
+          margin-bottom: 1.5rem;
+          h5 {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin-bottom: 1rem;
+          }
+          .swiper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+              text-align: center;
+      
+              /* Center slide text vertically */
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              align-items: center;
+              img {
+                display: block;
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+              }
+            }
+            .swiper-button-next, .swiper-button-prev {
+              background-color: #fff;
+              color: $SecondText;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              &:after {
+                content: unset;
+              }
         ul {
           display: flex;
           flex-wrap: wrap;
@@ -2146,17 +2338,16 @@ a {
           }
         }
       }
-      .experience {
-        margin-bottom: 1.5rem;
-        h5 {
-          font-family: "semibold";
-          color: $PrimaryText;
-          margin-bottom: 1rem;
-        }
-        .experience_card {
+      .services_doctor {
+        .card_doctor_services {
           display: flex;
-          align-items: start;
+          align-items: center;
+          width: 70%;
+          border: .5px solid #C1C1C1;
+          border-radius: 8px;
           margin-bottom: 1rem;
+          &:last-child {
+            margin-bottom: 0;
           svg {
             color: transparent;
             stroke: $PrimaryColor;
@@ -2167,10 +2358,18 @@ a {
             font-size: 0.9rem;
             margin-inline-end: 1rem;
           }
-          .experience_description {
+          img {
+            width: 40%;
+            height: 180px;
+            border-radius: 8px 0 0 8px;
+          }
+          .details_doctor_services {
+            padding: 1rem;
             .title {
               font-family: "semibold";
+              font-size: 1.1rem;
               color: $PrimaryText;
+              margin-bottom: 0.5rem;
               margin-bottom: 0;
             }
             .specialty {
@@ -2179,9 +2378,27 @@ a {
               font-size: 0.9rem;
               margin-bottom: 0;
             }
-            .date {
-              display: block;
+            .text {
               font-family: "regular";
+              color: $SecondText;
+              font-size: .8rem;
+              margin-bottom: 0.5rem;
+            }
+            .book_now {
+              border: 1px solid $PrimaryColor;
+              color: $PrimaryColor;
+              font-family: "semibold";
+              font-size: .8rem;
+              padding: .6rem 3rem;
+              border-radius: 180px;
+              margin-top: 0.5rem;
+              transition: .7s ease-in-out;
+              &:hover {
+                border-color: transparent;
+                background-color: $PrimaryColor;
+                color: #fff;
+                transition: .7s ease-in-out;
+              }
               color: #5b6152;
               font-size: 0.8rem;
             }
@@ -2194,13 +2411,47 @@ a {
           }
         }
       }
-      .clinic_images {
-        margin-bottom: 1.5rem;
-        h5 {
+      .reviews {
+        .overall_rating {
+          text-align: center;
+          .rating {
+            margin-bottom: 1rem;
+            svg {
+              font-size: 1.5rem;
+              color: transparent;
+              stroke-width: 30px;
+              margin-inline-end: .2rem;
+              stroke: #d18927;
+              &.active {
+                color: #d18927;
+              }
+            }
+          }
+          h5 {
+            font-family: "semibold";
+            color: $PrimaryText;
+          }
+          p {
+            font-family: "regular";
+            color: $SecondText;
+            font-size: .9rem;
+          }
+        }
+      }
+      .all_reviews {
+        margin-top: 1rem;
+        .title {
           font-family: "semibold";
           color: $PrimaryText;
           margin-bottom: 1rem;
         }
+        .card_all_reviews {
+          margin-bottom: 1rem;
+          border-bottom: .7px solid #BDBDBD;
+          &:last-child {
+            border-bottom: 0;
+          }
+          .person_rate {
         .swiper {
           width: 100%;
           height: 100%;
@@ -2212,20 +2463,36 @@ a {
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
             img {
-              display: block;
-              width: 100%;
-              height: 150px;
-              object-fit: cover;
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              margin-inline-end: 1rem;
             }
+            .rate {
+              .name {
+                font-family: "semibold";
+                color: $PrimaryText;
+                margin-bottom: 0;
+              }
+              .rating {
+                margin-bottom: 0;
+                svg {
+                  font-size: 0.8rem;
+                  color: transparent;
+                  stroke-width: 50px;
+                  margin-inline-end: .2rem;
+                  stroke: #d18927;
+                  &.active {
+                    color: #d18927;
+                  }
+                }
+              }
+              .date {
+                font-family: "regular";
+                font-size: .8rem;
+                color: $SecondText;
+              }
           }
           .swiper-button-next,
           .swiper-button-prev {
@@ -2237,6 +2504,13 @@ a {
             &:after {
               content: unset;
             }
+          }
+          .rate_text {
+            font-family: "regular";
+            color: $PrimaryText;
+            font-size: .9rem;
+            margin-top: .5rem;
+            width: 50%;
           }
         }
       }
@@ -2560,6 +2834,261 @@ a {
   }
 }
 
+.choose_branches {
+  margin-top: 1.5rem;
+  h5 {
+    font-family: "bold";
+    color: $PrimaryText;
+  }
+  .text {
+    font-family: "regular";
+    color: $SecondText;
+    font-size: .8rem;
+    width: 70%;
+    margin-bottom: 1.5rem;
+  }
+  .card_branches {
+    width: 32%;
+    display: inline-block; 
+    margin-inline-end: 1%;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: .7px solid #BDBDBD;
+    img {
+      width: 100%;
+      height: 200px;
+      border-radius: 6px 6px 0 0;
+    }
+    .card_text_branches {
+      padding: 1rem 1.5rem;
+      .title {
+        font-family: "semibold";
+        color: $PrimaryText;
+      }
+      .text {
+        font-family: "regular";
+        color: $SecondText;
+        font-size: .8rem;
+        width: 100%;
+        margin-bottom: .2rem;
+      }
+      .rating {
+        margin-bottom: .5rem;
+        svg {
+          font-size: 0.8rem;
+          color: transparent;
+          stroke-width: 50px;
+          stroke: #d18927;
+          &.active {
+            color: #d18927;
+          }
+        }
+        span {
+          font-family: "regular";
+          color: $SecondText;
+          font-size: .8rem;
+        }
+      }
+      .address, .number_doctors, .number {
+        margin-bottom: .5rem;
+        svg {
+          color: $PrimaryColor;
+          margin-inline-end: .5rem;
+        }
+        span {
+          font-family: "regular";
+          color: $PrimaryText;
+          font-size: .8rem;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.branch_details {
+  .header_branch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 70vh;
+      width: 100%;
+    }
+    .search_header_branch {
+      position: absolute;
+      h1 {
+        color: #fff;
+        font-family: "bold";
+        margin-bottom: 1.5rem;
+      }
+      .form-group {
+        position: relative;
+        svg {
+          position: absolute;
+          top: 30%;
+          left: 3%;
+          color: $PrimaryColor;
+        }
+        input {
+          font-family: "regular";
+          font-size: .8rem;
+          padding: .75rem;
+          padding-inline-start: 2.5rem;
+          border-radius: 33px;
+        }
+        .btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: $PrimaryColor;
+          color: #fff;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: .7s ease-in-out;
+          svg {
+            position: unset;
+            color: #fff;
+          }
+          &:hover {
+            border-color: transparent;
+            border: 1px solid $PrimaryColor;
+            background-color: transparent;
+            transition: .7s ease-in-out;
+            svg {
+              color: $PrimaryColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .explore_services {
+    margin: 2rem 0;
+    .title {
+      font-family: "bold";
+      color: $PrimaryText;
+      text-align: center;
+    }
+    .text {
+      font-family: "regular";
+      color: $SecondText;
+      text-align: center;
+      font-size: .8rem;
+      width: 20%;
+      margin: 0 auto 1.5rem;
+    }
+    .card_explore_services {
+      width: 31%;
+      margin-inline-end: 2%;
+      border: .5px solid #C1C1C1;
+      border-radius: 8px;
+      display: inline-block;
+      &:last-child {
+        margin-inline-end: 0;
+      }
+      img {
+        width: 100%;
+        height: 220px;
+        border-radius: 8px 8px 0 0;
+      }
+      .card_explore_services_details {
+        padding: 1rem;
+        text-align: start;
+        .name {
+          color: $PrimaryText;
+          font-family: "semibold";
+          margin-bottom: 0;
+        }
+        .speciality {
+          color: $SecondText;
+          font-family: "regular";
+          font-size: .8rem;
+        }
+        .book_doctor_btn {
+          border: 1px solid $PrimaryColor;
+          color: $PrimaryColor;
+          font-family: "semibold";
+          font-size: .8rem;
+          margin-top: 1rem;
+          padding: .6rem;
+          width: 100%;
+          border-radius: 180px;
+          transition: .7s ease-in-out;
+          &:hover {
+            border-color: transparent;
+            color: #fff;
+            background-color: $PrimaryColor;
+            border: 1px solid $PrimaryColor;
+            transition: .7s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  .statistics_branch {
+    margin-top: 2rem;
+    .cards {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      .statistics_branch_card {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 33%;
+        svg {
+          background-color: $PrimaryColor;
+          color: #fff;
+          padding: 1rem;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin-inline-end: 1rem;
+        }
+        .number {
+          .count {
+            margin-bottom: 0;
+            font-size: 1.2rem;
+            font-family: "semibold";
+            color: $PrimaryText;
+          }
+          .text {
+            margin-bottom: 0;
+            font-family: "semibold";
+            color: $SecondText;
+            font-size: .7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.terms {
+  margin-top: 2rem;
+  .title {
+    font-family: "semibold";
+    color: $PrimaryText;
+    font-size: 1.2rem;
+  }
+  .text {
+    font-family: "regular";
+    color: $SecondText;
+    font-size: .9rem;
+    width: 90%;
+  }
+}
+
 .team_about {
   padding: 5% 0;
   position: relative;
@@ -2651,8 +3180,9 @@ a {
     }
   }
 }
+
 .great_section {
-  padding: 1% 0;
+  padding: 3rem 0;
   position: relative;
   background: linear-gradient(to left, #a1cf5f, #89af52);
   .head {
@@ -2668,19 +3198,19 @@ a {
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-      margin: 2% 0;
 
       h2 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         font-family: "bold";
         color: white;
       }
       p {
-        font-size: 0.9rem;
-        width: 80%;
+        font-size: 0.8rem;
+        width: 60%;
         font-family: "regular";
         color: white;
         line-height: 1.4;
+        margin-bottom: 0;
       }
     }
     .button {
@@ -2699,10 +3229,9 @@ a {
         font-family: "regular";
         text-align: center;
         color: $PrimaryColor;
-        padding: 0.5rem 2rem;
+        padding: 0.75rem 2.5rem;
         width: fit-content;
         transition: 0.7s ease-in-out;
-        width: 100%;
         &:hover {
           background-color: $PrimaryColor;
           color: white;

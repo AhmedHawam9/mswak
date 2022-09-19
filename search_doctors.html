@@ -159,55 +159,95 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- START BREADCRUMB -->
-    <section class="breadcrumb">
+    <!-- Start Doctor header -->
+    <section class="doctor_header">
       <div class="container">
-        <div class="content">
-          <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
-          <span>Doctors</span>
+        <div class="row align-items-center">
+          <div class="col-md-6 col-12">
+            <h2>Miswak Medical Group Welcomes You</h2>
+            <p>
+              With a selection of the best consultants and specialists in the
+              Kingdom At your service throughout the day
+            </p>
+          </div>
+          <div class="col-md-6 col-12">
+            <img src="./media/image/header_doctor.png" alt="header_doctor" />
+          </div>
         </div>
       </div>
     </section>
-    <!-- FINISH BREADCRUMB -->
+    <!-- End Doctor header -->
 
-    <!-- Start search doctors -->
-    <section class="search_doctors">
+    <!-- Start booking information -->
+    <div class="booking_information">
       <div class="container">
-        <form action="" class="form_search_doctors">
-          <div class="form-group city">
+        <h5>Booking Information</h5>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="form-group">
+              <i class="fa-solid fa-tooth"></i>
+              <select
+                name=""
+                id=""
+                class="form-control selectpicker"
+                title="Hollywood Smile"
+              >
+                <option value="">test</option>
+                <option value="">test</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="form-group">
+              <i class="fa-solid fa-location-dot"></i>
+              <select
+                name=""
+                id=""
+                class="form-control selectpicker"
+                title="El Damam"
+              >
+                <option value="">test</option>
+                <option value="">test</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="form-group">
+              <i class="fa-solid fa-building"></i>
+              <select
+                name=""
+                id=""
+                class="form-control selectpicker"
+                title="Jasmine neighborhood"
+              >
+                <option value="">test</option>
+                <option value="">test</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End booking information -->
+
+    <!-- Start choose doctor -->
+    <section class="choose_doctor">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h5>Choose The Doctor (22)</h5>
+          <div class="sorting">
+            <label for="">Sorting</label>
             <select
               name=""
               id=""
               class="form-control selectpicker"
-              title="City"
+              title="Hollywood Smile"
             >
               <option value="">test</option>
               <option value="">test</option>
             </select>
           </div>
-          <div class="form-group search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" name="" id="" class="form-control" placeholder="search by branch & area name">
-            <button type="submit" class="btn btn_submit">Apply</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- End search doctors -->
-
-    <!-- Start choose doctor -->
-    <section class="choose_doctor">
-      <div class="container">
-        <h5>All Doctors</h5>
-        <p class="text">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod orem ipsum dolor sit amet, consetetur elitr, sed diam
-          nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing
-          elitr, sed diam nonumy eirmod orem ipsum dolor sit amet, consetetur
-          elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit amet,
-          consetetu
-        </p>
+        </div>
         <!-- Start for loop card booking doctor -->
         <div class="card_booking_doctor">
           <img src="./media/image/7w7w.jpg" alt="doctor" />
@@ -254,12 +294,7 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault1"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
                           4:30 pm
                         </label>
@@ -267,12 +302,7 @@
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault2"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         <label class="form-check-label" for="flexRadioDefault2">
                           5:15 pm
                         </label>
@@ -280,21 +310,14 @@
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault3"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                         <label class="form-check-label" for="flexRadioDefault3">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -304,12 +327,7 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault4"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
                         <label class="form-check-label" for="flexRadioDefault4">
                           4:30 pm
                         </label>
@@ -317,12 +335,7 @@
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault5"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
                         <label class="form-check-label" for="flexRadioDefault5">
                           5:15 pm
                         </label>
@@ -330,21 +343,14 @@
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault6"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
                         <label class="form-check-label" for="flexRadioDefault6">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -354,12 +360,7 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault7"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
                         <label class="form-check-label" for="flexRadioDefault7">
                           4:30 pm
                         </label>
@@ -367,12 +368,7 @@
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault8"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
                         <label class="form-check-label" for="flexRadioDefault8">
                           5:15 pm
                         </label>
@@ -380,21 +376,14 @@
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault9"
-                        />
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9">
                         <label class="form-check-label" for="flexRadioDefault9">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -404,65 +393,35 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault10"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault10"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10">
+                        <label class="form-check-label" for="flexRadioDefault10">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault11"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault11"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11">
+                        <label class="form-check-label" for="flexRadioDefault11">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault12"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault12"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
+                        <label class="form-check-label" for="flexRadioDefault12">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
               </form>
-              <div class="swiper-button-next">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="swiper-button-prev">
-                <i class="fa-solid fa-chevron-left"></i>
-              </div>
+              <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
             </div>
 
             <!-- Initialize Swiper -->
@@ -527,56 +486,30 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault20"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault20"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault20">
+                        <label class="form-check-label" for="flexRadioDefault20">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault21"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault21"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault21">
+                        <label class="form-check-label" for="flexRadioDefault21">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault22"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault22"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault22">
+                        <label class="form-check-label" for="flexRadioDefault22">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -586,56 +519,30 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault23"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault23"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault23">
+                        <label class="form-check-label" for="flexRadioDefault23">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault24"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault24"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault24">
+                        <label class="form-check-label" for="flexRadioDefault24">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault25"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault25"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault25">
+                        <label class="form-check-label" for="flexRadioDefault25">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -645,56 +552,30 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault30"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault30"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault30">
+                        <label class="form-check-label" for="flexRadioDefault30">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault31"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault31"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault31">
+                        <label class="form-check-label" for="flexRadioDefault31">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault32"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault32"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault32">
+                        <label class="form-check-label" for="flexRadioDefault32">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -704,65 +585,35 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault33"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault33"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault33">
+                        <label class="form-check-label" for="flexRadioDefault33">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault34"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault34"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault34">
+                        <label class="form-check-label" for="flexRadioDefault34">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault35"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault35"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault35">
+                        <label class="form-check-label" for="flexRadioDefault35">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
               </form>
-              <div class="swiper-button-next">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="swiper-button-prev">
-                <i class="fa-solid fa-chevron-left"></i>
-              </div>
+              <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
             </div>
 
             <!-- Initialize Swiper -->
@@ -827,56 +678,30 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault40"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault40"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault40">
+                        <label class="form-check-label" for="flexRadioDefault40">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault41"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault41"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault41">
+                        <label class="form-check-label" for="flexRadioDefault41">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault42"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault42"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault42">
+                        <label class="form-check-label" for="flexRadioDefault42">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -886,56 +711,30 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault43"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault43"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault43">
+                        <label class="form-check-label" for="flexRadioDefault43">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault44"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault44"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault44">
+                        <label class="form-check-label" for="flexRadioDefault44">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault45"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault45"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault45">
+                        <label class="form-check-label" for="flexRadioDefault45">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -945,56 +744,30 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault46"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault46"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault46">
+                        <label class="form-check-label" for="flexRadioDefault46">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault47"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault47"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault47">
+                        <label class="form-check-label" for="flexRadioDefault47">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault48"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault48"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault48">
+                        <label class="form-check-label" for="flexRadioDefault48">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
 
@@ -1004,65 +777,35 @@
                   <ul>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault10"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault10"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10">
+                        <label class="form-check-label" for="flexRadioDefault10">
                           4:30 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault11"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault11"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11">
+                        <label class="form-check-label" for="flexRadioDefault11">
                           5:15 pm
                         </label>
                       </div>
                     </li>
                     <li>
                       <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault12"
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexRadioDefault12"
-                        >
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
+                        <label class="form-check-label" for="flexRadioDefault12">
                           6:00 pm
                         </label>
                       </div>
                     </li>
                   </ul>
-                  <li class="book">
-                    <button type="submit" class="btn">Book</button>
-                  </li>
+                  <li class="book"><button type="submit" class="btn">Book</button></li>
                 </div>
                 <!-- For loop this booking -->
               </form>
-              <div class="swiper-button-next">
-                <i class="fa-solid fa-chevron-right"></i>
-              </div>
-              <div class="swiper-button-prev">
-                <i class="fa-solid fa-chevron-left"></i>
-              </div>
+              <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+              <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
             </div>
 
             <!-- Initialize Swiper -->
