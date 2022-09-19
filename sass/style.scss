@@ -2330,6 +2330,224 @@ a {
         }
       }
     }
+    .booking_time {
+      padding: 1.5rem;
+      position: relative;
+      h6 {
+        font-family: "semibold";
+        color: $PrimaryText;
+        margin-bottom: 1rem;
+      }
+      .swiper {
+        position: unset;
+        .swiper-slide {
+          .day {
+            background-color: #8194e2;
+            color: #fff;
+            border-radius: 5px;
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-family: "regular";
+            text-align: center;
+            font-size: 0.8rem;
+          }
+          ul {
+            margin-bottom: 0;
+            list-style: none;
+            .form-check {
+              padding-left: 0;
+              margin-bottom: 0.5rem;
+              .form-check-label {
+                background-color: #f0f0f0;
+                color: #5b6152;
+                font-family: "regular";
+                border-radius: 5px;
+                padding: 0.5rem;
+                width: 100%;
+                text-align: center;
+                font-size: 0.8rem;
+                border: 1px solid #f0f0f0;
+              }
+              .form-check-input {
+                display: none;
+                &:checked ~ .form-check-label {
+                  border: 1px solid #000;
+                }
+              }
+            }
+          }
+          .book {
+            .btn {
+              font-family: "semibold";
+              background-color: #a1cf5f;
+              border-radius: 5px;
+              color: #fff;
+              padding: 0.5rem;
+              width: 100%;
+              font-size: 0.8rem;
+              transition: 0.7s ease-in-out;
+              &:hover {
+                border-color: transparent;
+                transition: 0.7s ease-in-out;
+                background-color: transparent;
+                border: 1px solid #a1cf5f;
+                color: #a1cf5f;
+              }
+            }
+          }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          border-radius: 50%;
+          border: 0.7px solid #bdbdbd;
+          width: 30px;
+          height: 30px;
+          top: 55%;
+          svg {
+            color: #a1cf5f;
+          }
+          &::after {
+            content: unset;
+          }
+        }
+      }
+    }
+  }
+  .ask_offer {
+    margin-top: 1.5rem;
+    position: relative;
+    img {
+      width: 100%;
+      height: 200px;
+    }
+    .text_ask_offer {
+      position: absolute;
+      height: 80%;
+      width: 50%;
+      top: 10%;
+      right: 5%;
+      bottom: 10%;
+      left: 5%;
+      p {
+        font-family: "semibold";
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+      }
+      span {
+        display: block;
+        font-family: "regular";
+        color: #fff;
+        font-size: .9rem;
+      }
+      .btn {
+        font-family: "semibold";
+        color: #fff;
+        background-color: $PrimaryColor;
+        font-size: .8rem;
+        margin-top: 1.3rem;
+        padding: .3rem 2rem;
+        border-radius: 110px;
+        transition: .7s ease-in-out;
+        &:hover {
+          border-color: transparent;
+          border: 1px solid $PrimaryColor;
+          background-color: transparent;
+          color: $PrimaryColor;
+          transition: .7s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.other_doctor {
+  margin-top: 2rem;
+  .title {
+    font-family: "semibold";
+    color: $PrimaryText;
+  }
+  .view_doctor {
+    background-color: $PrimaryColor;
+    color: #fff;
+    font-family: "semibold";
+    border-radius: 180px;
+    font-size: .8rem;
+    padding: .6rem 1.5rem;
+    transition: .7s ease-in-out;
+    &:hover {
+      border-color: transparent;
+      background-color: transparent;
+      border: 1px solid $PrimaryColor;
+      color: $PrimaryColor;
+      transition: .7s ease-in-out;
+    }
+  }
+  .card_doctor {
+    width: 23%;
+    margin-inline-end: 2%;
+    border: .5px solid #C1C1C1;
+    border-radius: 8px;
+    display: inline-block;
+    &:last-child {
+      margin-inline-end: 0;
+    }
+    img {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px 8px 0 0;
+    }
+    .other_doctor_details {
+      padding: 1rem;
+      text-align: center;
+      .name {
+        color: $PrimaryText;
+        font-family: "semibold";
+        margin-bottom: 0;
+      }
+      .speciality {
+        color: $SecondText;
+        font-family: "regular";
+        font-size: .8rem;
+      }
+      .location {
+        font-family: "regular";
+        font-size: .8rem;
+        color: #5B6152;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+      }
+      .rating {
+        svg {
+          font-size: 0.8rem;
+          color: transparent;
+          stroke-width: 60px;
+          stroke: #d18927;
+          &.active {
+            color: #d18927;
+          }
+        }
+      }
+      .book_doctor_btn {
+        border: 1px solid $PrimaryColor;
+        color: $PrimaryColor;
+        font-family: "semibold";
+        font-size: .8rem;
+        margin-top: 1rem;
+        padding: .6rem;
+        width: 100%;
+        border-radius: 180px;
+        transition: .7s ease-in-out;
+        &:hover {
+          border-color: transparent;
+          color: #fff;
+          background-color: $PrimaryColor;
+          border: 1px solid $PrimaryColor;
+          transition: .7s ease-in-out;
+        }
+      }
+    }
   }
 }
 

@@ -263,7 +263,7 @@
                   tabindex="0"
                 >
                   <div class="about_doctor">
-                  <!-- About Doctor -->
+                    <!-- About Doctor -->
                     <h5>About Doctor</h5>
                     <p>
                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
@@ -308,7 +308,9 @@
                       <i class="fa-solid fa-briefcase"></i>
                       <div class="experience_description">
                         <p class="title">Dentistry Certificate</p>
-                        <p class="specialty">Jerman Medical Specialization Board</p>
+                        <p class="specialty">
+                          Jerman Medical Specialization Board
+                        </p>
                         <span class="date">2015 - 2019</span>
                         <span class="address">Berlin , Jerman</span>
                       </div>
@@ -320,7 +322,9 @@
                       <i class="fa-solid fa-briefcase"></i>
                       <div class="experience_description">
                         <p class="title">Dentistry Certificate</p>
-                        <p class="specialty">Jerman Medical Specialization Board</p>
+                        <p class="specialty">
+                          Jerman Medical Specialization Board
+                        </p>
                         <span class="date">2015 - 2019</span>
                         <span class="address">Berlin , Jerman</span>
                       </div>
@@ -337,37 +341,55 @@
                       <div class="swiper-wrapper">
                         <!-- For loop this slide -->
                         <div class="swiper-slide">
-                          <img src="./media/image/tooth1.jpg" alt="clinic">
+                          <img src="./media/image/tooth1.jpg" alt="clinic" />
                         </div>
                         <!-- For loop this slide -->
 
                         <!-- For loop this slide -->
                         <div class="swiper-slide">
-                          <img src="./media/image/tooth2.jpg" alt="clinic">
+                          <img src="./media/image/tooth2.jpg" alt="clinic" />
                         </div>
                         <!-- For loop this slide -->
 
                         <!-- For loop this slide -->
                         <div class="swiper-slide">
-                          <img src="./media/image/tooth3.jpg" alt="clinic">
+                          <img src="./media/image/tooth3.jpg" alt="clinic" />
                         </div>
                         <!-- For loop this slide -->
 
                         <!-- For loop this slide -->
                         <div class="swiper-slide">
-                          <img src="./media/image/tooth1.jpg" alt="clinic">
+                          <img src="./media/image/tooth1.jpg" alt="clinic" />
                         </div>
                         <!-- For loop this slide -->
                       </div>
-                      <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
-                      <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                      <div class="swiper-button-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                      </div>
                     </div>
                     <!-- Initialize Swiper -->
                     <script>
-                      var swiper = new Swiper(".clinicSwiper", {
+                      var swiper = new Swiper(".clinicSwiper" , {
                         slidesPerView: 3,
                         spaceBetween: 30,
                         loop: true,
+                        breakpoints: {
+                          300: {
+                            slidesPerView: 1,
+                          },
+                          
+                          768: {
+                            slidesPerView: 2,
+                          },
+                          
+                          1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                          },
+                        },
                         autoplay: {
                           delay: 3500,
                           disableOnInteraction: false,
@@ -382,7 +404,7 @@
                   <!-- Clinic Images -->
                 </div>
                 <div
-                  class="tab-pane fade services"
+                  class="tab-pane fade services_doctor"
                   id="services-tab-pane"
                   role="tabpanel"
                   aria-labelledby="services-tab"
@@ -406,31 +428,328 @@
             <h6 class="pick_title">Pick A Time Slot</h6>
             <div class="time_slot">
               <div class="appointment_fees">
-                <h6><i class="fa-solid fa-money-bills"></i> Appointment Fees</h6>
+                <h6>
+                  <i class="fa-solid fa-money-bills"></i> Appointment Fees
+                </h6>
                 <span>200 SAR</span>
               </div>
               <div class="location">
                 <i class="fa-solid fa-location-dot"></i>
                 <span>ElDamam Branch , Jasmine District , A2esha …..</span>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.960405149614!2d31.371055515097687!3d31.027352778424618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d1062afff57%3A0x40e6c610456cf723!2sCrazy%20Idea!5e0!3m2!1sen!2seg!4v1663512041744!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.960405149614!2d31.371055515097687!3d31.027352778424618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d1062afff57%3A0x40e6c610456cf723!2sCrazy%20Idea!5e0!3m2!1sen!2seg!4v1663512041744!5m2!1sen!2seg"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
               <div class="reservation_data">
                 <h6>Reservation Data</h6>
                 <div class="form-group">
                   <i class="fa-solid fa-user"></i>
-                  <input type="text" name="" id="" class="form-control" placeholder="your full name">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="your full name"
+                  />
                 </div>
                 <div class="form-group">
                   <i class="fa-solid fa-phone"></i>
-                  <input type="text" name="" id="" class="form-control" placeholder="your phone number">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="your phone number"
+                  />
                 </div>
                 <div class="form-group">
                   <i class="fa-solid fa-tooth"></i>
-                  <select name="" id="" class="selectpicker form-control" title="please choose the  required service">
+                  <select
+                    name=""
+                    id=""
+                    class="selectpicker form-control"
+                    title="please choose the  required service"
+                  >
                     <option value="">test</option>
                     <option value="">test</option>
                   </select>
                 </div>
+              </div>
+              <div class="booking_time">
+                <h6>Booking Time</h6>
+                <!-- Swiper -->
+                <div class="swiper bookingSwiper">
+                  <form action="booking_doctor.html" class="swiper-wrapper">
+                    <!-- For loop this booking -->
+                    <div class="swiper-slide">
+                      <li class="day">Today</li>
+                      <ul>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                            >
+                              4:30 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault2"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault2"
+                            >
+                              5:15 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault3"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault3"
+                            >
+                              6:00 pm
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                      <li class="book">
+                        <button type="submit" class="btn">Book</button>
+                      </li>
+                    </div>
+                    <!-- For loop this booking -->
+
+                    <!-- For loop this booking -->
+                    <div class="swiper-slide">
+                      <li class="day">sat 22/3</li>
+                      <ul>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault4"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault4"
+                            >
+                              4:30 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault5"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault5"
+                            >
+                              5:15 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault6"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault6"
+                            >
+                              6:00 pm
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                      <li class="book">
+                        <button type="submit" class="btn">Book</button>
+                      </li>
+                    </div>
+                    <!-- For loop this booking -->
+
+                    <!-- For loop this booking -->
+                    <div class="swiper-slide">
+                      <li class="day">Sun 23/3</li>
+                      <ul>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault7"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault7"
+                            >
+                              4:30 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault8"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault8"
+                            >
+                              5:15 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault9"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault9"
+                            >
+                              6:00 pm
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                      <li class="book">
+                        <button type="submit" class="btn">Book</button>
+                      </li>
+                    </div>
+                    <!-- For loop this booking -->
+
+                    <!-- For loop this booking -->
+                    <div class="swiper-slide">
+                      <li class="day">Mon 24/3</li>
+                      <ul>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault10"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault10"
+                            >
+                              4:30 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault11"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault11"
+                            >
+                              5:15 pm
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault12"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault12"
+                            >
+                              6:00 pm
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                      <li class="book">
+                        <button type="submit" class="btn">Book</button>
+                      </li>
+                    </div>
+                    <!-- For loop this booking -->
+                  </form>
+                  <div class="swiper-button-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                </div>
+
+                <!-- Initialize Swiper -->
+                <script>
+                  var swiper = new Swiper(".bookingSwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    navigation: {
+                      nextEl: ".swiper-button-next",
+                      prevEl: ".swiper-button-prev",
+                    },
+                  });
+                </script>
+              </div>
+            </div>
+            <div class="ask_offer">
+              <img src="./media/image/ask_offer.jpg" alt="ask_offer" />
+              <div class="text_ask_offer">
+                <p>Ask For Offers Now</p>
+                <span
+                  >Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed</span
+                >
+                <a href="#" class="btn">Explore</a>
               </div>
             </div>
           </div>
@@ -438,6 +757,90 @@
       </div>
     </section>
     <!-- start doctor details -->
+
+    <div class="other_doctor">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="title">Almeswak Other Doctor</h5>
+          <a href="doctors.html" class="btn view_doctor">View All Doctors</a>
+        </div>
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn book_doctor_btn">Book Doctor</a>
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn book_doctor_btn">Book Doctor</a>
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn book_doctor_btn">Book Doctor</a>
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn book_doctor_btn">Book Doctor</a>
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+      </div>
+    </div>
 
     <!-- start footer section -->
     <footer>
