@@ -159,20 +159,51 @@
   footer .footer-bottom .socialicon {
     justify-content: center;
   }
-}
-.header_about_us .main_img{
-  height: 260px;
-}
-.header_about_us .coll_img img{
-  height: 126px;
-}
-.best_dector_aboutus .head .main_content_start{
-  width: 100%;
-}
-.best_dector_aboutus .head ,.great_section .head{
-  flex-direction: column;
-}
-.team_about .head .main_content_start{
-  width: 100%;
+  .header_about_us .main_img{
+    height: 260px;
+  }
+  .header_about_us .coll_img img{
+    height: 126px;
+  }
+  .best_dector_aboutus .head .main_content_start{
+    width: 100%;
+  }
+  .best_dector_aboutus .head ,.great_section .head{
+    flex-direction: column;
+  }
+  .team_about .head .main_content_start{
+    width: 100%;
+  }
+  .doctor {
+    .doctor_details {
+      padding: 0;
+      .doctor_card {
+        flex-direction: column;
+        img {
+          width: 100%;
+          margin-inline-end: 0;
+          margin-bottom: 1rem;
+          border-radius: 12px 12px 0 0;
+        }
+        .doctor_description {
+          padding: 0 1.5rem;
+        }
+      }
+      .tab-content {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+  .other_doctor {
+    .card_doctor {
+      width: 90%;
+      margin: 0 5%;
+      margin-inline-end: 5%;
+      margin-bottom: 1.5rem;
+      img {
+        height: 250px;
+      }
+    }
+  }
 }
 /* ======= Mobile ======= */
