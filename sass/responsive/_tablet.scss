@@ -91,6 +91,15 @@
     }
   }
   .doctor {
+    .doctor_details {
+      .tab-content {
+        .services_doctor {
+          .card_doctor_services {
+            width: 90%;
+          }
+        }
+      }
+    }
     .pick_title {
       margin-top: 1.5rem;
     }
@@ -99,6 +108,30 @@
     .card_doctor {
       width: 47%;
       margin-bottom: 1.5rem;
+    }
+  }
+  .choose_branches {
+    .card_branches {
+      width: 48.5%;
+    }
+  }
+  .branch_details {
+    .explore_services {
+      .text {
+        width: 40%;
+      }
+      .card_explore_services {
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  .branch_details {
+    .statistics_branch {
+      .cards {
+        width: 100%;
+      }
     }
   }
 }

@@ -1,5 +1,13 @@
 /* ======= Small laptop ======= */
-  @media only screen and (max-width: 1200px) {
-  
+@media only screen and (max-width: 1400px) {
+  .navbar {
+    .navbar-collapse {
+      .nav-item {
+        .nav-link {
+          font-size: .8rem;
+        }
+      }
+    }
+  }
 }
 /* ======= Small laptop ======= */

@@ -191,6 +191,21 @@
       }
       .tab-content {
         padding: 0 1.5rem;
+        .services_doctor {
+          .card_doctor_services {
+            width: 100%;
+            &:last-child {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        .all_reviews {
+          .card_all_reviews {
+            .rate_text {
+              width: 90%;
+            }
+          }
+        }
       }
     }
   }
@@ -203,6 +218,38 @@
       img {
         height: 250px;
       }
+    }
+  }
+  .choose_branches {
+    .card_branches {
+      width: 100%;
+      margin: 0 0 1rem;
+    }
+  }
+  .branch_details {
+    .explore_services {
+      .text {
+        width: 60%;
+      }
+      .card_explore_services {
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .statistics_branch {
+      .cards {
+        flex-direction: column;
+        .statistics_branch_card {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  .header_about_us {
+    h4 {
+      font-size: 1.5rem;
     }
   }
 }
