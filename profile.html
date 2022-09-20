@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="sass/style.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/sweet-alert.css" />
     <!-- ? Main CSS -->
 
@@ -16,6 +18,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/sweet-alert.min.js"></script>
     <!-- ? Main JavaScript -->
 
@@ -160,75 +164,121 @@
       <div class="container">
         <div class="content">
           <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
-          <span>Login</span>
+          <span>Profile</span>
         </div>
       </div>
     </section>
     <!-- FINISH BREADCRUMB -->
 
-    <!-- start form login  -->
-    <form action="#" class="form_login">
-      <h5>Login</h5>
-      <!-- start button social login -->
-      <div class="collection">
-        <!-- content -->
-        <div class="content">
-          <a href="#" class="btn">
-            <img src="./media/image/google.png" alt="google">
-            Continue With Google
-          </a>
-          <a href="#" class="btn">
-            <img src="./media/image/apple.png" alt="apple">
-            Continue With Apple
-          </a>
-          <a href="#" class="btn">
-            <img src="./media/image/twitter.png" alt="twitter">
-            Continue With Google
-          </a>
+    <!-- start profile -->
+    <section class="profile">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="sidebar_profile">
+              <img src="./media/image/7w7w.jpg" alt="person" />
+              <p class="name">Ahmed Hawam</p>
+              <p class="email">ahmed.hawam2030@gmail.com</p>
+              <div class="d-flex align-items-start">
+                <div
+                  class="nav flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link active"
+                    id="v-pills-settings-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-settings"
+                    aria-selected="false"
+                  >
+                    <p class="tab_title">
+                      <i class="fa-regular fa-circle-user"></i>
+                      Account Setting
+                    </p>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-appointments-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-appointments"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-appointments"
+                    aria-selected="true"
+                  >
+                    <p class="tab_title">
+                      <i class="fa-solid fa-calendar-day"></i>
+                      Appointments
+                    </p>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="v-pills-password-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-password"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-password"
+                    aria-selected="false"
+                  >
+                    <p class="tab_title">
+                      <i class="fa-solid fa-lock"></i>
+                      Change Password
+                    </p>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                  <a href="#" class="btn logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Log Out
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8 col-12">
+            <div class="profile_section">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-settings"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab"
+                  tabindex="0"
+                >
+                  ...
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-appointments"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-appointments-tab"
+                  tabindex="0"
+                >
+                  ...
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-password"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-password-tab"
+                  tabindex="0"
+                >
+                  ...
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- content -->
       </div>
-      <!-- finish button social login -->
-
-      <div class="or">or</div>
-
-      <!-- start input group -->
-      <div class="form-group">
-        <input
-          type="tel"
-          class="form-control"
-          name="phone"
-          id="phone"
-          placeholder="your phone number"
-          required
-        />
-        <span class="icon_form"><i class="fa-solid fa-phone"></i></span>
-      </div>
-      <!-- finish input group -->
-
-      <!-- start input group -->
-      <div class="form-group">
-        <input
-          type="password"
-          class="form-control"
-          name="password"
-          id="password"
-          placeholder="enter new password"
-        />
-        <span class="icon_form"><i class="fa-solid fa-lock"></i></span>
-      </div>
-      <!-- finish input group -->
-
-      <button type="submit" class="btn btn_submit" name="submit" id="submit">
-        Login
-      </button>
-
-      <p class="login">
-        Don't have an account ?
-        <a  href="signup.html">Register</a>
-      </p>
-    </form>
-    <!-- finish form login  -->
+    </section>
+    <!-- end profile -->
 
     <!-- start footer section -->
     <footer>
@@ -388,5 +438,15 @@
       </div>
     </footer>
     <!-- end footer section -->
+
+    <script src="js/main.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 20,
+        time: 2000,
+      });
+    </script>
   </body>
 </html>
