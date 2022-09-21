@@ -150,6 +150,7 @@
   .auth {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
     .signup_btn {
       color: $PrimaryColor;
       border-color: $PrimaryColor;

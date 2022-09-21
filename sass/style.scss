@@ -50,7 +50,7 @@ a {
   font-family: "semibold";
 }
 .form-control:focus {
-  box-shadow: 0 0 0 0.25rem rgba(161, 207, 95, .25) !important;
+  box-shadow: 0 0 0 0.25rem rgba(161, 207, 95, 0.25) !important;
   border-color: $PrimaryColor !important;
 }
 .rates {
@@ -179,7 +179,7 @@ a {
   .auth_card {
     width: 40%;
     margin: 0 auto;
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     border-radius: 12px;
     padding: 2rem;
     .title {
@@ -211,28 +211,28 @@ a {
         color: #5b6152;
       }
       /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
     }
     .btn {
       font-family: "semibold";
       color: #fff;
       background-color: $PrimaryColor;
       width: 100%;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
       &:hover {
         background-color: transparent;
         color: $PrimaryColor;
         border: 1px solid $PrimaryColor;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
       }
     }
   }
@@ -243,28 +243,28 @@ input[type=number] {
 .profile {
   margin: 3rem 0;
   .sidebar_profile {
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     border-radius: 12px;
     img {
       width: 70px;
       height: 70px;
       border-radius: 50%;
       display: block;
-      margin: 2rem auto .5rem;
+      margin: 2rem auto 0.5rem;
     }
     .name {
       text-align: center;
       font-family: "semibold";
       color: $PrimaryText;
-      font-size: .8rem;
+      font-size: 0.8rem;
       margin-bottom: 0;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
     .email {
       text-align: center;
       font-family: "semibold";
       color: $SecondText;
-      font-size: .7rem;
+      font-size: 0.7rem;
       margin-bottom: 2rem;
     }
     .nav-pills {
@@ -273,10 +273,10 @@ input[type=number] {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-top: .5px solid #BCBCBC;
-        color: #5B6152;
+        border-top: 0.5px solid #bcbcbc;
+        color: #5b6152;
         border-radius: 0;
-        padding: 1rem .6rem;
+        padding: 1rem 0.6rem;
         font-family: "semibold";
         font-size: 1rem;
         .tab_title {
@@ -287,31 +287,242 @@ input[type=number] {
           color: $PrimaryColor;
         }
         svg {
-          margin-inline-end: .5rem;
+          margin-inline-end: 0.5rem;
         }
       }
       .logout {
         width: 100%;
         text-align: start;
-        border-top: .5px solid #BCBCBC;
-        color: #D13811;
+        border-top: 0.5px solid #bcbcbc;
+        color: #d13811;
         border-radius: 0;
-        padding: 1rem .6rem;
+        padding: 1rem 0.6rem;
         font-family: "semibold";
         font-size: 1rem;
         svg {
-          margin-inline-end: .5rem;
+          margin-inline-end: 0.5rem;
         }
         &:hover {
           border-color: transparent;
-          border-top: .5px solid #BCBCBC;
+          border-top: 0.5px solid #bcbcbc;
         }
       }
     }
   }
   .profile_section {
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     border-radius: 12px;
+    .tab-content {
+      .tab-pane {
+        padding: 2rem;
+        .title {
+          font-family: "semibold";
+          color: $PrimaryText;
+        }
+        .text {
+          font-family: "regular";
+          font-size: .8rem;
+          color: $SecondText;
+          margin-bottom: 2rem;
+          display: block;
+        }
+        .avatar-upload {
+          display: flex;
+          align-items: center;
+          margin: 2rem 0;
+        }
+        .avatar-upload .avatar-edit {
+          z-index: 1;
+        }
+        .avatar-upload .avatar-edit input {
+          display: none;
+        }
+        .avatar-upload .avatar-edit input + label {
+          width: fit-content;
+          font-size: 0.8rem;
+          padding: 0.5rem 2rem;
+          background-color: $PrimaryColor;
+          color: #fff;
+          font-family: "semibold";
+          transition: 0.7s ease-in-out;
+          &:hover {
+            border-color: transparent;
+            border: 1px solid $PrimaryColor;
+            color: $PrimaryColor;
+            background-color: transparent;
+            transition: 0.7s ease-in-out;
+          }
+        }
+        .avatar-upload .avatar-edit input + label:after {
+          content: "\f040";
+          font-family: "FontAwesome";
+          color: #757575;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          margin: auto;
+        }
+        .avatar-upload .avatar-preview {
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          margin-inline-end: 1.5rem;
+        }
+        .avatar-upload .avatar-preview > div {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .form-group {
+          margin-bottom: 1rem;
+          position: relative;
+          label {
+            font-family: "regular";
+            color: $SecondText;
+            margin-bottom: .5rem;
+            font-size: .8rem;
+          }
+          svg {
+            color: $SecondText;
+            position: absolute;
+            top: 30%;
+            z-index: 5;
+            left: 0.8rem;
+            color: transparent;
+            stroke: $SecondText;
+            stroke-width: 40px;
+          }
+          input {
+            padding: 0.6rem;
+            font-size: 0.8rem;
+            padding-inline-start: 2.5rem;
+            font-family: "regular";
+            color: #5b6152;
+          }
+          /* Chrome, Safari, Edge, Opera */
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          /* Firefox */
+          input[type="number"] {
+            -moz-appearance: textfield;
+          }
+        }
+        .submit_btn {
+          display: block;
+          background-color: $PrimaryColor;
+          color: #fff;
+          font-family: "semibold";
+          font-size: .8rem;
+          padding: .75rem 3rem;
+          margin-left: auto;
+          transition: .7s ease-in-out;
+          &:hover {
+            border-color: transparent;
+            border: 1px solid $PrimaryColor;
+            background-color: transparent;
+            color: $PrimaryColor;
+            transition: .7s ease-in-out;
+          }
+        }
+        &.password {
+          .form-group {
+            margin-bottom: .5rem;
+            svg {
+              top: 60%;
+            }
+          }
+        }
+
+        .card_appointments {
+          display: flex;
+          align-items: center;
+          border-radius: 12px;
+          border: .7px solid #BDBDBD;
+          margin-bottom: 1rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          img {
+            width: 25%;
+            height: 230px;
+            margin-inline-end: 1.5rem;
+            border-radius: 12px 0 0 12px;
+          }
+          .details_card_appointments {
+            width: 50%;
+            .status {
+              font-size: .7rem;
+              font-family: "regular";
+              padding: .3rem 1.3rem;
+              display: inline-block;
+              border-radius: 24px;
+              margin-bottom: .5rem;
+              &.cancel {
+                color: #D13811;
+                background-color: rgba(209, 56, 17, .1);
+              }
+              &.finish {
+                color: #535DEB;
+                background-color: rgba(83, 93, 235, .1);
+              }
+              &.confirm {
+                color: #A1CF5F;
+                background-color: rgba(161, 207, 95, .1);
+              }
+              &.wait {
+                color: #D1BE11;
+                background-color: rgba(209, 190, 17, .1);
+              }
+            }
+            .name {
+              font-family: "semibold";
+              color: $PrimaryText;
+              font-size: 1.2rem;
+              margin-bottom: .5rem;
+            }
+            .description {
+              font-family: "regular";
+              color: $SecondText;
+              font-size: .8rem;
+              margin-bottom: 1rem;
+              width: 80%;
+            }
+            .location, .time {
+              margin-bottom: .5rem;
+              svg {
+                color: transparent;
+                stroke: $PrimaryColor;
+                stroke-width: 40px;
+                margin-inline-end: .5rem;
+              }
+              span {
+                font-family: "regular";
+                color: $PrimaryText;
+                font-size: .9rem;
+              }
+            }
+          }
+          .book {
+            border: 1px solid $PrimaryColor;
+            color: $PrimaryColor;
+            font-family: "regular";
+            padding: .5rem 2rem;
+            font-size: .8rem;
+            margin-left: auto;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
   }
 }
 // End profile
@@ -342,10 +553,10 @@ input[type=number] {
           margin-inline-end: 0;
         }
         &:hover {
-          border: 1px solid #B63131;
+          border: 1px solid #b63131;
         }
         img {
-          margin-inline-end: .5rem;
+          margin-inline-end: 0.5rem;
           width: 25px;
           height: 25px;
         }
@@ -468,10 +679,10 @@ input[type=number] {
           margin-inline-end: 0;
         }
         &:hover {
-          border: 1px solid #B63131;
+          border: 1px solid #b63131;
         }
         img {
-          margin-inline-end: .5rem;
+          margin-inline-end: 0.5rem;
           width: 20px;
           height: 20px;
         }
@@ -674,7 +885,7 @@ input[type=number] {
       margin-bottom: 1rem;
     }
     .form-group {
-      margin-bottom: 1rem;
+      margin-bottom: 0;
       position: relative;
       svg {
         color: $SecondText;
@@ -880,7 +1091,7 @@ input[type=number] {
     color: $SecondText;
     width: 40%;
     margin-bottom: 2rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .show_all {
     background-color: $PrimaryColor;
@@ -1006,10 +1217,10 @@ input[type=number] {
       }
       input {
         color: $SecondText;
-        background-color: #F7F7F7;
+        background-color: #f7f7f7;
         font-family: "regular";
-        font-size: .8rem;
-        padding: .65rem;
+        font-size: 0.8rem;
+        padding: 0.65rem;
         padding-inline-start: 2rem;
       }
     }
@@ -1021,13 +1232,13 @@ input[type=number] {
       background-color: $PrimaryColor;
       color: #fff;
       font-family: "semibold";
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
       &:hover {
         border-color: transparent;
         border: 1px solid $PrimaryColor;
         color: $PrimaryColor;
         background-color: transparent;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
       }
     }
   }
@@ -1284,7 +1495,7 @@ input[type=number] {
   .text {
     font-family: "regular";
     color: $SecondText;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 70%;
   }
   .sorting {
@@ -2185,7 +2396,7 @@ input[type=number] {
 
 .doctor {
   .doctor_details {
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     border-radius: 12px;
     padding: 1.5rem;
     .doctor_card {
@@ -2278,7 +2489,7 @@ input[type=number] {
           p {
             font-family: "regular";
             color: $SecondText;
-            font-size: .8rem
+            font-size: 0.8rem;
           }
         }
         .languages {
@@ -2293,13 +2504,13 @@ input[type=number] {
             flex-wrap: wrap;
             list-style: none;
             li {
-              border: .7px solid #BDBDBD;
+              border: 0.7px solid #bdbdbd;
               width: fit-content;
-              margin-inline-end: .5rem;
+              margin-inline-end: 0.5rem;
               font-family: "regular";
               color: $PrimaryText;
-              font-size: .8rem;
-              padding: .3rem .7rem;
+              font-size: 0.8rem;
+              padding: 0.3rem 0.7rem;
               border-radius: 4px;
               &:last-child {
                 margin-inline-end: 0;
@@ -2325,7 +2536,7 @@ input[type=number] {
               background-color: rgba(141, 181, 83, 0.1);
               padding: 1.5rem;
               border-radius: 50%;
-              font-size: .9rem;
+              font-size: 0.9rem;
               margin-inline-end: 1rem;
             }
             .experience_description {
@@ -2336,21 +2547,21 @@ input[type=number] {
               }
               .specialty {
                 font-family: "regular";
-                color: #5B6152;
-                font-size: .9rem;
+                color: #5b6152;
+                font-size: 0.9rem;
                 margin-bottom: 0;
               }
               .date {
                 display: block;
                 font-family: "regular";
-                color: #5B6152;
-                font-size: .8rem;
+                color: #5b6152;
+                font-size: 0.8rem;
               }
               .address {
                 display: block;
                 font-family: "regular";
-                color: #5B6152;
-                font-size: .8rem;
+                color: #5b6152;
+                font-size: 0.8rem;
               }
             }
           }
@@ -2367,7 +2578,7 @@ input[type=number] {
             height: 100%;
             .swiper-slide {
               text-align: center;
-      
+
               /* Center slide text vertically */
               display: -webkit-box;
               display: -ms-flexbox;
@@ -2388,7 +2599,8 @@ input[type=number] {
                 object-fit: cover;
               }
             }
-            .swiper-button-next, .swiper-button-prev {
+            .swiper-button-next,
+            .swiper-button-prev {
               background-color: #fff;
               color: $SecondText;
               width: 30px;
@@ -2406,7 +2618,7 @@ input[type=number] {
           display: flex;
           align-items: center;
           width: 70%;
-          border: .5px solid #C1C1C1;
+          border: 0.5px solid #c1c1c1;
           border-radius: 8px;
           margin-bottom: 1rem;
           &:last-child {
@@ -2428,23 +2640,23 @@ input[type=number] {
             .text {
               font-family: "regular";
               color: $SecondText;
-              font-size: .8rem;
+              font-size: 0.8rem;
               margin-bottom: 0.5rem;
             }
             .book_now {
               border: 1px solid $PrimaryColor;
               color: $PrimaryColor;
               font-family: "semibold";
-              font-size: .8rem;
-              padding: .6rem 3rem;
+              font-size: 0.8rem;
+              padding: 0.6rem 3rem;
               border-radius: 180px;
               margin-top: 0.5rem;
-              transition: .7s ease-in-out;
+              transition: 0.7s ease-in-out;
               &:hover {
                 border-color: transparent;
                 background-color: $PrimaryColor;
                 color: #fff;
-                transition: .7s ease-in-out;
+                transition: 0.7s ease-in-out;
               }
             }
           }
@@ -2459,7 +2671,7 @@ input[type=number] {
               font-size: 1.5rem;
               color: transparent;
               stroke-width: 30px;
-              margin-inline-end: .2rem;
+              margin-inline-end: 0.2rem;
               stroke: #d18927;
               &.active {
                 color: #d18927;
@@ -2473,7 +2685,7 @@ input[type=number] {
           p {
             font-family: "regular";
             color: $SecondText;
-            font-size: .9rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -2486,7 +2698,7 @@ input[type=number] {
         }
         .card_all_reviews {
           margin-bottom: 1rem;
-          border-bottom: .7px solid #BDBDBD;
+          border-bottom: 0.7px solid #bdbdbd;
           &:last-child {
             border-bottom: 0;
           }
@@ -2510,7 +2722,7 @@ input[type=number] {
                   font-size: 0.8rem;
                   color: transparent;
                   stroke-width: 50px;
-                  margin-inline-end: .2rem;
+                  margin-inline-end: 0.2rem;
                   stroke: #d18927;
                   &.active {
                     color: #d18927;
@@ -2519,7 +2731,7 @@ input[type=number] {
               }
               .date {
                 font-family: "regular";
-                font-size: .8rem;
+                font-size: 0.8rem;
                 color: $SecondText;
               }
             }
@@ -2527,8 +2739,8 @@ input[type=number] {
           .rate_text {
             font-family: "regular";
             color: $PrimaryText;
-            font-size: .9rem;
-            margin-top: .5rem;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
             width: 50%;
           }
         }
@@ -2540,14 +2752,14 @@ input[type=number] {
     color: $PrimaryText;
     margin-bottom: 1rem;
   }
-  .time_slot{
+  .time_slot {
     border-radius: 12px;
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     .appointment_fees {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
       border-radius: 12px 12px 0 0;
       padding: 1rem 1.5rem;
       // margin-bottom: 1rem;
@@ -2557,27 +2769,27 @@ input[type=number] {
         margin-bottom: 0;
         svg {
           color: $PrimaryColor;
-          margin-inline-end: .5rem;
+          margin-inline-end: 0.5rem;
         }
       }
       span {
         font-family: "semibold";
         color: $PrimaryText;
-      }   
+      }
     }
     .location {
       padding: 1.5rem;
-      border-bottom: .7px solid #BDBDBD;
+      border-bottom: 0.7px solid #bdbdbd;
       svg {
         color: $PrimaryColor;
-        margin-inline-end: .5rem;
+        margin-inline-end: 0.5rem;
       }
       span {
         font-family: "regular";
         color: $PrimaryText;
-        font-size: .9rem;
+        font-size: 0.9rem;
         margin-bottom: 1rem;
-        display: inline-block
+        display: inline-block;
       }
       iframe {
         width: 100%;
@@ -2602,11 +2814,11 @@ input[type=number] {
           left: 0.5rem;
         }
         input {
-          font-size: .8rem;
+          font-size: 0.8rem;
           font-family: "regular";
           color: $SecondText;
-          padding: .6rem;
-          padding-inline-start: 2rem
+          padding: 0.6rem;
+          padding-inline-start: 2rem;
         }
         .bootstrap-select {
           .dropdown-toggle {
@@ -2735,29 +2947,29 @@ input[type=number] {
         font-family: "semibold";
         color: #fff;
         font-size: 1.2rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
       span {
         display: block;
         font-family: "regular";
         color: #fff;
-        font-size: .9rem;
+        font-size: 0.9rem;
       }
       .btn {
         font-family: "semibold";
         color: #fff;
         background-color: $PrimaryColor;
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-top: 1.3rem;
-        padding: .3rem 2rem;
+        padding: 0.3rem 2rem;
         border-radius: 110px;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
         &:hover {
           border-color: transparent;
           border: 1px solid $PrimaryColor;
           background-color: transparent;
           color: $PrimaryColor;
-          transition: .7s ease-in-out;
+          transition: 0.7s ease-in-out;
         }
       }
     }
@@ -2862,17 +3074,17 @@ input[type=number] {
   .text {
     font-family: "regular";
     color: $SecondText;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 70%;
     margin-bottom: 1.5rem;
   }
   .card_branches {
     width: 32%;
-    display: inline-block; 
+    display: inline-block;
     margin-inline-end: 1%;
     margin-bottom: 1rem;
     border-radius: 6px;
-    border: .7px solid #BDBDBD;
+    border: 0.7px solid #bdbdbd;
     img {
       width: 100%;
       height: 200px;
@@ -2887,12 +3099,12 @@ input[type=number] {
       .text {
         font-family: "regular";
         color: $SecondText;
-        font-size: .8rem;
+        font-size: 0.8rem;
         width: 100%;
-        margin-bottom: .2rem;
+        margin-bottom: 0.2rem;
       }
       .rating {
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
         svg {
           font-size: 0.8rem;
           color: transparent;
@@ -2905,19 +3117,21 @@ input[type=number] {
         span {
           font-family: "regular";
           color: $SecondText;
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
       }
-      .address, .number_doctors, .number {
-        margin-bottom: .5rem;
+      .address,
+      .number_doctors,
+      .number {
+        margin-bottom: 0.5rem;
         svg {
           color: $PrimaryColor;
-          margin-inline-end: .5rem;
+          margin-inline-end: 0.5rem;
         }
         span {
           font-family: "regular";
           color: $PrimaryText;
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
         &:last-child {
           margin-bottom: 0;
@@ -2954,8 +3168,8 @@ input[type=number] {
         }
         input {
           font-family: "regular";
-          font-size: .8rem;
-          padding: .75rem;
+          font-size: 0.8rem;
+          padding: 0.75rem;
           padding-inline-start: 2.5rem;
           border-radius: 33px;
         }
@@ -2971,7 +3185,7 @@ input[type=number] {
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: .7s ease-in-out;
+          transition: 0.7s ease-in-out;
           svg {
             position: unset;
             color: #fff;
@@ -2980,7 +3194,7 @@ input[type=number] {
             border-color: transparent;
             border: 1px solid $PrimaryColor;
             background-color: transparent;
-            transition: .7s ease-in-out;
+            transition: 0.7s ease-in-out;
             svg {
               color: $PrimaryColor;
             }
@@ -3001,14 +3215,14 @@ input[type=number] {
       font-family: "regular";
       color: $SecondText;
       text-align: center;
-      font-size: .8rem;
+      font-size: 0.8rem;
       width: 20%;
       margin: 0 auto 1.5rem;
     }
     .card_explore_services {
       width: 31%;
       margin-inline-end: 2%;
-      border: .5px solid #C1C1C1;
+      border: 0.5px solid #c1c1c1;
       border-radius: 8px;
       display: inline-block;
       &:last-child {
@@ -3030,24 +3244,24 @@ input[type=number] {
         .speciality {
           color: $SecondText;
           font-family: "regular";
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
         .book_doctor_btn {
           border: 1px solid $PrimaryColor;
           color: $PrimaryColor;
           font-family: "semibold";
-          font-size: .8rem;
+          font-size: 0.8rem;
           margin-top: 1rem;
-          padding: .6rem;
+          padding: 0.6rem;
           width: 100%;
           border-radius: 180px;
-          transition: .7s ease-in-out;
+          transition: 0.7s ease-in-out;
           &:hover {
             border-color: transparent;
             color: #fff;
             background-color: $PrimaryColor;
             border: 1px solid $PrimaryColor;
-            transition: .7s ease-in-out;
+            transition: 0.7s ease-in-out;
           }
         }
       }
@@ -3085,7 +3299,7 @@ input[type=number] {
             margin-bottom: 0;
             font-family: "semibold";
             color: $SecondText;
-            font-size: .7rem;
+            font-size: 0.7rem;
           }
         }
       }
@@ -3103,7 +3317,7 @@ input[type=number] {
   .text {
     font-family: "regular";
     color: $SecondText;
-    font-size: .9rem;
+    font-size: 0.9rem;
     width: 90%;
   }
 }
@@ -3601,7 +3815,7 @@ input[type=number] {
     }
     p {
       color: $SecondText;
-      font-size: .8rem;
+      font-size: 0.8rem;
       width: 80%;
       font-family: "regular";
       margin-bottom: 8%;
@@ -3629,7 +3843,7 @@ input[type=number] {
       }
       p,
       a {
-        font-size: .8rem;
+        font-size: 0.8rem;
         color: $PrimaryText;
         font-family: "regular";
         padding-inline-start: 5%;
@@ -3662,17 +3876,17 @@ input[type=number] {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
       svg {
         color: $PrimaryColor;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
       }
       &:hover {
         background-color: transparent;
         border: 1px solid #fff;
-        transition: .7s ease-in-out;
-        svg{
-          transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
+        svg {
+          transition: 0.7s ease-in-out;
           color: #fff;
         }
       }
@@ -3713,9 +3927,9 @@ form.form_contact {
       background-color: $PrimaryColor;
       color: white;
       font-family: "regular";
-      font-size: .8rem;
+      font-size: 0.8rem;
       border-radius: 32px;
-      padding: .6rem 2rem;
+      padding: 0.6rem 2rem;
       border: 1px solid $PrimaryColor;
       transition: 0.7s ease-in-out;
       &:hover {
@@ -3769,6 +3983,7 @@ form.form_contact {
 }
 .other_doctor_service {
   margin-top: 2rem;
+  margin-bottom: 3rem;
   .search_form {
     position: relative;
     width: 400px;
@@ -3889,39 +4104,37 @@ form.form_contact {
 
 // start service detils page
 .service_detials {
-  .tabs_service{
-    background-color: #EEEEEE;
+  .tabs_service {
+    background-color: #eeeeee;
     padding: 4% 2%;
     border-radius: 5px;
-    ul{
+    ul {
       list-style: none;
-      li{
+      li {
         padding: 5% 6%;
         background-color: white;
         margin-bottom: 2%;
         border-radius: 5px;
-        a{
+        a {
           font-size: 1rem;
-          font-family: 'semibold';
+          font-family: "semibold";
           color: $PrimaryText;
-          svg{
+          svg {
             margin-inline-start: 46%;
           }
         }
-
       }
-      li.active{
+      li.active {
         background-color: $PrimaryColor;
-        a{
+        a {
           color: white;
-          
         }
       }
     }
   }
-  .vedio_service{
+  .vedio_service {
     margin: 5% 0;
-    p{
+    p {
       color: $SecondText;
       font-family: "regular";
       font-size: 1rem;
@@ -3930,7 +4143,7 @@ form.form_contact {
       margin-top: 4%;
       border: 1px solid #c1c1c1;
       position: relative;
-     
+
       img {
         width: 100%;
         height: 250px;
@@ -3941,7 +4154,7 @@ form.form_contact {
           width: 100%;
           height: 250px;
         }
-     
+
         .video-play-button {
           position: absolute;
           z-index: 10;
@@ -3979,7 +4192,7 @@ form.form_contact {
             -webkit-animation: pulse-border 1500ms ease-out infinite;
             animation: pulse-border 1500ms ease-out infinite;
           }
-  
+
           &::after {
             content: "";
             position: absolute;
@@ -4056,6 +4269,7 @@ form.form_contact {
       color: $PrimaryText;
       font-family: "semibold";
       font-size: 1.3rem;
+      margin-top: 1rem;
     }
     p {
       color: $SecondText;
@@ -4084,25 +4298,24 @@ form.form_contact {
         }
       }
     }
-    .img_collect{
+    .img_collect {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       margin: 2% 0 4%;
-      img{
+      img {
         width: 45%;
         height: 200px;
         margin: 0 2%;
-
       }
     }
   }
 }
-.reservation_info_service{
+.reservation_info_service {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-.service_common_anawser{
+.service_common_anawser {
   margin: 3% 0;
   .head {
     display: flex;
@@ -4132,46 +4345,46 @@ form.form_contact {
         line-height: 1.4;
       }
     }
-  
   }
   .accordion {
-		.accordion-item {
-			margin: 2% 0;
-			border: 1px solid $SecondText;
-			.accordion-header {
-				font-size: 2.2rem;
-				font-family: "bold";
-				color: $PrimaryText;
-				.accordion-button {
-					color: white;
-					background-color: $PrimaryColor;
-					&::after {
-						margin-left: auto;
-						margin-right: unset;
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
-					}
-				}
-				.accordion-button.collapsed {
-					color: $PrimaryText;
-					background-color: #F1F1F1;
+    .accordion-item {
+      margin: 2% 0;
+      border-color: transparent;
+      .accordion-header {
+        font-size: 2.2rem;
+        font-family: "bold";
+        color: $PrimaryText;
+        .accordion-button {
+          color: white;
+          background-color: $PrimaryColor;
+          &::after {
+            margin-left: auto;
+            margin-right: unset;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
+          }
+        }
+        .accordion-button.collapsed {
+          color: $SecondText;
+          background-color: #f1f1f1;
           border: 1px solid transparent;
-					&::after {
-						margin-left: auto;
-						margin-right: unset;
-						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
-					}
-				}
-			}
-			.accordion-collapse {
-				.accordion-body {
-					font-size: 1.2rem;
-					font-family: "regular";
-					color: $SecondText;
-					padding: 2% 1%;
-				}
-			}
-		}
-	}
+          &::after {
+            margin-left: auto;
+            margin-right: unset;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+          }
+        }
+      }
+      .accordion-collapse {
+        .accordion-body {
+          font-size: 1rem;
+          width: 70%;
+          font-family: "regular";
+          color: $SecondText;
+          padding: 2% 1%;
+        }
+      }
+    }
+  }
 }
 
 .contact_details {
@@ -4179,7 +4392,7 @@ form.form_contact {
   display: flex;
   iframe {
     width: 50%;
-    height: 350px
+    height: 350px;
   }
   .contact_details_card {
     width: 50%;
@@ -4193,12 +4406,12 @@ form.form_contact {
       }
       p {
         color: $SecondText;
-        font-size: .8rem;
+        font-size: 0.8rem;
         width: 80%;
         font-family: "regular";
         margin-bottom: 1rem;
       }
-  
+
       .lists {
         margin-bottom: 3%;
         display: flex;
@@ -4212,7 +4425,7 @@ form.form_contact {
           justify-content: center;
           align-items: center;
           background-color: white;
-  
+
           svg {
             color: transparent;
             stroke: $PrimaryColor;
@@ -4221,7 +4434,7 @@ form.form_contact {
         }
         p,
         a {
-          font-size: .8rem;
+          font-size: 0.8rem;
           color: $PrimaryText;
           font-family: "regular";
           padding-inline-start: 5%;

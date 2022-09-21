@@ -252,7 +252,82 @@
                   aria-labelledby="v-pills-settings-tab"
                   tabindex="0"
                 >
-                  ...
+                  <h5 class="title">Account Settings</h5>
+                  <form action="" class="accout_setting">
+                    <div class="avatar-upload">
+                      <div class="avatar-preview">
+                        <div
+                          id="imagePreview"
+                          style="background-image: url(./media/image/user.png)"
+                        ></div>
+                      </div>
+                      <div class="avatar-edit">
+                        <input
+                          type="file"
+                          id="imageUpload"
+                          accept=".png, .jpg, .jpeg"
+                        />
+                        <label for="imageUpload" class="btn"
+                          >Upload Image</label
+                        >
+                      </div>
+                    </div>
+                    <!-- Script preview image -->
+                    <script>
+                      function readURL(input) {
+                        if (input.files && input.files[0]) {
+                          var reader = new FileReader();
+                          reader.onload = function (e) {
+                            $("#imagePreview").css(
+                              "background-image",
+                              "url(" + e.target.result + ")"
+                            );
+                            $("#imagePreview").hide();
+                            $("#imagePreview").fadeIn(650);
+                          };
+                          reader.readAsDataURL(input.files[0]);
+                        }
+                      }
+                      $("#imageUpload").change(function () {
+                        readURL(this);
+                      });
+                    </script>
+                    <!-- Script preview image -->
+
+                    <div class="form-group">
+                      <i class="fa-solid fa-user"></i>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        value="Ahmed Hawam"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <i class="fa-solid fa-phone"></i>
+                      <input
+                        type="number"
+                        name=""
+                        id=""
+                        class="form-control"
+                        value="01111488849"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <i class="fa-solid fa-envelope"></i>
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        class="form-control"
+                        value="ahmed.hawam2030@gmail.com"
+                      />
+                    </div>
+                    <button type="submit" class="btn submit_btn">
+                      save changes
+                    </button>
+                  </form>
                 </div>
                 <div
                   class="tab-pane fade"
@@ -261,16 +336,160 @@
                   aria-labelledby="v-pills-appointments-tab"
                   tabindex="0"
                 >
-                  ...
+                  <h5 class="title">Appointments</h5>
+                  <!-- Card Appointments -->
+                  <div class="card_appointments">
+                    <img src="./media/image/7w7w.jpg" alt="Appointments" />
+                    <div class="details_card_appointments">
+                      <span class="status cancel">cancelled</span>
+                      <p class="name">Doctor . Ahmed Hawam</p>
+                      <p class="description">
+                        Consultant of Oral Medicine and Cosmetic Dentistry and a
+                        Diploma in Cosmetic Dentistry, University of Leeds,
+                        England
+                      </p>
+                      <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span
+                          >ElDamam Branch , Jasmine District , A2esha …..</span
+                        >
+                      </div>
+                      <div class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Date : 22May , 05:00 Pm</span>
+                      </div>
+                    </div>
+                    <span class="book">Rebooking</span>
+                  </div>
+                  <!-- Card Appointments -->
+
+                  <!-- Card Appointments -->
+                  <div class="card_appointments">
+                    <img src="./media/image/7w7w.jpg" alt="Appointments" />
+                    <div class="details_card_appointments">
+                      <span class="status finish">finished</span>
+                      <p class="name">Doctor . Ahmed Hawam</p>
+                      <p class="description">
+                        Consultant of Oral Medicine and Cosmetic Dentistry and a
+                        Diploma in Cosmetic Dentistry, University of Leeds,
+                        England
+                      </p>
+                      <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span
+                          >ElDamam Branch , Jasmine District , A2esha …..</span
+                        >
+                      </div>
+                      <div class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Date : 22May , 05:00 Pm</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card Appointments -->
+
+                  <!-- Card Appointments -->
+                  <div class="card_appointments">
+                    <img src="./media/image/7w7w.jpg" alt="Appointments" />
+                    <div class="details_card_appointments">
+                      <span class="status confirm">confirmed</span>
+                      <p class="name">Doctor . Ahmed Hawam</p>
+                      <p class="description">
+                        Consultant of Oral Medicine and Cosmetic Dentistry and a
+                        Diploma in Cosmetic Dentistry, University of Leeds,
+                        England
+                      </p>
+                      <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span
+                          >ElDamam Branch , Jasmine District , A2esha …..</span
+                        >
+                      </div>
+                      <div class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Date : 22May , 05:00 Pm</span>
+                      </div>
+                    </div>
+                    <span class="book">Cancel Booking</span>
+                  </div>
+                  <!-- Card Appointments -->
+
+                  <!-- Card Appointments -->
+                  <div class="card_appointments">
+                    <img src="./media/image/7w7w.jpg" alt="Appointments" />
+                    <div class="details_card_appointments">
+                      <span class="status wait">waiting</span>
+                      <p class="name">Doctor . Ahmed Hawam</p>
+                      <p class="description">
+                        Consultant of Oral Medicine and Cosmetic Dentistry and a
+                        Diploma in Cosmetic Dentistry, University of Leeds,
+                        England
+                      </p>
+                      <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span
+                          >ElDamam Branch , Jasmine District , A2esha …..</span
+                        >
+                      </div>
+                      <div class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Date : 22May , 05:00 Pm</span>
+                      </div>
+                    </div>
+                    <span class="book">Cancel Booking</span>
+                  </div>
+                  <!-- Card Appointments -->
                 </div>
                 <div
-                  class="tab-pane fade"
+                  class="tab-pane fade password"
                   id="v-pills-password"
                   role="tabpanel"
                   aria-labelledby="v-pills-password-tab"
                   tabindex="0"
                 >
-                  ...
+                  <h5 class="title">Change Password</h5>
+                  <span class="text"
+                    >the new password must be strong and contain 8 samples
+                    consisting of characters & samples</span
+                  >
+                  <form action="" class="accout_setting">
+                    <div class="form-group">
+                      <i class="fa-solid fa-user"></i>
+                      <label for="">Current Password</label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="enter new password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <i class="fa-solid fa-phone"></i>
+                      <label for="">New Password</label>
+                      <input
+                        type="number"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="enter new password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <i class="fa-solid fa-envelope"></i>
+                      <label for="">Repeat New Password</label>
+                      <input
+                        type="email"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="enter new password"
+                      />
+                    </div>
+                    <button type="submit" class="btn submit_btn">
+                      save changes
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
