@@ -533,7 +533,7 @@ a {
   border-radius: 5px;
   padding: 3rem 2rem;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   h5 {
     margin-bottom: 4%;
     font-size: 1.2rem;
@@ -659,7 +659,7 @@ a {
   border-radius: 5px;
   padding: 2rem;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   h5 {
     margin-bottom: 4%;
     font-size: 1.2rem;
@@ -738,6 +738,14 @@ a {
       color: $SecondText;
       z-index: 5;
     }
+  }
+  .forget_password_href {
+    font-family: "semibold";
+    color: $PrimaryText;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: end;
+    font-size: .9rem;
   }
   .btn_submit {
     width: 100%;
