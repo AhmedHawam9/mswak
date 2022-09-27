@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,11 +7,51 @@
     <!-- ? Main CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <link rel="stylesheet" href="sass/style.min.css" />
+    <!-- <link rel="stylesheet" href="sass/style.min.css" /> -->
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/sweet-alert.css" />
     <!-- ? Main CSS -->
+
+    <script>
+      if (localStorage.getItem("lang") == "ar") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style_rtl.min.css";
+          link.media = "all";
+          head.appendChild(link);
+        }
+      } else if (localStorage.getItem("lang") == "en") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.min.css";
+          link.media = "all";
+          head.appendChild(link);
+        }
+      } else {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.min.css";
+          link.media = "all";
+          head.appendChild(link);
+        }
+      }
+    </script>
 
     <!-- ? Main JavaScript -->
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -97,38 +137,17 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="branches.html">Address</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Medical Provider
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">test</a></li>
-                <li><a class="dropdown-item" href="#">test</a></li>
-              </ul>
+              <a class="nav-link" href="offers.html">Offers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Training Academy</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Library
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">test</a></li>
-                <li><a class="dropdown-item" href="#">test</a></li>
-              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact-us.html">Contact us</a>
@@ -136,7 +155,6 @@
           </ul>
           <div class="auth">
             <a href="signup.html" class="signup_btn btn">Sign up</a>
-            <a href="login.html" class="login_btn btn">Login</a>
             <!-- start lang -->
             <div class="dropdown lang">
               <button
@@ -148,8 +166,28 @@
                 Arabic
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
-                <li><a class="dropdown-item" href="#">English</a></li>
+                <li>
+                  <a class="dropdown-item" onclick="changeLocaleAr()">Arabic</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" onclick="changeLocaleEn()"
+                    >English</a
+                  >
+                </li>
+                <script>
+                  function changeLocaleAr() {
+                    localStorage.setItem("lang", "ar");
+                    location.reload();
+                  }
+                  function changeLocaleEn() {
+                    localStorage.setItem("lang", "en");
+                    location.reload();
+                  }
+                  function readLang() {
+                    var lang = localStorage.getItem("lang");
+                    document.getElementById("langHtml").innerHTML = lang;
+                  }
+                </script>
               </ul>
             </div>
             <!-- End lang -->
@@ -163,7 +201,10 @@
     <section class="breadcrumb">
       <div class="container">
         <div class="content">
-            <h6><i class="fa-regular fa-circle-check"></i> Your Booking Was Successfully Submitted</h6>
+          <h6>
+            <i class="fa-regular fa-circle-check"></i> Your Booking Was
+            Successfully Submitted
+          </h6>
         </div>
       </div>
     </section>
@@ -177,61 +218,94 @@
               <h6><i class="fa-solid fa-calendar-day"></i> Booking Details</h6>
               <ul>
                 <li>
-                    <span class="title">Patient Name</span>
-                    <span class="text">Rasha Elsayed</span>
+                  <span class="title">Patient Name</span>
+                  <span class="text">Rasha Elsayed</span>
                 </li>
                 <li>
-                    <span class="title">Booking Date</span>
-                    <span class="text">Sat, 22May , 10:30AM</span>
+                  <span class="title">Booking Date</span>
+                  <span class="text">Sat, 22May , 10:30AM</span>
                 </li>
                 <li>
-                    <span class="title">Doctor Name</span>
-                    <span class="text">Doctor.Adham Abdulrhman</span>
+                  <span class="title">Doctor Name</span>
+                  <span class="text">Doctor.Adham Abdulrhman</span>
                 </li>
                 <li>
-                    <span class="title">Waiting Time</span>
-                    <span class="text">30:00 Min</span>
+                  <span class="title">Waiting Time</span>
+                  <span class="text">30:00 Min</span>
                 </li>
                 <li>
-                    <span class="title">Location</span>
-                    <span class="text">Eldmam Branch , Jasmine Abstract, A2esha
-                        Street , Seventh Floor <span class="map">View On Map</span></span>
+                  <span class="title">Location</span>
+                  <span class="text"
+                    >Eldmam Branch , Jasmine Abstract, A2esha Street , Seventh
+                    Floor <span class="map">View On Map</span></span
+                  >
                 </li>
                 <li>
-                    <span class="title">Examination Fees</span>
-                    <span class="text">250 SAR</span>
+                  <span class="title">Examination Fees</span>
+                  <span class="text">250 SAR</span>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-5 col-12">
             <div class="additional_info">
-                <h6><i class="fa-regular fa-note-sticky"></i> Additional Info. ( optional )</h6>
-                <span class="text">help the doctor know alittle about your self and your health problem </span>
-                <form action="" class="additional_info_form">
-                    <div class="form-group">
-                        <i class="fa-regular fa-user"></i>
-                      <input type="text" name="" id="" class="form-control" placeholder="your age">
-                    </div>
-                    <div class="form-group">
-                        <i class="fa-solid fa-venus-mars"></i>
-                        <select name="" id="" class="selectpicker form-control" title="Gender">
-                            <option value="">Male</option>
-                            <option value="">Female</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="5 " class="form-control" placeholder="Case description"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <label for="file_info" class="file_info">
-                            <i class="fa-solid fa-file-circle-plus"></i>
-                            <input type="file" name="" id="file_info" class="form-control">
-                            <span>attach files (pdf, png , jpg) max 10 files</span>
-                        </label>
-                      </div>
-                      <button type="submit" class="btn submit_btn">Send To Doctor</button>
-                </form>
+              <h6>
+                <i class="fa-regular fa-note-sticky"></i> Additional Info. (
+                optional )
+              </h6>
+              <span class="text"
+                >help the doctor know alittle about your self and your health
+                problem
+              </span>
+              <form action="" class="additional_info_form">
+                <div class="form-group">
+                  <i class="fa-regular fa-user"></i>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="your age"
+                  />
+                </div>
+                <div class="form-group">
+                  <i class="fa-solid fa-venus-mars"></i>
+                  <select
+                    name=""
+                    id=""
+                    class="selectpicker form-control"
+                    title="Gender"
+                  >
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5 "
+                    class="form-control"
+                    placeholder="Case description"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="file_info" class="file_info">
+                    <i class="fa-solid fa-file-circle-plus"></i>
+                    <input
+                      type="file"
+                      name=""
+                      id="file_info"
+                      class="form-control"
+                    />
+                    <span>attach files (pdf, png , jpg) max 10 files</span>
+                  </label>
+                </div>
+                <button type="submit" class="btn submit_btn">
+                  Send To Doctor
+                </button>
+              </form>
             </div>
           </div>
         </div>

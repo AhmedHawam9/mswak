@@ -99,7 +99,8 @@ a {
 
 // Start header
 .header {
-  height: 80vh;
+  height: 75vh;
+  margin-top: 7.5rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -138,6 +139,7 @@ a {
 //start breadcrumb
 .breadcrumb {
   padding: 1.5rem 0;
+  margin-top: 7rem;
   margin-bottom: 3rem;
   position: relative;
   text-align: start;
@@ -534,6 +536,7 @@ a {
   padding: 3rem 2rem;
   width: 50%;
   margin: 0 auto 2rem;
+  margin-top: 6rem;
   h5 {
     margin-bottom: 4%;
     font-size: 1.2rem;
@@ -660,6 +663,7 @@ a {
   padding: 2rem;
   width: 50%;
   margin: 0 auto 2rem;
+  margin-top: 6rem;
   h5 {
     margin-bottom: 4%;
     font-size: 1.2rem;
@@ -1427,6 +1431,7 @@ a {
 // Start doctor header
 .doctor_header {
   background-color: #f7f7f7;
+  margin-top: 7rem;
   h2 {
     font-family: "semibold";
     color: $PrimaryText;
@@ -3168,6 +3173,7 @@ a {
 }
 
 .branch_details {
+  margin-top: 7rem;
   .header_branch {
     position: relative;
     display: flex;

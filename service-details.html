@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
-
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +8,49 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="sass/style.min.css" />
+    <!-- <link rel="stylesheet" href="sass/style.min.css" /> -->
     <link rel="stylesheet" href="css/sweet-alert.css" />
-
     <!-- ? Main CSS -->
+
+    <script>
+      if (localStorage.getItem("lang") == "ar") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style_rtl.min.css";
+          link.media = "all";
+          head.appendChild(link);
+        }
+      } else if (localStorage.getItem("lang") == "en") {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.min.css";
+          link.media = "all";
+          head.appendChild(link);
+        }
+      } else {
+        var cssId = "myCss"; // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+          var head = document.getElementsByTagName("head")[0];
+          var link = document.createElement("link");
+          link.id = cssId;
+          link.rel = "stylesheet";
+          link.type = "text/css";
+          link.href = "sass/style.min.css";
+          link.media = "all";
+          head.appendChild(link);
+        }
+      }
+    </script>
 
     <!-- ? Main JavaScript -->
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -26,535 +64,678 @@
     <!-- ? Favicon -->
     <link rel="icon" href="media/image/favicon.ico" type="image" />
     <title>Mswak</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Start flotting whatsapp -->
     <a href="#" class="float">
-        <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-brands fa-whatsapp"></i>
     </a>
     <!-- Start flotting whatsapp -->
 
     <!-- Start Navbar -->
     <div class="navbar-top">
-        <div class="container">
-            <div class="contact_details">
-                <a href="mailto:almeswak.dental@gmail.com" class="email">
-                    <i class="fa-regular fa-envelope"></i>almeswak.dental@gmail.com
-                </a>
-                <a href="#" class="url">Almeswak_dentist.com</a>
-                <a href="tel:+966251254255" class="phone"><i class="fa-solid fa-phone"></i>+966 2512 542 55</a>
-            </div>
-            <ul class="socialicon">
-                <li>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+966506661277"><i
-                            class="fab fa-whatsapp icon"></i></a>
-                </li>
-                <li>
-                    <a target="_blank" href="#"><i class="fa-brands fa-facebook-f icon"></i></a>
-                </li>
-                <li>
-                    <a target="_blank" href="#"><i class="fa-brands fa-twitter icon"></i></a>
-                </li>
-                <li>
-                    <a target="_blank" href="#"><i class="fa-brands fa-instagram icon"></i></a>
-                </li>
-            </ul>
+      <div class="container">
+        <div class="contact_details">
+          <a href="mailto:almeswak.dental@gmail.com" class="email">
+            <i class="fa-regular fa-envelope"></i>almeswak.dental@gmail.com
+          </a>
+          <a href="#" class="url">Almeswak_dentist.com</a>
+          <a href="tel:+966251254255" class="phone"
+            ><i class="fa-solid fa-phone"></i>+966 2512 542 55</a
+          >
         </div>
+        <ul class="socialicon">
+          <li>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=+966506661277"
+              ><i class="fab fa-whatsapp icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="#"
+              ><i class="fa-brands fa-facebook-f icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="#"
+              ><i class="fa-brands fa-twitter icon"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="#"
+              ><i class="fa-brands fa-instagram icon"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="./media/image/logo.png" alt="logo" class="logo" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Medical Provider
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">test</a></li>
-                            <li><a class="dropdown-item" href="#">test</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Training Academy</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Library
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">test</a></li>
-                            <li><a class="dropdown-item" href="#">test</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact us</a>
-                    </li>
-                </ul>
-                <div class="auth">
-                    <a href="signup.html" class="signup_btn btn">Sign up</a>
-                    <a href="login.html" class="login_btn btn">Login</a>
-                    <!-- start lang -->
-                    <div class="dropdown lang">
-                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Arabic
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Arabic</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                        </ul>
-                    </div>
-                    <!-- End lang -->
-                </div>
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./media/image/logo.png" alt="logo" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="branches.html">Address</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="offers.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Training Academy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact us</a>
+            </li>
+          </ul>
+          <div class="auth">
+            <a href="signup.html" class="signup_btn btn">Sign up</a>
+            <!-- start lang -->
+            <div class="dropdown lang">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Arabic
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" onclick="changeLocaleAr()">Arabic</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" onclick="changeLocaleEn()"
+                    >English</a
+                  >
+                </li>
+                <script>
+                  function changeLocaleAr() {
+                    localStorage.setItem("lang", "ar");
+                    location.reload();
+                  }
+                  function changeLocaleEn() {
+                    localStorage.setItem("lang", "en");
+                    location.reload();
+                  }
+                  function readLang() {
+                    var lang = localStorage.getItem("lang");
+                    document.getElementById("langHtml").innerHTML = lang;
+                  }
+                </script>
+              </ul>
             </div>
+            <!-- End lang -->
+          </div>
         </div>
+      </div>
     </nav>
     <!-- End Navbar -->
 
-
     <!-- START BREADCRUMB -->
     <section class="breadcrumb">
-        <div class="container">
-            <div class="content">
-                <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
-                <span>Services</span>
-            </div>
+      <div class="container">
+        <div class="content">
+          <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
+          <span>Services</span>
         </div>
+      </div>
     </section>
     <!-- FINISH BREADCRUMB -->
 
-
     <!-- start service detials -->
     <section class="service_detials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- start tabs -->
-                    <section class="tabs_service">
-                        <ul>
-                            <li class="active"><a href="#"> Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i>
-                                </a></li>
-                            <li><a href="#"> Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i> </a></li>
-                            <li><a href="#"> Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i> </a></li>
-                            <li><a href="#"> Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i> </a></li>
-                        </ul>
-                    </section>
-                    <!-- finish tabs -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- start tabs -->
+            <section class="tabs_service">
+              <ul>
+                <li class="active">
+                  <a href="#">
+                    Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Cosmetic Dentistry <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <!-- finish tabs -->
 
-                    <div class="vedio_service">
-                        <h5>
-                            Some Guide And Advices Videos
-                        </h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod orem ipsum
-                            dolor sit amet, con
-                        </p>
-                        <div class="content">
-                            <div class="img">
-                                <img src="media/image/service1.jpg" alt="service">
-                                <button id="play-video" class="video-play-button">
-                                    <span></span>
-                                </button>
-                            </div>
-                            <!-- video model -->
-                            <div id="video-overlay" class="video-overlay">
-                                <a class="video-overlay-close">&times;</a>
-                            </div>
-                            <!-- video model -->
-                        </div>
-                    </div>
-
+            <div class="vedio_service">
+              <h5>Some Guide And Advices Videos</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod orem ipsum dolor sit amet, con
+              </p>
+              <div class="content">
+                <div class="img">
+                  <img src="media/image/service1.jpg" alt="service" />
+                  <button id="play-video" class="video-play-button">
+                    <span></span>
+                  </button>
                 </div>
-                <div class="col-lg-8 col-md-6 col-12">
-                    <div class="info">
-                        <img src="media/image/serv.png" alt="service">
-                        <h5>Cosmetic Dentistry</h5>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod orem ipsum
-                            dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit amet, consetetur
-                            elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod</p>
-                        <ul>
-                            <li>Comprehensive patient services</li>
-                            <li>Comprehensive patient services</li>
-                            <li>Comprehensive patient services</li>
-                            <li>Comprehensive patient services</li>
-                        </ul>
-                        <div class="img_collect">
-                            <img src="media/image/blog1.png" alt="">
-                            <img src="media/image/blog2.png" alt="">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod orem ipsum
-                            dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit amet, consetetur
-                            elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod</p>
-                    </div>
+                <!-- video model -->
+                <div id="video-overlay" class="video-overlay">
+                  <a class="video-overlay-close">&times;</a>
                 </div>
+                <!-- video model -->
+              </div>
             </div>
+          </div>
+          <div class="col-lg-8 col-md-6 col-12">
+            <div class="info">
+              <img src="media/image/serv.png" alt="service" />
+              <h5>Cosmetic Dentistry</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr,
+                sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit
+                amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor
+                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy
+                eirmod
+              </p>
+              <ul>
+                <li>Comprehensive patient services</li>
+                <li>Comprehensive patient services</li>
+                <li>Comprehensive patient services</li>
+                <li>Comprehensive patient services</li>
+              </ul>
+              <div class="img_collect">
+                <img src="media/image/blog1.png" alt="" />
+                <img src="media/image/blog2.png" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr,
+                sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit
+                amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor
+                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy
+                eirmod
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- finish service detials -->
 
-
     <!-- Start reservation info -->
     <section class="reservation_info reservation_info_service">
-        <form action="doctors.html" class="container">
-            <h6>Reservation information</h6>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="form-group">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <select name="" id="" class="form-control selectpicker" title="Enter your area">
-                            <option value="">test</option>
-                            <option value="">test</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="form-group">
-                        <i class="fa-solid fa-building"></i>
-                        <select name="" id="" class="form-control selectpicker" title="Select Branch">
-                            <option value="">test</option>
-                            <option value="">test</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <button type="submit" class="btn submit_btn">Search now</button>
-                </div>
+      <form action="doctors.html" class="container">
+        <h6>Reservation information</h6>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="form-group">
+              <i class="fa-solid fa-location-dot"></i>
+              <select
+                name=""
+                id=""
+                class="form-control selectpicker"
+                title="Enter your area"
+              >
+                <option value="">test</option>
+                <option value="">test</option>
+              </select>
             </div>
-        </form>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="form-group">
+              <i class="fa-solid fa-building"></i>
+              <select
+                name=""
+                id=""
+                class="form-control selectpicker"
+                title="Select Branch"
+              >
+                <option value="">test</option>
+                <option value="">test</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <button type="submit" class="btn submit_btn">Search now</button>
+          </div>
+        </div>
+      </form>
     </section>
     <!-- End reservation info -->
     <!-- start doctor details -->
 
     <div class="other_doctor">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="title">Top Doctors On That Service</h5>
-
-            </div>
-            <!-- For loop this Card Doctor -->
-            <div class="card_doctor">
-                <img src="./media/image/7w7w.jpg" alt="doctor" />
-                <div class="other_doctor_details">
-                    <h5 class="name">Ahmed Hawam</h5>
-                    <span class="speciality">Dental Prosthodontist Speciality</span>
-                    <p class="location">El Damam Branch , El Mawada District</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <a href="doctor_details.html" class="btn book_doctor_btn">Book Doctor</a>
-                </div>
-            </div>
-            <!-- For loop this Card Doctor -->
-
-            <!-- For loop this Card Doctor -->
-            <div class="card_doctor">
-                <img src="./media/image/7w7w.jpg" alt="doctor" />
-                <div class="other_doctor_details">
-                    <h5 class="name">Ahmed Hawam</h5>
-                    <span class="speciality">Dental Prosthodontist Speciality</span>
-                    <p class="location">El Damam Branch , El Mawada District</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <a href="doctor_details.html" class="btn book_doctor_btn">Book Doctor</a>
-                </div>
-            </div>
-            <!-- For loop this Card Doctor -->
-
-            <!-- For loop this Card Doctor -->
-            <div class="card_doctor">
-                <img src="./media/image/7w7w.jpg" alt="doctor" />
-                <div class="other_doctor_details">
-                    <h5 class="name">Ahmed Hawam</h5>
-                    <span class="speciality">Dental Prosthodontist Speciality</span>
-                    <p class="location">El Damam Branch , El Mawada District</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <a href="doctor_details.html" class="btn book_doctor_btn">Book Doctor</a>
-                </div>
-            </div>
-            <!-- For loop this Card Doctor -->
-
-            <!-- For loop this Card Doctor -->
-            <div class="card_doctor">
-                <img src="./media/image/7w7w.jpg" alt="doctor" />
-                <div class="other_doctor_details">
-                    <h5 class="name">Ahmed Hawam</h5>
-                    <span class="speciality">Dental Prosthodontist Speciality</span>
-                    <p class="location">El Damam Branch , El Mawada District</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star active"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <a href="doctor_details.html" class="btn book_doctor_btn">Book Doctor</a>
-                </div>
-            </div>
-            <!-- For loop this Card Doctor -->
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="title">Top Doctors On That Service</h5>
         </div>
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="doctor_details.html" class="btn book_doctor_btn"
+              >Book Doctor</a
+            >
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="doctor_details.html" class="btn book_doctor_btn"
+              >Book Doctor</a
+            >
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="doctor_details.html" class="btn book_doctor_btn"
+              >Book Doctor</a
+            >
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+
+        <!-- For loop this Card Doctor -->
+        <div class="card_doctor">
+          <img src="./media/image/7w7w.jpg" alt="doctor" />
+          <div class="other_doctor_details">
+            <h5 class="name">Ahmed Hawam</h5>
+            <span class="speciality">Dental Prosthodontist Speciality</span>
+            <p class="location">El Damam Branch , El Mawada District</p>
+            <div class="rating">
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star active"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="doctor_details.html" class="btn book_doctor_btn"
+              >Book Doctor</a
+            >
+          </div>
+        </div>
+        <!-- For loop this Card Doctor -->
+      </div>
     </div>
 
     <!-- finish doctor details -->
 
     <!-- start service_common_anawser -->
     <section class="service_common_anawser">
-
-        <div class="container">
-            <div class="head">
-                <div class="main_content_start">
-                    <h2>Some Guide And Advices</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor
-                        sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
-                        sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr, sed diam
-                        nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod.</p>
-                </div>
-
-            </div>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How Can I Book My New Appointment ?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How Can I Book My New Appointment ?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How Can I Book My New Appointment ?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod  orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="head">
+          <div class="main_content_start">
+            <h2>Some Guide And Advices</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod orem ipsum dolor sit amet, consetetur elitr, sed
+              diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit
+              amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor
+              sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod orem
+              ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod.
+            </p>
+          </div>
         </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How Can I Book My New Appointment ?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr,
+                sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit
+                amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor
+                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy
+                eirmod
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How Can I Book My New Appointment ?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr,
+                sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit
+                amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor
+                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy
+                eirmod
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How Can I Book My New Appointment ?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod orem ipsum dolor sit amet, consetetur elitr,
+                sed diam nonumy eirmod Lorem ipsum dolor sit amet, consetetur
+                sadipscing elitr, sed diam nonumy eirmod orem ipsum dolor sit
+                amet, consetetur elitr, sed diam nonumy eirmod Lorem ipsum dolor
+                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                orem ipsum dolor sit amet, consetetur elitr, sed diam nonumy
+                eirmod
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- finish service_common_anawser -->
 
     <!-- start footer section -->
     <footer>
-        <div class="container">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center align-items-lg-start justify-content-sm-center contact"
+          >
+            <img src="./media/image/logo_footer.png" alt="logo footer" />
+            <p>
+              Miswak Dental Foundation is one of the largest dental treatment
+              institutions in the Kingdom of Saudi Arabia and contains more than
+              80 branches throughout the Kingdom .
+            </p>
+            <form action="" class="subscribe_form">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="subscribe our offers & news"
+                />
+                <button type="submit" class="btn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+            <div class="payment_footer">
+              <img src="./media/image/mada.png" alt="mada" />
+              <img src="./media/image/visa.png" alt="visa" />
+              <img src="./media/image/mastercard.png" alt="mastercard" />
+            </div>
+          </div>
+          <div class="d-lg-flex col-lg-8 col-md-12 col-sm-12 mx-auto">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-links">
+              <div class="h3 d-block">Need Help?</div>
+              <div class="d-lg-block">
+                <ul>
+                  <li>
+                    <a href="contact.html" class="hvr-float-shadow"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="privacy.html" class="hvr-float-shadow"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="terms.html" class="hvr-float-shadow"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="faq.html" class="hvr-float-shadow">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-links">
+              <div class="h3 d-block">Quick Links</div>
+              <div class="d-lg-block">
+                <ul>
+                  <li>
+                    <a href="about.html" class="hvr-float-shadow">About Us</a>
+                  </li>
+                  <li>
+                    <a href="doctors.html" class="hvr-float-shadow">Doctors</a>
+                  </li>
+                  <li>
+                    <a href="services.html" class="hvr-float-shadow"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="training.html" class="hvr-float-shadow"
+                      >Training Academy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="offers.html" class="hvr-float-shadow">Offers</a>
+                  </li>
+                  <li>
+                    <a href="blog.html" class="hvr-float-shadow">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 p-0 col-links">
+              <div class="h3 d-block">Branches</div>
+              <div class="d-lg-block">
+                <ul>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Jeddah</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Elreyad</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Al Damam</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Al Khobar</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Makkah</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">Al madina Al mnwara</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hvr-float-shadow">more......</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-0">
+        <div class="footer-bottom">
+          <div class="container">
             <div class="row">
-                <div
-                    class="col-lg-4 col-md-12 col-sm-12 logo-col d-flex flex-column align-items-sm-center align-items-lg-start justify-content-sm-center contact">
-                    <img src="./media/image/logo_footer.png" alt="logo footer" />
-                    <p>
-                        Miswak Dental Foundation is one of the largest dental treatment
-                        institutions in the Kingdom of Saudi Arabia and contains more than
-                        80 branches throughout the Kingdom .
-                    </p>
-                    <form action="" class="subscribe_form">
-                        <div class="form-group">
-                            <input type="email" name="" id="" class="form-control"
-                                placeholder="subscribe our offers & news" />
-                            <button type="submit" class="btn">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </form>
-                    <div class="payment_footer">
-                        <img src="./media/image/mada.png" alt="mada" />
-                        <img src="./media/image/visa.png" alt="visa" />
-                        <img src="./media/image/mastercard.png" alt="mastercard" />
-                    </div>
-                </div>
-                <div class="d-lg-flex col-lg-8 col-md-12 col-sm-12 mx-auto">
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-links">
-                        <div class="h3 d-block">Need Help?</div>
-                        <div class="d-lg-block">
-                            <ul>
-                                <li>
-                                    <a href="contact.html" class="hvr-float-shadow">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="privacy.html" class="hvr-float-shadow">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="terms.html" class="hvr-float-shadow">Terms & Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html" class="hvr-float-shadow">FAQ</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-links">
-                        <div class="h3 d-block">Quick Links</div>
-                        <div class="d-lg-block">
-                            <ul>
-                                <li>
-                                    <a href="about.html" class="hvr-float-shadow">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="doctors.html" class="hvr-float-shadow">Doctors</a>
-                                </li>
-                                <li>
-                                    <a href="services.html" class="hvr-float-shadow">Services</a>
-                                </li>
-                                <li>
-                                    <a href="training.html" class="hvr-float-shadow">Training Academy</a>
-                                </li>
-                                <li>
-                                    <a href="offers.html" class="hvr-float-shadow">Offers</a>
-                                </li>
-                                <li>
-                                    <a href="blog.html" class="hvr-float-shadow">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 p-0 col-links">
-                        <div class="h3 d-block">Branches</div>
-                        <div class="d-lg-block">
-                            <ul>
-                                <li>
-                                    <a href="#" class="hvr-float-shadow">Jeddah</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="hvr-float-shadow">Elreyad</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="hvr-float-shadow">Al Damam</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="hvr-float-shadow">Al Khobar</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="hvr-float-shadow">Makkah</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="hvr-float-shadow">Al madina Al mnwara</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="hvr-float-shadow">more......</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              <div class="item col-sm-6">
+                <p class="my-3">All Right Reserved To Almeswak @2022</p>
+              </div>
+              <div class="item col-sm-6">
+                <ul class="socialicon">
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=+966506661277"
+                      ><i class="fab fa-whatsapp icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fa-brands fa-facebook-f icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fa-brands fa-twitter icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fa-brands fa-instagram icon"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container-fluid p-0">
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="item col-sm-6">
-                            <p class="my-3">All Right Reserved To Almeswak @2022</p>
-                        </div>
-                        <div class="item col-sm-6">
-                            <ul class="socialicon">
-                                <li>
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+966506661277"><i
-                                            class="fab fa-whatsapp icon"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="#"><i class="fa-brands fa-facebook-f icon"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="#"><i class="fa-brands fa-twitter icon"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="#"><i class="fa-brands fa-instagram icon"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
     <!-- end footer section -->
 
+    <script>
+      const player = document.querySelector("#play-video");
+      const videoOverlay = document.querySelector("#video-overlay");
 
-      <script>
-        const player = document.querySelector("#play-video")
-        const videoOverlay = document.querySelector("#video-overlay")
+      player.addEventListener("click", function (e) {
+        e.preventDefault();
+        videoOverlay.classList.add("open");
+        videoOverlay.innerHTML +=
+          '<iframe src="media/video/header.mp4" width="853" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+      });
 
-        player.addEventListener("click", function (e) {
-            e.preventDefault();
-            videoOverlay.classList.add("open")
-            videoOverlay.innerHTML += '<iframe src="media/video/header.mp4" width="853" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>';
-        })
+      videoOverlay.addEventListener("click", function (e) {
+        e.preventDefault();
+        close_video();
+      });
 
-        videoOverlay.addEventListener("click", function (e) {
-            e.preventDefault();
-            close_video();
-        });
-
-        document.addEventListener("keyup", function (e) {
-            if (e.keyCode === 27) {
-                close_video();
-            }
-        });
-
-        function close_video() {
-            videoOverlay.classList.remove("open")
-            videoOverlay.querySelector("iframe").remove();
+      document.addEventListener("keyup", function (e) {
+        if (e.keyCode === 27) {
+          close_video();
         }
+      });
 
+      function close_video() {
+        videoOverlay.classList.remove("open");
+        videoOverlay.querySelector("iframe").remove();
+      }
     </script>
-
-</body>
-
+  </body>
 </html>

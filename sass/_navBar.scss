@@ -4,7 +4,7 @@
   right: 0;
   left: 0;
   padding: 0.5rem 0;
-  background-color: #f7f7f7;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,14 +110,17 @@
   }
 }
 .navbar {
-  margin-top: 3.5rem;
-  position: relative;
+  top: 3.5rem;
+  position: fixed;
+  width: 100%;
   z-index: 20;
+  background-color: #f7f7f7;
   .navbar-brand {
     margin-inline-end: 5rem;
     .logo {
-      width: 100px;
-      margin-top: -2rem;
+      width: 150px;
+      margin-top: -5.5rem;
+      position: absolute;
     }
   }
   .navbar-collapse {
@@ -223,7 +226,7 @@
       }
     }
     .navbar-collapse {
-      justify-content: space-between;
+      justify-content: end;
       .nav-item {
         margin-inline-end: .5rem;
         .nav-link {
@@ -243,9 +246,12 @@
     }
   }
   .navbar {
+    top: 4.5rem;
     .navbar-brand {
       .logo {
         margin-top: 0;
+        position: unset;
+        width: 70px;
       }
     }
     .navbar-nav {
@@ -289,7 +295,7 @@
 /* ======= Mobile ======= */
 @media only screen and (max-width: 600px) {
   .navbar-top {
-    position: unset;
+    
     .container {
       flex-direction: column;
       .contact_details {
@@ -310,7 +316,7 @@
     }
   }
   .navbar {
-    margin-top: 0rem;
+    top: 8.5rem;
   }
 }
 /* ======= Mobile ======= */

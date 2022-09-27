@@ -1,5 +1,8 @@
 /* ======= Mobile ======= */
 @media only screen and (max-width: 600px) {
+  .breadcrumb, .doctor_header, .branch_details {
+    margin-top: 13.5rem;
+  }
   .auth {
     .auth_card {
       width: 90%;
@@ -7,6 +10,7 @@
   }
   .header {
     height: 50vh;
+    margin-top: 13.5rem;
     .text_header {
       h1,
       p {
