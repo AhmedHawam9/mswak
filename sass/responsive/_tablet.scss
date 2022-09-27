@@ -1,5 +1,12 @@
 /* ======= Tablet ======= */
 @media only screen and (max-width: 991.98px) {
+  .breadcrumb, .doctor_header, .branch_details {
+    margin-top: 9.5rem;
+  }
+  .header {
+    margin-top: 9.5rem;
+    height: 60vh;
+  }
   .auth {
     .auth_card {
       width: 70%;
@@ -7,6 +14,13 @@
         svg {
           left: 1rem;
         }
+      }
+    }
+  }
+  .reservation_info {
+    form {
+      .form-group {
+        margin-bottom: 1rem;
       }
     }
   }
